@@ -1,3 +1,16 @@
 {
-  "_comment": "Optional manual overrides, keyed by 'HomeTeam-AwayTeam' (English, as football-data names them). Location + channels normally come from schedule.json (abola). Use this only to override: location (string), channels (extra list), youtube (url). Example: {\"Portugal-Spain\": {\"youtube\": \"https://youtube.com/@livemodetv\"}}"
+  "_comment": "Optional manual overrides, keyed by 'HomeTeam-AwayTeam' (English, as football-data names them). Location + channels normally come from schedule.json (abola). Use this only to override: location (string), channels (extra list), youtube (url). Example: {\"Portugal-Spain\": {\"youtube\": \"https://youtube.com/@livemodetv\"}}. RTP/SIC/TVI free-TV games from publico.pt (2026-06-06); conditional 'caso Portugal' knockout games omitted (fixture unknown).",
+
+  "Mexico-South Africa": {"channels": ["TVI"]},
+  "Germany-Ivory Coast": {"channels": ["TVI"]},
+  "Portugal-Uzbekistan": {"channels": ["TVI"]},
+  "Norway-France": {"channels": ["TVI"]},
+
+  "France-Senegal": {"channels": ["RTP"]},
+  "Switzerland-Bosnia-Herzegovina": {"channels": ["RTP"]},
+  "Portugal-Colombia": {"channels": ["RTP"]},
+
+  "Canada-Bosnia-Herzegovina": {"channels": ["SIC"]},
+  "Portugal-Congo DR": {"channels": ["SIC"]},
+  "Ecuador-Germany": {"channels": ["SIC"]}
 }

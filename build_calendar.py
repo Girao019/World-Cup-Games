@@ -10,7 +10,7 @@ overrides.json.
 Event format (pt-PT):
   SUMMARY:     ⚽ Spain x Austria (Dezasseis avos)
   LOCATION:    Los Angeles, Estados Unidos da América
-  DESCRIPTION: Mundial FIFA 2026 — Dezasseis avos de final (jogo 84). Transmissão: Sport TV.
+  DESCRIPTION: Transmitido na: Sport TV.
 
 Run:   FOOTBALL_DATA_TOKEN=xxx python build_calendar.py
 Test:  python build_calendar.py --selftest
@@ -194,22 +194,16 @@ def build_ics(matches, overrides, schedule, now):
         home, away = sides(m, gno)
         start = datetime.fromisoformat(m["utcDate"].replace("Z", "+00:00"))
         end = start + timedelta(minutes=MATCH_MINUTES)
-        hhmm = (start + timedelta(hours=1)).strftime("%H:%M")  # hora de Portugal (WEST, UTC+1)
 
         ov = overrides.get(match_key(m), {})
         sched = schedule.get(m["utcDate"], {})
         channels = DEFAULT_CHANNELS + sched.get("channels", []) + ov.get("channels", [])
         short, _ = stage_pt(m)
         gsuf = group_suffix(m)  # "" fora da fase de grupos
-        loc_full, loc_short = locations(ov, sched)
+        loc_full, _ = locations(ov, sched)
 
         summary = f"⚽ {home} x {away} ({short}{gsuf})"
-        # Template abola: Jogo N - HH:MM - T1 x T2 - Local - TV
-        parts = [f"Jogo {gno}", hhmm, f"{home} x {away}"]
-        if loc_short:
-            parts.append(loc_short)
-        parts.append("Transmitido na: " + join_pt(channels))
-        desc = " - ".join(parts)
+        desc = "Transmitido na: " + join_pt(channels) + "."
         if ov.get("youtube"):
             desc += "\nYouTube: " + ov["youtube"]
 
@@ -248,12 +242,10 @@ def selftest():
     schedule = load_schedule()  # real schedule.json (game_no, cidade, canais)
     ics = build_ics(matches, {}, schedule, now).replace("\r\n ", "")  # unfold
     assert "SUMMARY:⚽ Espanha x Áustria (Dezasseis avos)" in ics, ics
-    assert "DESCRIPTION:Jogo 84 - 20:00 - Espanha x Áustria - Los Angeles\\, nos EUA - Transmitido na: Sport TV" in ics, ics
+    assert "DESCRIPTION:Transmitido na: Sport TV." in ics, ics
     assert "LOCATION:Los Angeles\\, Estados Unidos da América" in ics, ics
     assert "SUMMARY:⚽ México x Poland (Fase de Grupos A)" in ics, ics  # Poland sem mapa -> igual
-    assert "DESCRIPTION:Jogo 1 - 20:00 - México x Poland - Transmitido na: Sport TV" in ics, ics  # sem local
-    assert ("DESCRIPTION:Jogo 104 - 20:00 - Vencedor do jogo 101 x Vencedor do jogo 102 - "
-            "New York/New Jersey\\, nos EUA - Transmitido na: Sport TV\\, LiveModeTV e RTP") in ics, ics
+    assert "DESCRIPTION:Transmitido na: Sport TV\\, LiveModeTV e RTP." in ics, ics
     print("selftest OK")
 
 
