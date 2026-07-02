@@ -186,6 +186,9 @@ def main():
         return selftest()
     now = datetime.now(timezone.utc)
     matches = fetch_matches()
+    if os.environ.get("DUMP"):
+        names = sorted({m[s]["name"] for m in matches for s in ("homeTeam", "awayTeam") if m[s]["name"]})
+        sys.stderr.write("TEAMS=" + json.dumps(names, ensure_ascii=False) + "\n")
     ics = build_ics(matches, load_overrides(), load_schedule(), now)
     with open(OUT, "w", encoding="utf-8") as f:
         f.write(ics)

@@ -24,6 +24,7 @@ jobs:
       - name: Build ICS
         env:
           FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
+          DUMP: "1"
         run: python build_calendar.py
       - name: Stage site
         run: |
