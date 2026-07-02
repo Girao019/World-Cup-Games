@@ -11,8 +11,6 @@ Run once after editing the table:  python generate_schedule.py
 import json
 from datetime import datetime, timedelta
 
-COUNTRY_PT = {"USA": "Estados Unidos da América", "Canada": "Canadá", "Mexico": "México"}
-
 # (game_no, "DD.MM.YYYY HH:MM" Portugal local, city, country, [extra channels])
 ROWS = [
     (69, "28.06.2026 00:30", "Miami", "USA", []),
@@ -59,7 +57,8 @@ def main():
     for game_no, pt, city, country, extra in ROWS:
         out[utc_key(pt)] = {
             "game_no": game_no,
-            "location": f"{city}, {COUNTRY_PT[country]}",
+            "city": city,
+            "country": country,  # USA | Canada | Mexico
             "channels": extra,
         }
     assert len(out) == len(ROWS), "duplicate utcDate key collision"
@@ -67,8 +66,8 @@ def main():
         json.dump(out, f, ensure_ascii=False, indent=2, sort_keys=True)
     print(f"Wrote schedule.json: {len(out)} games")
     # sanity: jogo 84 -> Los Angeles at 19:00Z on 2026-07-02
-    assert out["2026-07-02T19:00:00Z"]["location"] == "Los Angeles, Estados Unidos da América"
-    assert out["2026-07-02T19:00:00Z"]["game_no"] == 84
+    j84 = out["2026-07-02T19:00:00Z"]
+    assert j84["city"] == "Los Angeles" and j84["country"] == "USA" and j84["game_no"] == 84
     print("sanity OK")
 
 

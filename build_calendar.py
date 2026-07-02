@@ -63,7 +63,45 @@ TEAM_PT = {
 
 
 def team_pt(name):
-    return TEAM_PT.get(name, name) if name else "A definir"
+    return TEAM_PT.get(name, name) if name else None
+
+
+# Pais: forma curta (descricao "nos EUA") e completa (campo LOCATION).
+COUNTRY_SHORT = {"USA": "nos EUA", "Canada": "no Canadá", "Mexico": "no México"}
+COUNTRY_FULL = {"USA": "Estados Unidos da América", "Canada": "Canadá", "Mexico": "México"}
+
+# Bracket (abola): jogo -> (jogo feeder A, jogo feeder B). Vencedores.
+FEEDERS = {
+    93: (83, 84), 94: (81, 82), 95: (86, 88), 96: (85, 87),
+    97: (89, 90), 98: (93, 94), 99: (91, 92), 100: (95, 96),
+    101: (97, 98), 102: (99, 100),
+    104: (101, 102),
+}
+# 3.o lugar: perdedores das meias-finais.
+LOSER_FEEDERS = {103: (101, 102)}
+
+
+def sides(m, game_no):
+    # (home, away) em pt-PT. Se indefinido, "Vencedor/Perdedor do jogo X".
+    names = [team_pt(m["homeTeam"]["name"]), team_pt(m["awayTeam"]["name"])]
+    feeders, verb = FEEDERS.get(game_no), "Vencedor"
+    if feeders is None:
+        feeders, verb = LOSER_FEEDERS.get(game_no), "Perdedor"
+    out = []
+    for i, nm in enumerate(names):
+        if nm:
+            out.append(nm)
+        elif feeders:
+            out.append(f"{verb} do jogo {feeders[i]}")
+        else:
+            out.append("A definir")
+    return out[0], out[1]
+
+
+def join_pt(items):
+    if len(items) <= 1:
+        return "".join(items)
+    return ", ".join(items[:-1]) + " e " + items[-1]
 
 
 def fetch_matches():
@@ -104,10 +142,14 @@ def group_suffix(m):
     return " " + grp.split("_")[-1] if grp else ""  # "GROUP_K" -> " K"
 
 
-def location_pt(ov, sched):
-    # football-data free tier nao devolve o estadio; localizacao vem do
-    # schedule.json (abola.pt), com override manual em overrides.json.
-    return ov.get("location") or sched.get("location", "")
+def locations(ov, sched):
+    # Devolve (campo_LOCATION, forma_curta_descricao). "" quando desconhecido.
+    if ov.get("location"):
+        return ov["location"], ov["location"]
+    city, country = sched.get("city"), sched.get("country")
+    if not city:
+        return "", ""
+    return f"{city}, {COUNTRY_FULL[country]}", f"{city}, {COUNTRY_SHORT[country]}"
 
 
 def ics_escape(s):
@@ -148,20 +190,26 @@ def build_ics(matches, overrides, schedule, now):
         "X-WR-TIMEZONE:Europe/Lisbon",
     ]
     for m in matches:
-        home = team_pt(m["homeTeam"]["name"])
-        away = team_pt(m["awayTeam"]["name"])
+        gno = game_no[m["id"]]
+        home, away = sides(m, gno)
         start = datetime.fromisoformat(m["utcDate"].replace("Z", "+00:00"))
         end = start + timedelta(minutes=MATCH_MINUTES)
+        hhmm = (start + timedelta(hours=1)).strftime("%H:%M")  # hora de Portugal (WEST, UTC+1)
 
         ov = overrides.get(match_key(m), {})
         sched = schedule.get(m["utcDate"], {})
         channels = DEFAULT_CHANNELS + sched.get("channels", []) + ov.get("channels", [])
-        short, long = stage_pt(m)
+        short, _ = stage_pt(m)
         gsuf = group_suffix(m)  # "" fora da fase de grupos
+        loc_full, loc_short = locations(ov, sched)
 
         summary = f"⚽ {home} x {away} ({short}{gsuf})"
-        desc = (f"Mundial FIFA 2026 — {long}{gsuf} (jogo {game_no[m['id']]}). "
-                f"Transmissão: {', '.join(channels)}.")
+        # Template abola: Jogo N - HH:MM - T1 x T2 - Local - TV
+        parts = [f"Jogo {gno}", hhmm, f"{home} x {away}"]
+        if loc_short:
+            parts.append(loc_short)
+        parts.append(join_pt(channels))
+        desc = " - ".join(parts)
         if ov.get("youtube"):
             desc += "\nYouTube: " + ov["youtube"]
 
@@ -174,9 +222,8 @@ def build_ics(matches, overrides, schedule, now):
             "SUMMARY:" + ics_escape(summary),
             "DESCRIPTION:" + ics_escape(desc),
         ]
-        loc = location_pt(ov, sched)
-        if loc:
-            ev.append("LOCATION:" + ics_escape(loc))
+        if loc_full:
+            ev.append("LOCATION:" + ics_escape(loc_full))
         ev.append("END:VEVENT")
         lines += ev
     lines.append("END:VCALENDAR")
@@ -194,14 +241,19 @@ def selftest():
          "homeTeam": {"name": "Spain"}, "awayTeam": {"name": "Austria"}},
         {"id": 1, "utcDate": "2026-06-11T19:00:00Z", "stage": "GROUP_STAGE", "group": "GROUP_A",
          "homeTeam": {"name": "Mexico"}, "awayTeam": {"name": "Poland"}},
+        # final (jogo 104) por decidir -> "Vencedor do jogo X"; NY/NJ; TV com "e"
+        {"id": 999, "utcDate": "2026-07-19T19:00:00Z", "stage": "FINAL", "group": None,
+         "homeTeam": {"name": None}, "awayTeam": {"name": None}},
     ]
-    schedule = load_schedule()  # real schedule.json (game_no 84, LA)
+    schedule = load_schedule()  # real schedule.json (game_no, cidade, canais)
     ics = build_ics(matches, {}, schedule, now).replace("\r\n ", "")  # unfold
     assert "SUMMARY:⚽ Espanha x Áustria (Dezasseis avos)" in ics, ics
-    assert "DESCRIPTION:Mundial FIFA 2026 — Dezasseis avos de final (jogo 84). Transmissão: Sport TV." in ics, ics
+    assert "DESCRIPTION:Jogo 84 - 20:00 - Espanha x Áustria - Los Angeles\\, nos EUA - Sport TV" in ics, ics
     assert "LOCATION:Los Angeles\\, Estados Unidos da América" in ics, ics
-    assert "SUMMARY:⚽ México x Poland (Fase de Grupos A)" in ics, ics  # Poland sem mapa -> fica igual
-    assert "(jogo 1)" in ics  # sem entrada no schedule -> fallback ordem por data
+    assert "SUMMARY:⚽ México x Poland (Fase de Grupos A)" in ics, ics  # Poland sem mapa -> igual
+    assert "DESCRIPTION:Jogo 1 - 20:00 - México x Poland - Sport TV" in ics, ics  # sem local
+    assert ("DESCRIPTION:Jogo 104 - 20:00 - Vencedor do jogo 101 x Vencedor do jogo 102 - "
+            "New York/New Jersey\\, nos EUA - Sport TV\\, LiveModeTV e RTP") in ics, ics
     print("selftest OK")
 
 

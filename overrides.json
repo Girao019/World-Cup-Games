@@ -1,8 +1,3 @@
 {
-  "_comment": "Sport TV shows ALL games (added automatically). Per game add EXTRA channels, youtube and location. Key = 'HomeTeam-AwayTeam' exactly as football-data.org names them (English, e.g. 'Spain-Austria'). location is free text pt-PT (the API does not provide the venue).",
-  "Spain-Austria": {
-    "location": "Los Angeles, Estados Unidos da América",
-    "channels": ["SIC", "LiveModeTV"],
-    "youtube": "https://youtube.com/@livemodetv"
-  }
+  "_comment": "Optional manual overrides, keyed by 'HomeTeam-AwayTeam' (English, as football-data names them). Location + channels normally come from schedule.json (abola). Use this only to override: location (string), channels (extra list), youtube (url). Example: {\"Portugal-Spain\": {\"youtube\": \"https://youtube.com/@livemodetv\"}}"
 }

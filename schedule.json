@@ -1,168 +1,199 @@
 {
   "2026-06-27T23:30:00Z": {
     "channels": [],
-    "game_no": 69,
-    "location": "Miami, Estados Unidos da América"
+    "city": "Miami",
+    "country": "USA",
+    "game_no": 69
   },
   "2026-06-28T19:00:00Z": {
     "channels": [],
-    "game_no": 73,
-    "location": "Los Angeles, Estados Unidos da América"
+    "city": "Los Angeles",
+    "country": "USA",
+    "game_no": 73
   },
   "2026-06-29T17:00:00Z": {
     "channels": [],
-    "game_no": 76,
-    "location": "Houston, Estados Unidos da América"
+    "city": "Houston",
+    "country": "USA",
+    "game_no": 76
   },
   "2026-06-29T20:30:00Z": {
     "channels": [],
-    "game_no": 74,
-    "location": "Boston, Estados Unidos da América"
+    "city": "Boston",
+    "country": "USA",
+    "game_no": 74
   },
   "2026-06-30T01:00:00Z": {
     "channels": [],
-    "game_no": 75,
-    "location": "Monterrey, México"
+    "city": "Monterrey",
+    "country": "Mexico",
+    "game_no": 75
   },
   "2026-07-01T01:00:00Z": {
     "channels": [],
-    "game_no": 79,
-    "location": "Mexico City, México"
+    "city": "Mexico City",
+    "country": "Mexico",
+    "game_no": 79
   },
   "2026-07-01T16:00:00Z": {
     "channels": [],
-    "game_no": 80,
-    "location": "Atlanta, Estados Unidos da América"
+    "city": "Atlanta",
+    "country": "USA",
+    "game_no": 80
   },
   "2026-07-01T20:00:00Z": {
     "channels": [],
-    "game_no": 82,
-    "location": "Seattle, Estados Unidos da América"
+    "city": "Seattle",
+    "country": "USA",
+    "game_no": 82
   },
   "2026-07-02T00:00:00Z": {
     "channels": [],
-    "game_no": 81,
-    "location": "Santa Clara, Estados Unidos da América"
+    "city": "Santa Clara",
+    "country": "USA",
+    "game_no": 81
   },
   "2026-07-02T19:00:00Z": {
     "channels": [],
-    "game_no": 84,
-    "location": "Los Angeles, Estados Unidos da América"
+    "city": "Los Angeles",
+    "country": "USA",
+    "game_no": 84
   },
   "2026-07-02T23:00:00Z": {
     "channels": [
       "LiveModeTV"
     ],
-    "game_no": 83,
-    "location": "Toronto, Canadá"
+    "city": "Toronto",
+    "country": "Canada",
+    "game_no": 83
   },
   "2026-07-03T03:00:00Z": {
     "channels": [],
-    "game_no": 85,
-    "location": "Vancouver, Canadá"
+    "city": "Vancouver",
+    "country": "Canada",
+    "game_no": 85
   },
   "2026-07-03T18:00:00Z": {
     "channels": [],
-    "game_no": 88,
-    "location": "Arlington, Estados Unidos da América"
+    "city": "Arlington",
+    "country": "USA",
+    "game_no": 88
   },
   "2026-07-03T22:00:00Z": {
     "channels": [
       "LiveModeTV"
     ],
-    "game_no": 86,
-    "location": "Miami, Estados Unidos da América"
+    "city": "Miami",
+    "country": "USA",
+    "game_no": 86
   },
   "2026-07-04T01:30:00Z": {
     "channels": [],
-    "game_no": 87,
-    "location": "Kansas City, Estados Unidos da América"
+    "city": "Kansas City",
+    "country": "USA",
+    "game_no": 87
   },
   "2026-07-04T17:00:00Z": {
     "channels": [],
-    "game_no": 90,
-    "location": "Houston, Estados Unidos da América"
+    "city": "Houston",
+    "country": "USA",
+    "game_no": 90
   },
   "2026-07-04T21:00:00Z": {
     "channels": [],
-    "game_no": 89,
-    "location": "Philadelphia, Estados Unidos da América"
+    "city": "Philadelphia",
+    "country": "USA",
+    "game_no": 89
   },
   "2026-07-05T20:00:00Z": {
     "channels": [],
-    "game_no": 91,
-    "location": "New York/New Jersey, Estados Unidos da América"
+    "city": "New York/New Jersey",
+    "country": "USA",
+    "game_no": 91
   },
   "2026-07-06T00:00:00Z": {
     "channels": [],
-    "game_no": 92,
-    "location": "Mexico City, México"
+    "city": "Mexico City",
+    "country": "Mexico",
+    "game_no": 92
   },
   "2026-07-06T19:00:00Z": {
     "channels": [],
-    "game_no": 93,
-    "location": "Dallas, Estados Unidos da América"
+    "city": "Dallas",
+    "country": "USA",
+    "game_no": 93
   },
   "2026-07-07T00:00:00Z": {
     "channels": [],
-    "game_no": 94,
-    "location": "Seattle, Estados Unidos da América"
+    "city": "Seattle",
+    "country": "USA",
+    "game_no": 94
   },
   "2026-07-07T16:00:00Z": {
     "channels": [],
-    "game_no": 95,
-    "location": "Atlanta, Estados Unidos da América"
+    "city": "Atlanta",
+    "country": "USA",
+    "game_no": 95
   },
   "2026-07-07T20:00:00Z": {
     "channels": [],
-    "game_no": 96,
-    "location": "Vancouver, Canadá"
+    "city": "Vancouver",
+    "country": "Canada",
+    "game_no": 96
   },
   "2026-07-09T20:00:00Z": {
     "channels": [],
-    "game_no": 97,
-    "location": "Boston, Estados Unidos da América"
+    "city": "Boston",
+    "country": "USA",
+    "game_no": 97
   },
   "2026-07-10T19:00:00Z": {
     "channels": [],
-    "game_no": 98,
-    "location": "Los Angeles, Estados Unidos da América"
+    "city": "Los Angeles",
+    "country": "USA",
+    "game_no": 98
   },
   "2026-07-12T21:00:00Z": {
     "channels": [],
-    "game_no": 99,
-    "location": "Miami, Estados Unidos da América"
+    "city": "Miami",
+    "country": "USA",
+    "game_no": 99
   },
   "2026-07-13T01:00:00Z": {
     "channels": [],
-    "game_no": 100,
-    "location": "Kansas City, Estados Unidos da América"
+    "city": "Kansas City",
+    "country": "USA",
+    "game_no": 100
   },
   "2026-07-14T19:00:00Z": {
     "channels": [
       "LiveModeTV"
     ],
-    "game_no": 101,
-    "location": "Dallas, Estados Unidos da América"
+    "city": "Dallas",
+    "country": "USA",
+    "game_no": 101
   },
   "2026-07-15T19:00:00Z": {
     "channels": [
       "LiveModeTV"
     ],
-    "game_no": 102,
-    "location": "Atlanta, Estados Unidos da América"
+    "city": "Atlanta",
+    "country": "USA",
+    "game_no": 102
   },
   "2026-07-18T21:00:00Z": {
     "channels": [],
-    "game_no": 103,
-    "location": "Miami, Estados Unidos da América"
+    "city": "Miami",
+    "country": "USA",
+    "game_no": 103
   },
   "2026-07-19T19:00:00Z": {
     "channels": [
       "LiveModeTV",
       "RTP"
     ],
-    "game_no": 104,
-    "location": "New York/New Jersey, Estados Unidos da América"
+    "city": "New York/New Jersey",
+    "country": "USA",
+    "game_no": 104
   }
 }
