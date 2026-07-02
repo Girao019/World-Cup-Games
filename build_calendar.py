@@ -42,6 +42,30 @@ STAGE_PT = {
     "FINAL": ("Final", "Final"),
 }
 
+# football-data nome (EN) -> pt-PT
+TEAM_PT = {
+    "Algeria": "Argélia", "Argentina": "Argentina", "Australia": "Austrália",
+    "Austria": "Áustria", "Belgium": "Bélgica", "Bosnia-Herzegovina": "Bósnia e Herzegovina",
+    "Brazil": "Brasil", "Canada": "Canadá", "Cape Verde Islands": "Cabo Verde",
+    "Colombia": "Colômbia", "Congo DR": "RD Congo", "Croatia": "Croácia",
+    "Curaçao": "Curaçau", "Czechia": "República Checa", "Ecuador": "Equador",
+    "Egypt": "Egito", "England": "Inglaterra", "France": "França", "Germany": "Alemanha",
+    "Ghana": "Gana", "Haiti": "Haiti", "Iran": "Irão", "Iraq": "Iraque",
+    "Ivory Coast": "Costa do Marfim", "Japan": "Japão", "Jordan": "Jordânia",
+    "Mexico": "México", "Morocco": "Marrocos", "Netherlands": "Países Baixos",
+    "New Zealand": "Nova Zelândia", "Norway": "Noruega", "Panama": "Panamá",
+    "Paraguay": "Paraguai", "Portugal": "Portugal", "Qatar": "Qatar",
+    "Saudi Arabia": "Arábia Saudita", "Scotland": "Escócia", "Senegal": "Senegal",
+    "South Africa": "África do Sul", "South Korea": "Coreia do Sul", "Spain": "Espanha",
+    "Sweden": "Suécia", "Switzerland": "Suíça", "Tunisia": "Tunísia", "Turkey": "Turquia",
+    "United States": "Estados Unidos", "Uruguay": "Uruguai", "Uzbekistan": "Uzbequistão",
+}
+
+
+def team_pt(name):
+    return TEAM_PT.get(name, name) if name else "A definir"
+
+
 def fetch_matches():
     token = os.environ.get("FOOTBALL_DATA_TOKEN")
     if not token:
@@ -124,8 +148,8 @@ def build_ics(matches, overrides, schedule, now):
         "X-WR-TIMEZONE:Europe/Lisbon",
     ]
     for m in matches:
-        home = m["homeTeam"]["name"] or "A definir"
-        away = m["awayTeam"]["name"] or "A definir"
+        home = team_pt(m["homeTeam"]["name"])
+        away = team_pt(m["awayTeam"]["name"])
         start = datetime.fromisoformat(m["utcDate"].replace("Z", "+00:00"))
         end = start + timedelta(minutes=MATCH_MINUTES)
 
@@ -173,10 +197,10 @@ def selftest():
     ]
     schedule = load_schedule()  # real schedule.json (game_no 84, LA)
     ics = build_ics(matches, {}, schedule, now).replace("\r\n ", "")  # unfold
-    assert "SUMMARY:⚽ Spain x Austria (Dezasseis avos)" in ics, ics
+    assert "SUMMARY:⚽ Espanha x Áustria (Dezasseis avos)" in ics, ics
     assert "DESCRIPTION:Mundial FIFA 2026 — Dezasseis avos de final (jogo 84). Transmissão: Sport TV." in ics, ics
     assert "LOCATION:Los Angeles\\, Estados Unidos da América" in ics, ics
-    assert "SUMMARY:⚽ Mexico x Poland (Fase de Grupos A)" in ics
+    assert "SUMMARY:⚽ México x Poland (Fase de Grupos A)" in ics, ics  # Poland sem mapa -> fica igual
     assert "(jogo 1)" in ics  # sem entrada no schedule -> fallback ordem por data
     print("selftest OK")
 
@@ -186,9 +210,6 @@ def main():
         return selftest()
     now = datetime.now(timezone.utc)
     matches = fetch_matches()
-    if os.environ.get("DUMP"):
-        names = sorted({m[s]["name"] for m in matches for s in ("homeTeam", "awayTeam") if m[s]["name"]})
-        sys.stderr.write("TEAMS=" + json.dumps(names, ensure_ascii=False) + "\n")
     ics = build_ics(matches, load_overrides(), load_schedule(), now)
     with open(OUT, "w", encoding="utf-8") as f:
         f.write(ics)
