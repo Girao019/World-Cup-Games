@@ -28,16 +28,30 @@ Google Calendar → **Other calendars** → **+** → **From URL** → paste the
 ## Editing broadcasters
 
 Edit `overrides.json`. Key = `HomeTeam-AwayTeam` exactly as football-data.org
-names the teams. Only list EXTRA channels beyond Sport TV:
+names the teams (English, e.g. `Spain-Austria`). Only list EXTRA channels
+beyond Sport TV. `location` is free text (the free API does not provide the
+venue, so set it per game if you want a location on the event):
 
 ```json
 {
-  "Portugal-Brasil": {
+  "Spain-Austria": {
+    "location": "Los Angeles, Estados Unidos da América",
     "channels": ["SIC", "LiveModeTV"],
     "youtube": "https://youtube.com/@livemodetv"
   }
 }
 ```
+
+Event format:
+
+```
+SUMMARY:     ⚽ Spain x Austria (Dezasseis avos)
+LOCATION:    Los Angeles, Estados Unidos da América
+DESCRIPTION: Mundial FIFA 2026 — Dezasseis avos de final (jogo 84). Transmissão: Sport TV.
+```
+
+`jogo N` is derived by sorting all matches by kickoff time, so it approximates
+FIFA's official game number but may differ by a place on same-day games.
 
 ## Local run / test
 

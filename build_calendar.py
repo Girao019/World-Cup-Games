@@ -14,7 +14,6 @@ Event format (pt-PT):
 
 Run:   FOOTBALL_DATA_TOKEN=xxx python build_calendar.py
 Test:  python build_calendar.py --selftest
-Debug: DUMP=1 FOOTBALL_DATA_TOKEN=xxx python build_calendar.py  (prints a sample match)
 """
 import json
 import os
@@ -41,11 +40,6 @@ STAGE_PT = {
     "THIRD_PLACE": ("3.o lugar", "Disputa do 3.o lugar"),
     "FINAL": ("Final", "Final"),
 }
-
-# venue (string do football-data) -> "Cidade, Pais" em pt-PT.
-# Preenchido a partir dos nomes reais devolvidos pela API (ver DUMP).
-VENUE_PT = {}
-
 
 def fetch_matches():
     token = os.environ.get("FOOTBALL_DATA_TOKEN")
@@ -76,11 +70,10 @@ def group_suffix(m):
     return " " + grp.split("_")[-1] if grp else ""  # "GROUP_K" -> " K"
 
 
-def location_pt(m, ov):
-    if ov.get("location"):
-        return ov["location"]
-    v = m.get("venue")
-    return VENUE_PT.get(v, "") if v else ""
+def location_pt(ov):
+    # football-data free tier nao devolve o estadio/cidade, por isso a
+    # localizacao vem por jogo do overrides.json.
+    return ov.get("location", "")
 
 
 def ics_escape(s):
@@ -142,7 +135,7 @@ def build_ics(matches, overrides, now):
             "SUMMARY:" + ics_escape(summary),
             "DESCRIPTION:" + ics_escape(desc),
         ]
-        loc = location_pt(m, ov)
+        loc = location_pt(ov)
         if loc:
             ev.append("LOCATION:" + ics_escape(loc))
         ev.append("END:VEVENT")
@@ -158,13 +151,11 @@ def selftest():
     now = datetime(2026, 7, 2, 12, 0, tzinfo=timezone.utc)
     matches = [
         {"id": 84, "utcDate": "2026-07-04T19:00:00Z", "stage": "LAST_32", "group": None,
-         "venue": "Los Angeles Stadium",
          "homeTeam": {"name": "Spain"}, "awayTeam": {"name": "Austria"}},
         {"id": 1, "utcDate": "2026-06-11T19:00:00Z", "stage": "GROUP_STAGE", "group": "GROUP_A",
-         "venue": None, "homeTeam": {"name": "Mexico"}, "awayTeam": {"name": "Poland"}},
+         "homeTeam": {"name": "Mexico"}, "awayTeam": {"name": "Poland"}},
     ]
-    overrides = {"Spain-Austria": {}}
-    VENUE_PT["Los Angeles Stadium"] = "Los Angeles, Estados Unidos da América"
+    overrides = {"Spain-Austria": {"location": "Los Angeles, Estados Unidos da América"}}
     ics = build_ics(matches, overrides, now).replace("\r\n ", "")  # unfold
     assert "SUMMARY:⚽ Spain x Austria (Dezasseis avos)" in ics, ics
     assert "DESCRIPTION:Mundial FIFA 2026 — Dezasseis avos de final (jogo 2). Transmissão: Sport TV." in ics, ics
@@ -179,13 +170,6 @@ def main():
         return selftest()
     now = datetime.now(timezone.utc)
     matches = fetch_matches()
-    if os.environ.get("DUMP"):
-        ko = next((m for m in matches if m.get("stage") not in (None, "GROUP_STAGE")), matches[0])
-        sys.stderr.write("SAMPLE_MATCH=" + json.dumps(ko, ensure_ascii=False) + "\n")
-        venues = sorted({m.get("venue") for m in matches if m.get("venue")})
-        sys.stderr.write("VENUES=" + json.dumps(venues, ensure_ascii=False) + "\n")
-        stages = sorted({m.get("stage") for m in matches})
-        sys.stderr.write("STAGES=" + json.dumps(stages, ensure_ascii=False) + "\n")
     ics = build_ics(matches, load_overrides(), now)
     with open(OUT, "w", encoding="utf-8") as f:
         f.write(ics)

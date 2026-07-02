@@ -1,6 +1,7 @@
 {
-  "_comment": "Sport TV shows ALL games (added automatically). List here only EXTRA channels + youtube per game. Key = 'HomeTeam-AwayTeam' exactly as football-data.org names them.",
-  "Portugal-Brasil": {
+  "_comment": "Sport TV shows ALL games (added automatically). Per game add EXTRA channels, youtube and location. Key = 'HomeTeam-AwayTeam' exactly as football-data.org names them (English, e.g. 'Spain-Austria'). location is free text pt-PT (the API does not provide the venue).",
+  "Spain-Austria": {
+    "location": "Los Angeles, Estados Unidos da América",
     "channels": ["SIC", "LiveModeTV"],
     "youtube": "https://youtube.com/@livemodetv"
   }
