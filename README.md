@@ -45,3 +45,4 @@ names the teams. Only list EXTRA channels beyond Sport TV:
 python build_calendar.py --selftest        # no network, asserts output
 FOOTBALL_DATA_TOKEN=xxx python build_calendar.py   # writes worldcup.ics
 ```
+
