@@ -1,0 +1,7 @@
+{
+  "_comment": "Sport TV shows ALL games (added automatically). List here only EXTRA channels + youtube per game. Key = 'HomeTeam-AwayTeam' exactly as football-data.org names them.",
+  "Portugal-Brasil": {
+    "channels": ["SIC", "LiveModeTV"],
+    "youtube": "https://youtube.com/@livemodetv"
+  }
+}
