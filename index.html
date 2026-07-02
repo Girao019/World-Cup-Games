@@ -7,7 +7,8 @@
 <style>
   body{font-family:system-ui,sans-serif;max-width:640px;margin:3rem auto;padding:0 1rem;line-height:1.5}
   code{background:#f2f2f2;padding:.15rem .35rem;border-radius:4px;word-break:break-all}
-  a.btn{display:inline-block;background:#0a7d2c;color:#fff;padding:.6rem 1rem;border-radius:6px;text-decoration:none;margin:.5rem 0}
+  a.btn,button.btn{display:inline-block;background:#0a7d2c;color:#fff;padding:.6rem 1rem;border-radius:6px;text-decoration:none;margin:.5rem 0;border:0;font:inherit;cursor:pointer}
+  .url-row{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap;margin:.5rem 0}
 </style>
 </head>
 <body>
@@ -18,9 +19,24 @@
 <ol>
   <li>Abrir <a href="https://calendar.google.com">calendar.google.com</a> (no computador)</li>
   <li>Barra lateral: "Outros calendários" &rarr; <b>+</b> &rarr; <b>A partir do URL</b></li>
-  <li>Colar: <code>https://girao019.github.io/World-Cup-Games/worldcup.ics</code></li>
+  <li>Colar o URL:
+    <div class="url-row">
+      <code id="feed">https://girao019.github.io/World-Cup-Games/worldcup.ics</code>
+      <button class="btn" id="copy" type="button">Copiar URL</button>
+    </div>
+  </li>
   <li>Adicionar. O Google atualiza sozinho, sem importar de novo.</li>
 </ol>
 <p>Notificações: passar o rato no calendário &rarr; ⋮ &rarr; Definições &rarr; "Notificações de eventos".</p>
+<script>
+  document.getElementById('copy').addEventListener('click', function () {
+    var url = document.getElementById('feed').textContent;
+    navigator.clipboard.writeText(url).then(function () {
+      var b = document.getElementById('copy');
+      b.textContent = 'Copiado!';
+      setTimeout(function () { b.textContent = 'Copiar URL'; }, 1500);
+    });
+  });
+</script>
 </body>
 </html>
