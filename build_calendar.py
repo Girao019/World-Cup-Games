@@ -23,6 +23,7 @@ from datetime import datetime, timedelta, timezone
 
 API = "https://api.football-data.org/v4/competitions/WC/matches"
 OVERRIDES_FILE = "overrides.json"
+SCHEDULE_FILE = "schedule.json"
 OUT = "worldcup.ics"
 MATCH_MINUTES = 120  # kickoff -> ~final whistle
 DEFAULT_CHANNELS = ["Sport TV"]  # transmite todos os jogos
@@ -50,11 +51,20 @@ def fetch_matches():
         return json.load(r)["matches"]
 
 
-def load_overrides():
-    if not os.path.exists(OVERRIDES_FILE):
+def load_json(path):
+    if not os.path.exists(path):
         return {}
-    with open(OVERRIDES_FILE, encoding="utf-8") as f:
+    with open(path, encoding="utf-8") as f:
         return json.load(f)
+
+
+def load_overrides():
+    return load_json(OVERRIDES_FILE)
+
+
+def load_schedule():
+    # utcDate -> {game_no, location, channels(extra)}, from abola.pt (generate_schedule.py)
+    return load_json(SCHEDULE_FILE)
 
 
 def match_key(m):
@@ -70,10 +80,10 @@ def group_suffix(m):
     return " " + grp.split("_")[-1] if grp else ""  # "GROUP_K" -> " K"
 
 
-def location_pt(ov):
-    # football-data free tier nao devolve o estadio/cidade, por isso a
-    # localizacao vem por jogo do overrides.json.
-    return ov.get("location", "")
+def location_pt(ov, sched):
+    # football-data free tier nao devolve o estadio; localizacao vem do
+    # schedule.json (abola.pt), com override manual em overrides.json.
+    return ov.get("location") or sched.get("location", "")
 
 
 def ics_escape(s):
@@ -96,10 +106,14 @@ def fold(line):
     return out
 
 
-def build_ics(matches, overrides, now):
-    # jogo N: ordena por data de inicio (desempate por id) e numera 1..N.
+def build_ics(matches, overrides, schedule, now):
+    # jogo N: numero oficial do schedule.json (abola). Fallback: ordem por data.
     ordered = sorted(matches, key=lambda m: (m["utcDate"], m["id"]))
     game_no = {m["id"]: i + 1 for i, m in enumerate(ordered)}
+    for m in matches:
+        sched = schedule.get(m["utcDate"])
+        if sched and sched.get("game_no"):
+            game_no[m["id"]] = sched["game_no"]
 
     lines = [
         "BEGIN:VCALENDAR",
@@ -116,7 +130,8 @@ def build_ics(matches, overrides, now):
         end = start + timedelta(minutes=MATCH_MINUTES)
 
         ov = overrides.get(match_key(m), {})
-        channels = DEFAULT_CHANNELS + ov.get("channels", [])
+        sched = schedule.get(m["utcDate"], {})
+        channels = DEFAULT_CHANNELS + sched.get("channels", []) + ov.get("channels", [])
         short, long = stage_pt(m)
         gsuf = group_suffix(m)  # "" fora da fase de grupos
 
@@ -135,7 +150,7 @@ def build_ics(matches, overrides, now):
             "SUMMARY:" + ics_escape(summary),
             "DESCRIPTION:" + ics_escape(desc),
         ]
-        loc = location_pt(ov)
+        loc = location_pt(ov, sched)
         if loc:
             ev.append("LOCATION:" + ics_escape(loc))
         ev.append("END:VEVENT")
@@ -150,18 +165,19 @@ def build_ics(matches, overrides, now):
 def selftest():
     now = datetime(2026, 7, 2, 12, 0, tzinfo=timezone.utc)
     matches = [
-        {"id": 84, "utcDate": "2026-07-04T19:00:00Z", "stage": "LAST_32", "group": None,
+        # jogo 84 real: Espanha x Austria, 02.07 20:00 PT = 19:00Z, Los Angeles
+        {"id": 500, "utcDate": "2026-07-02T19:00:00Z", "stage": "LAST_32", "group": None,
          "homeTeam": {"name": "Spain"}, "awayTeam": {"name": "Austria"}},
         {"id": 1, "utcDate": "2026-06-11T19:00:00Z", "stage": "GROUP_STAGE", "group": "GROUP_A",
          "homeTeam": {"name": "Mexico"}, "awayTeam": {"name": "Poland"}},
     ]
-    overrides = {"Spain-Austria": {"location": "Los Angeles, Estados Unidos da América"}}
-    ics = build_ics(matches, overrides, now).replace("\r\n ", "")  # unfold
+    schedule = load_schedule()  # real schedule.json (game_no 84, LA)
+    ics = build_ics(matches, {}, schedule, now).replace("\r\n ", "")  # unfold
     assert "SUMMARY:⚽ Spain x Austria (Dezasseis avos)" in ics, ics
-    assert "DESCRIPTION:Mundial FIFA 2026 — Dezasseis avos de final (jogo 2). Transmissão: Sport TV." in ics, ics
-    assert "LOCATION:Los Angeles\\, Estados Unidos da América" in ics
+    assert "DESCRIPTION:Mundial FIFA 2026 — Dezasseis avos de final (jogo 84). Transmissão: Sport TV." in ics, ics
+    assert "LOCATION:Los Angeles\\, Estados Unidos da América" in ics, ics
     assert "SUMMARY:⚽ Mexico x Poland (Fase de Grupos A)" in ics
-    assert "(jogo 1)" in ics  # jogo mais cedo numerado primeiro
+    assert "(jogo 1)" in ics  # sem entrada no schedule -> fallback ordem por data
     print("selftest OK")
 
 
@@ -170,7 +186,7 @@ def main():
         return selftest()
     now = datetime.now(timezone.utc)
     matches = fetch_matches()
-    ics = build_ics(matches, load_overrides(), now)
+    ics = build_ics(matches, load_overrides(), load_schedule(), now)
     with open(OUT, "w", encoding="utf-8") as f:
         f.write(ics)
     print(f"Wrote {OUT}: {len(matches)} matches")

@@ -50,8 +50,16 @@ LOCATION:    Los Angeles, Estados Unidos da América
 DESCRIPTION: Mundial FIFA 2026 — Dezasseis avos de final (jogo 84). Transmissão: Sport TV.
 ```
 
-`jogo N` is derived by sorting all matches by kickoff time, so it approximates
-FIFA's official game number but may differ by a place on same-day games.
+### Locations, official game numbers, extra channels
+
+`schedule.json` holds per-game location, the official `jogo N` and extra
+broadcasters (LiveModeTV, RTP), sourced from
+[abola.pt](https://www.abola.pt) and keyed by UTC kickoff time. It is matched
+to the live fixtures by kickoff time. Edit the `ROWS` table in
+`generate_schedule.py` and run `python generate_schedule.py` to regenerate it.
+
+Games not in `schedule.json` (most group-stage games) get no location and a
+fallback `jogo N` derived from kickoff order.
 
 ## Local run / test
 
