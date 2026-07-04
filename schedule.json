@@ -189,8 +189,8 @@
   },
   "2026-07-19T19:00:00Z": {
     "channels": [
-      "LiveModeTV",
-      "RTP"
+      "RTP 1",
+      "LiveModeTV"
     ],
     "city": "New York/New Jersey",
     "country": "USA",

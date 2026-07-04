@@ -129,8 +129,10 @@ def load_schedule():
     return load_json(SCHEDULE_FILE)
 
 
-def match_key(m):
-    return f"{m['homeTeam']['name']}-{m['awayTeam']['name']}"
+def get_override(overrides, m):
+    # aceita "Casa-Fora" ou "Fora-Casa" (ordem casa/fora pode variar na API)
+    h, a = m["homeTeam"]["name"], m["awayTeam"]["name"]
+    return overrides.get(f"{h}-{a}") or overrides.get(f"{a}-{h}") or {}
 
 
 def stage_pt(m):
@@ -197,7 +199,7 @@ def build_ics(matches, overrides, schedule, now):
         start = datetime.fromisoformat(m["utcDate"].replace("Z", "+00:00"))
         end = start + timedelta(minutes=MATCH_MINUTES)
 
-        ov = overrides.get(match_key(m), {})
+        ov = get_override(overrides, m)
         sched = schedule.get(m["utcDate"], {})
         channels = DEFAULT_CHANNELS + sched.get("channels", []) + ov.get("channels", [])
         short, _ = stage_pt(m)
@@ -247,7 +249,7 @@ def selftest():
     assert "DESCRIPTION:Transmitido na: Sport TV." in ics, ics
     assert "LOCATION:Los Angeles\\, Estados Unidos da América" in ics, ics
     assert "SUMMARY:⚽ México x Poland (Fase de Grupos A)" in ics, ics  # Poland sem mapa -> igual
-    assert "DESCRIPTION:Transmitido na: Sport TV\\, LiveModeTV e RTP." in ics, ics
+    assert "DESCRIPTION:Transmitido na: Sport TV\\, RTP 1 e LiveModeTV." in ics, ics
     print("selftest OK")
 
 

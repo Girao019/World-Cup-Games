@@ -43,7 +43,7 @@ ROWS = [
     (101, "14.07.2026 20:00", "Dallas", "USA", ["LiveModeTV"]),
     (102, "15.07.2026 20:00", "Atlanta", "USA", ["LiveModeTV"]),
     (103, "18.07.2026 22:00", "Miami", "USA", []),
-    (104, "19.07.2026 20:00", "New York/New Jersey", "USA", ["LiveModeTV", "RTP"]),
+    (104, "19.07.2026 20:00", "New York/New Jersey", "USA", ["RTP 1", "LiveModeTV"]),
 ]
 
 

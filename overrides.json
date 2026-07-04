@@ -12,5 +12,8 @@
 
   "Canada-Bosnia-Herzegovina": {"channels": ["SIC"]},
   "Portugal-Congo DR": {"channels": ["SIC"]},
-  "Ecuador-Germany": {"channels": ["SIC"]}
+  "Ecuador-Germany": {"channels": ["SIC"]},
+
+  "Paraguay-France": {"channels": ["SIC"]},
+  "Portugal-Spain": {"channels": ["RTP 1"]}
 }
