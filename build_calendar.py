@@ -188,6 +188,8 @@ def build_ics(matches, overrides, schedule, now):
         "CALSCALE:GREGORIAN",
         "X-WR-CALNAME:Mundial FIFA 2026 (pt-PT)",
         "X-WR-TIMEZONE:Europe/Lisbon",
+        "REFRESH-INTERVAL;VALUE=DURATION:PT6H",  # a maioria dos clientes respeita; Google ignora
+        "X-PUBLISHED-TTL:PT6H",
     ]
     for m in matches:
         gno = game_no[m["id"]]
