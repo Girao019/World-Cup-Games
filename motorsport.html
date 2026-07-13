@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Automobilismo em Portugal · foco no Porto</title>
+<style>
+  :root { color-scheme: light dark; --bg:#0f1115; --card:#1a1d24; --fg:#e8eaed; --mut:#9aa0aa; --acc:#e63946; --porto:#ffd23f; --line:#2a2e37; }
+  @media (prefers-color-scheme: light) { :root { --bg:#f4f5f7; --card:#fff; --fg:#1a1d24; --mut:#5a6069; --line:#e2e5ea; } }
+  * { box-sizing: border-box; }
+  body { margin:0; font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; background:var(--bg); color:var(--fg); }
+  header { padding:2rem 1.2rem 1rem; max-width:900px; margin:0 auto; }
+  h1 { margin:0 0 .3rem; font-size:1.7rem; }
+  .sub { color:var(--mut); margin:0 0 1rem; }
+  .sub b { color:var(--porto); }
+  .subscribe { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:.8rem 1rem; margin:1rem 0; }
+  .subscribe code { background:rgba(128,128,128,.15); padding:.15rem .4rem; border-radius:5px; font-size:.85em; word-break:break-all; }
+  .fbtn { background:var(--acc); color:#fff; border:0; padding:.3rem .7rem; border-radius:6px; cursor:pointer; font:inherit; font-size:.8rem; margin:.3rem 0; }
+  .filters { display:flex; flex-wrap:wrap; gap:.4rem; max-width:900px; margin:0 auto; padding:.5rem 1.2rem; position:sticky; top:0; background:var(--bg); z-index:2; }
+  .filters button { border:1px solid var(--line); background:var(--card); color:var(--fg); padding:.4rem .8rem; border-radius:20px; cursor:pointer; font-size:.85rem; }
+  .filters button.on { background:var(--acc); color:#fff; border-color:var(--acc); }
+  .filters button.porto.on { background:var(--porto); color:#1a1d24; border-color:var(--porto); }
+  main { max-width:900px; margin:0 auto; padding:.5rem 1.2rem 3rem; display:grid; gap:.8rem; }
+  .card { background:var(--card); border:1px solid var(--line); border-left:4px solid var(--acc); border-radius:10px; padding:.9rem 1.1rem; }
+  .card[data-porto="true"] { border-left-color:var(--porto); }
+  .card.is-past { opacity:.55; }
+  .row1 { display:flex; align-items:center; gap:.5rem; flex-wrap:wrap; margin-bottom:.4rem; }
+  .badge { font-size:.75rem; padding:.15rem .5rem; border-radius:6px; background:rgba(128,128,128,.18); white-space:nowrap; }
+  .star { font-size:1rem; }
+  .date { font-weight:700; margin-left:auto; }
+  .up { font-size:.7rem; color:#2ecc71; text-transform:uppercase; letter-spacing:.05em; }
+  .tbc { font-size:.7rem; color:var(--porto); text-transform:uppercase; letter-spacing:.05em; }
+  .past { font-size:.7rem; color:var(--mut); text-transform:uppercase; letter-spacing:.05em; }
+  h3 { margin:.1rem 0 .3rem; font-size:1.1rem; }
+  h3 a { color:var(--fg); text-decoration:none; }
+  h3 a:hover { color:var(--acc); text-decoration:underline; }
+  .cat { margin:.1rem 0; color:var(--fg); font-size:.9rem; }
+  .where { margin:.2rem 0; color:var(--mut); font-size:.88rem; }
+  .notes { margin:.3rem 0 0; color:var(--mut); font-size:.83rem; }
+  footer { text-align:center; color:var(--mut); font-size:.8rem; padding:1rem; }
+</style>
+</head>
+<body>
+<header>
+  <h1>🏁 Automobilismo em Portugal</h1>
+  <p class="sub"><b>⭐ Foco no Porto e Norte.</b> Circuito, ralis, rampas e clássicos. 29 eventos, 9 na área do Porto.</p>
+  <div class="subscribe">
+    📅 <strong>Subscreve o calendário</strong> (atualiza sozinho no telemóvel/Google Calendar).<br>
+    Google Calendar: "Outros calendários" &rarr; <b>+</b> &rarr; <b>A partir do URL</b>, colar:<br>
+    <code id="feed">https://girao019.github.io/World-Cup-Games/motorsport-pt.ics</code>
+    <button class="fbtn" id="copy" type="button">Copiar</button><br>
+    <small>Telemóvel/Apple: <a href="webcal://girao019.github.io/World-Cup-Games/motorsport-pt.ics">clicar para subscrever</a>. Ou <a href="motorsport-pt.ics">descarregar .ics</a>.</small>
+  </div>
+</header>
+<div class="filters" id="filters">
+  <button data-f="all" class="on">Todos</button>
+  <button data-f="porto" class="porto">⭐ Porto</button>
+  <button data-f="rally">🏎️ Ralis</button>
+  <button data-f="hillclimb">⛰️ Rampas</button>
+  <button data-f="circuit">🏁 Circuito</button>
+  <button data-f="festival">🎪 Festivais</button>
+  <button data-f="classic">🚘 Clássicos</button>
+  <button data-f="show">🏛️ Salões</button>
+</div>
+<main id="list">
+    <article class="card" data-type="circuit" data-porto="false">
+      <div class="row1"><span class="badge t-circuit">🏁 Circuito</span><span class="date">17-19 jul</span><span class="up">a caminho</span></div>
+      <h3><a href="https://autodromodoalgarve.com/race-calendar/" target="_blank" rel="noopener">Ferrari Challenge Trofeo Pirelli</a></h3>
+      <p class="cat">GT monomarca (Ferrari 296 Challenge)</p>
+      <p class="where">📍 Autódromo Internacional do Algarve, <strong>Portimão</strong> · Algarve</p>
+      <p class="notes">Monomarca Ferrari, pilotos gentleman/pro.</p>
+    </article>
+    <article class="card" data-type="circuit" data-porto="false">
+      <div class="row1"><span class="badge t-circuit">🏁 Circuito</span><span class="date">18-19 jul</span><span class="up">a caminho</span></div>
+      <h3><a href="https://www.circuito-estoril.pt/en/eventos/" target="_blank" rel="noopener">Estoril Summer Party (Race Ready)</a></h3>
+      <p class="cat">Históricos / GT</p>
+      <p class="where">📍 Autódromo do Estoril, <strong>Estoril (Cascais)</strong> · Lisboa</p>
+      <p class="notes">Encontro de históricos e GT.</p>
+    </article>
+    <article class="card" data-type="rally" data-porto="false">
+      <div class="row1"><span class="badge t-rally">🏎️ Rali</span><span class="date">31 jul - 1 ago</span><span class="up">a caminho</span></div>
+      <h3><a href="https://www.fpak.pt" target="_blank" rel="noopener">Rali Vinho da Madeira</a></h3>
+      <p class="cat">Nacional + ERT (Rally2)</p>
+      <p class="where">📍 Troços de montanha (asfalto), <strong>Funchal</strong> · Madeira</p>
+      <p class="notes">CPR + European Rally Trophy. Asfalto.</p>
+    </article>
+    <article class="card" data-type="festival" data-porto="false">
+      <div class="row1"><span class="badge t-festival">🎪 Festival</span><span class="date">4-6 set</span><span class="up">a caminho</span></div>
+      <h3><a href="https://www.caramulo-motorfestival.com/" target="_blank" rel="noopener">Caramulo Motorfestival</a></h3>
+      <p class="cat">Clássicos, desportivos, carros de corrida, motos</p>
+      <p class="where">📍 Serra do Caramulo / Museu do Caramulo (rampa + exposições), <strong>Caramulo (Tondela)</strong> · Centro</p>
+      <p class="notes">~1h45 do Porto. O maior festival automóvel de Portugal: rampa, 40.000+ visitantes, 100+ expositores.</p>
+    </article>
+    <article class="card" data-type="hillclimb" data-porto="false">
+      <div class="row1"><span class="badge t-hillclimb">⛰️ Rampa</span><span class="date">5-6 set</span><span class="up">a caminho</span></div>
+      <h3><a href="https://www.fpak.pt" target="_blank" rel="noopener">Rampa Internacional de Boticas</a></h3>
+      <p class="cat">CPM nacional</p>
+      <p class="where">📍 Rampa de Boticas, <strong>Boticas</strong> · Vila Real / Norte</p>
+      <p class="notes">Norte de Portugal, ~1h40 do Porto.</p>
+    </article>
+    <article class="card" data-type="rally" data-porto="false">
+      <div class="row1"><span class="badge t-rally">🏎️ Rali</span><span class="date">11-12 set</span><span class="up">a caminho</span></div>
+      <h3><a href="https://www.fpak.pt" target="_blank" rel="noopener">Rali da Água / Transibérico Chaves-Verín</a></h3>
+      <p class="cat">Nacional (Rally2 e classes inferiores)</p>
+      <p class="where">📍 Troços de terra, Chaves, <strong>Chaves</strong> · Vila Real / Norte</p>
+      <p class="notes">CPR. Norte, ~1h30-2h do Porto. Transfronteiriço com Verín (Espanha).</p>
+    </article>
+    <article class="card" data-type="classic" data-porto="false">
+      <div class="row1"><span class="badge t-classic">🚘 Clássicos</span><span class="date">16-20 set</span><span class="up">a caminho</span></div>
+      <h3><a href="https://en.estorilclassics.pt/" target="_blank" rel="noopener">Estoril Classics</a></h3>
+      <p class="cat">Históricos + Concurso de Elegância ACP</p>
+      <p class="where">📍 Autódromo do Estoril, <strong>Estoril (Cascais)</strong> · Lisboa</p>
+      <p class="notes">Grelhas de históricos (F1, GT, turismo) + o principal concurso de elegância do país. Corridas 18-20 set.</p>
+    </article>
+    <article class="card" data-type="circuit" data-porto="false">
+      <div class="row1"><span class="badge t-circuit">🏁 Circuito</span><span class="date">18-19 set</span><span class="up">a caminho</span></div>
+      <h3><a href="https://autodromodoalgarve.com/race-calendar/" target="_blank" rel="noopener">24 Horas CRM</a></h3>
+      <p class="cat">Endurance amador (turismo/GT/protótipo)</p>
+      <p class="where">📍 Autódromo Internacional do Algarve, <strong>Portimão</strong> · Algarve</p>
+      <p class="notes">Prova de resistência de 24h, grelha mista.</p>
+    </article>
+    <article class="card" data-type="classic" data-porto="false">
+      <div class="row1"><span class="badge t-classic">🚘 Clássicos</span><span class="date">25-27 set</span><span class="up">a caminho</span></div>
+      <h3><a href="https://museudocaramulo.pt/" target="_blank" rel="noopener">Corrida dos Fundadores by Cartrack</a></h3>
+      <p class="cat">Clássicos (passeio/touring)</p>
+      <p class="where">📍 Figueira da Foz → Lisboa, <strong>Figueira da Foz</strong> · Centro / Lisboa</p>
+      <p class="notes">Evento touring de clássicos, ligado ao Museu do Caramulo.</p>
+    </article>
+    <article class="card" data-type="show" data-porto="true">
+      <div class="row1"><span class="badge t-show">🏛️ Salão</span><span class="star" title="Área do Porto">⭐</span><span class="date">2-5 out</span><span class="up">a caminho</span></div>
+      <h3><a href="https://exponor.pt/calendario/autoclassico/" target="_blank" rel="noopener">autoClássico Porto (Salão de Clássicos + Exclusive Top Cars + MotorXperience)</a></h3>
+      <p class="cat">Clássicos, época, supercarros, carros de corrida</p>
+      <p class="where">📍 Exponor, <strong>Matosinhos (Leça da Palmeira)</strong> · Norte</p>
+      <p class="notes">XXIII edição. O grande evento de clássicos do Porto no 2.º semestre. Inclui pavilhão de supercarros (Exclusive Top Cars) e zona de desporto motorizado (MotorXperience). Sex 15h-20h, Sáb-Seg 10h-20h.</p>
+    </article>
+    <article class="card" data-type="circuit" data-porto="false">
+      <div class="row1"><span class="badge t-circuit">🏁 Circuito</span><span class="date">2-4 out</span><span class="up">a caminho</span></div>
+      <h3><a href="https://autodromodoalgarve.com/race-calendar/" target="_blank" rel="noopener">Fun Cup</a></h3>
+      <p class="cat">Endurance monomarca (VW Fun Cup)</p>
+      <p class="where">📍 Autódromo Internacional do Algarve, <strong>Portimão</strong> · Algarve</p>
+      <p class="notes">Resistência de baixo custo, equipas multi-piloto.</p>
+    </article>
+    <article class="card" data-type="hillclimb" data-porto="false">
+      <div class="row1"><span class="badge t-hillclimb">⛰️ Rampa</span><span class="date">3-4 out</span><span class="up">a caminho</span></div>
+      <h3><a href="https://www.fpak.pt" target="_blank" rel="noopener">Rampa da Arrábida</a></h3>
+      <p class="cat">Taça de Portugal de Montanha</p>
+      <p class="where">📍 Serra da Arrábida, <strong>Setúbal</strong> · Setúbal</p>
+      <p class="notes">A sul de Lisboa.</p>
+    </article>
+    <article class="card" data-type="rally" data-porto="false">
+      <div class="row1"><span class="badge t-rally">🏎️ Rali</span><span class="date">3-4 out</span><span class="up">a caminho</span></div>
+      <h3><a href="https://www.fpak.pt" target="_blank" rel="noopener">Rallye Casinos do Algarve</a></h3>
+      <p class="cat">Nacional (Rally2 e classes inferiores)</p>
+      <p class="where">📍 Troços mistos, Algarve, <strong>Loulé</strong> · Algarve</p>
+      <p class="notes">CPR.</p>
+    </article>
+    <article class="card" data-type="circuit" data-porto="false">
+      <div class="row1"><span class="badge t-circuit">🏁 Circuito</span><span class="date">8-10 out</span><span class="up">a caminho</span></div>
+      <h3><a href="https://www.europeanlemansseries.com/" target="_blank" rel="noopener">4 Horas de Portimão - European Le Mans Series (final)</a></h3>
+      <p class="cat">LMP2 / LMP3 / LMGT3</p>
+      <p class="where">📍 Autódromo Internacional do Algarve, <strong>Portimão</strong> · Algarve</p>
+      <p class="notes">Final da ELMS. Protótipos LMP2/LMP3 + GT3. Corrida a 10 out.</p>
+    </article>
+    <article class="card" data-type="rally" data-porto="true">
+      <div class="row1"><span class="badge t-rally">🏎️ Rali</span><span class="star" title="Área do Porto">⭐</span><span class="date">9-11 out</span><span class="up">a caminho</span></div>
+      <h3><a href="https://www.fiaerc.com/" target="_blank" rel="noopener">Rally Five Cities North of Portugal (ex-Serras de Fafe)</a></h3>
+      <p class="cat">ERC + Nacional (Rally2, ERC3/4)</p>
+      <p class="where">📍 Terra, base Fafe (salto Pedra Sentada), <strong>Fafe</strong> · Braga / Norte</p>
+      <p class="notes">Final do Campeonato Europeu de Ralis (ERC), ~70 km / <1h do Porto. Também final do CPR. NOTA: ERC indica 9-11 out; rascunho FPAK indicava 23-25 out, confirmar.</p>
+    </article>
+    <article class="card" data-type="circuit" data-porto="false">
+      <div class="row1"><span class="badge t-circuit">🏁 Circuito</span><span class="date">16-18 out</span><span class="up">a caminho</span></div>
+      <h3><a href="https://www.gt-world-challenge-europe.com/" target="_blank" rel="noopener">GT World Challenge Europe (final)</a></h3>
+      <p class="cat">GT3</p>
+      <p class="where">📍 Autódromo Internacional do Algarve, <strong>Portimão</strong> · Algarve</p>
+      <p class="notes">Final do campeonato SRO GT3. Regresso de Portimão ao calendário desde 2015.</p>
+    </article>
+    <article class="card" data-type="classic" data-porto="false">
+      <div class="row1"><span class="badge t-classic">🚘 Clássicos</span><span class="date">30 out - 1 nov</span><span class="up">a caminho</span></div>
+      <h3><a href="https://autodromodoalgarve.com/race-calendar/" target="_blank" rel="noopener">Algarve Classic Festival</a></h3>
+      <p class="cat">Históricos / clássicos</p>
+      <p class="where">📍 Autódromo Internacional do Algarve, <strong>Portimão</strong> · Algarve</p>
+      <p class="notes">Festival de corridas históricas: desportivos, GT e monolugares clássicos.</p>
+    </article>
+    <article class="card" data-type="circuit" data-porto="false">
+      <div class="row1"><span class="badge t-circuit">🏁 Circuito</span><span class="date">31 out - 1 nov</span><span class="up">a caminho</span></div>
+      <h3><a href="https://www.circuito-estoril.pt/en/eventos/" target="_blank" rel="noopener">Porsche Sprint Challenge Ibérica (final)</a></h3>
+      <p class="cat">GT monomarca (Porsche 911 GT3 Cup)</p>
+      <p class="where">📍 Autódromo do Estoril, <strong>Estoril (Cascais)</strong> · Lisboa</p>
+      <p class="notes">6.ª e última ronda, Porsche 911 GT3 Cup.</p>
+    </article>
+    <article class="card" data-type="circuit" data-porto="false">
+      <div class="row1"><span class="badge t-circuit">🏁 Circuito</span><span class="date">27-29 nov</span><span class="up">a caminho</span></div>
+      <h3><a href="https://autodromodoalgarve.com/race-calendar/" target="_blank" rel="noopener">Ultimate Cup Series</a></h3>
+      <p class="cat">Endurance (protótipos LMP3 / GT / turismo)</p>
+      <p class="where">📍 Autódromo Internacional do Algarve, <strong>Portimão</strong> · Algarve</p>
+      <p class="notes">Série de resistência multi-categoria (França).</p>
+    </article>
+    <article class="card" data-type="circuit" data-porto="false">
+      <div class="row1"><span class="badge t-circuit">🏁 Circuito</span><span class="date">4-6 dez</span><span class="up">a caminho</span></div>
+      <h3><a href="https://www.campeonatoportugalvelocidade.com/" target="_blank" rel="noopener">Estoril Endurance Festival (final do Campeonato de Portugal de Velocidade)</a></h3>
+      <p class="cat">GT3/GT4/GTX, protótipos, monolugares</p>
+      <p class="where">📍 Autódromo do Estoril, <strong>Estoril (Cascais)</strong> · Lisboa</p>
+      <p class="notes">Final do CPV e dos Iberian Supercars. Ronda do campeonato nacional FPAK.</p>
+    </article>
+    <article class="card" data-type="hillclimb" data-porto="false">
+      <div class="row1"><span class="badge t-hillclimb">⛰️ Rampa</span><span class="date">Data por confirmar</span><span class="tbc">a confirmar</span></div>
+      <h3><a href="https://www.autosport.pt/" target="_blank" rel="noopener">Rampa do Caramulo</a></h3>
+      <p class="cat">CPM nacional</p>
+      <p class="where">📍 Subida da Serra do Caramulo, <strong>Caramulo (Tondela)</strong> · Viseu / Centro</p>
+      <p class="notes">Adicionada ao CPM a meio da época (data ~24-25 out, confirmar na FPAK). ~1h30 do Porto.</p>
+    </article>
+    <article class="card" data-type="classic" data-porto="true">
+      <div class="row1"><span class="badge t-classic">🚘 Clássicos</span><span class="star" title="Área do Porto">⭐</span><span class="date">Data por confirmar</span><span class="tbc">a confirmar</span></div>
+      <h3><a href="https://en.wikipedia.org/wiki/Circuito_da_Boavista" target="_blank" rel="noopener">Circuito da Boavista (histórico do Porto)</a></h3>
+      <p class="cat">Carros de corrida históricos</p>
+      <p class="where">📍 Circuito de rua da Avenida da Boavista, <strong>Porto</strong> · Norte</p>
+      <p class="notes">SEM edição marcada. Corridas bienais (2005-2013, incl. Grande Prémio Histórico do Porto + WTCC) suspensas pela Câmara em 2015. Movimento 'Salvar o Circuito da Boavista' pede o regresso. F1 em Portugal (2027-28) vai para Portimão, não para o Porto.</p>
+    </article>
+    <article class="card is-past" data-type="hillclimb" data-porto="true">
+      <div class="row1"><span class="badge t-hillclimb">⛰️ Rampa</span><span class="star" title="Área do Porto">⭐</span><span class="date">25-26 abr</span><span class="past">terminado</span></div>
+      <h3><a href="https://www.fpak.pt" target="_blank" rel="noopener">Rampa da Penha</a></h3>
+      <p class="cat">CPM nacional (protótipos CN, GT, turismo, monolugares)</p>
+      <p class="where">📍 Monte da Penha, <strong>Guimarães</strong> · Braga / Norte</p>
+      <p class="notes">Campeonato de Portugal de Montanha, ~50 min do Porto.</p>
+    </article>
+    <article class="card is-past" data-type="rally" data-porto="true">
+      <div class="row1"><span class="badge t-rally">🏎️ Rali</span><span class="star" title="Área do Porto">⭐</span><span class="date">17-18 abr</span><span class="past">terminado</span></div>
+      <h3><a href="https://www.fpak.pt" target="_blank" rel="noopener">Rali Terras d'Aboboreira</a></h3>
+      <p class="cat">Nacional + ERT (Rally2/3/4/5)</p>
+      <p class="where">📍 Serra da Aboboreira (terra), <strong>Amarante</strong> · Porto / Norte</p>
+      <p class="notes">CPR + European Rally Trophy. ~45 min a este do Porto. Piso de terra.</p>
+    </article>
+    <article class="card is-past" data-type="classic" data-porto="true">
+      <div class="row1"><span class="badge t-classic">🚘 Clássicos</span><span class="star" title="Área do Porto">⭐</span><span class="date">17-19 abr</span><span class="past">terminado</span></div>
+      <h3><a href="https://www.norteclassic.com/" target="_blank" rel="noopener">Norte Classic</a></h3>
+      <p class="cat">Clássicos (regularidade)</p>
+      <p class="where">📍 Alto Minho (Braga → Guimarães), <strong>Braga</strong> · Norte</p>
+      <p class="notes">Rali de regularidade, 100+ clássicos, inclui troços da Falperra e de Fafe. Anual na primavera.</p>
+    </article>
+    <article class="card is-past" data-type="hillclimb" data-porto="true">
+      <div class="row1"><span class="badge t-hillclimb">⛰️ Rampa</span><span class="star" title="Área do Porto">⭐</span><span class="date">15-17 mai</span><span class="past">terminado</span></div>
+      <h3><a href="https://www.fpak.pt" target="_blank" rel="noopener">Rampa Internacional da Falperra</a></h3>
+      <p class="cat">FIA European Hill Climb + CPM</p>
+      <p class="where">📍 Subida ao Sameiro/Falperra, <strong>Braga</strong> · Braga / Norte</p>
+      <p class="notes">40.ª edição. Ronda do Campeonato Europeu de Montanha da FIA. ~40 min do Porto: a rampa-rainha do Norte.</p>
+    </article>
+    <article class="card is-past" data-type="rally" data-porto="true">
+      <div class="row1"><span class="badge t-rally">🏎️ Rali</span><span class="star" title="Área do Porto">⭐</span><span class="date">7-10 mai</span><span class="past">terminado</span></div>
+      <h3><a href="https://www.wrc.com/en/events/wrc-vodafone-rally-de-portugal-2026" target="_blank" rel="noopener">Vodafone Rally de Portugal (WRC)</a></h3>
+      <p class="cat">Rally1 (WRC), Rally2 (WRC2), Rally3, Junior WRC</p>
+      <p class="where">📍 Parque de serviço Exponor, Leça da Palmeira (terra), <strong>Matosinhos</strong> · Porto / Norte</p>
+      <p class="notes">Ronda do WRC. Base na área metro do Porto (Matosinhos/Exponor). Power stage tradicionalmente em Fafe.</p>
+    </article>
+    <article class="card is-past" data-type="show" data-porto="true">
+      <div class="row1"><span class="badge t-show">🏛️ Salão</span><span class="star" title="Área do Porto">⭐</span><span class="date">22-24 mai</span><span class="past">terminado</span></div>
+      <h3><a href="https://www.caaa.pt/" target="_blank" rel="noopener">Automobilia Aveiro</a></h3>
+      <p class="cat">Clássicos, peças, memorabilia</p>
+      <p class="where">📍 AveiroExpo, <strong>Aveiro</strong> · Centro</p>
+      <p class="notes">~55 min a sul do Porto. A feira de coleccionismo mais antiga de Portugal, 300+ expositores. Anual em maio.</p>
+    </article>
+    <article class="card is-past" data-type="classic" data-porto="false">
+      <div class="row1"><span class="badge t-classic">🚘 Clássicos</span><span class="date">10-12 jul</span><span class="past">terminado</span></div>
+      <h3><a href="https://www.autosport.pt/" target="_blank" rel="noopener">55.º Circuito Internacional de Vila Real</a></h3>
+      <p class="cat">Clássicos pré-guerra, históricos, TCR World Tour</p>
+      <p class="where">📍 Circuito citadino de Vila Real, <strong>Vila Real</strong> · Norte</p>
+      <p class="notes">~1h15 do Porto. Circuito de rua histórico (desde 1931). Grelhas ANPAC Classics & Legends + TCR World Tour. Anual em julho.</p>
+    </article>
+</main>
+<footer>Dados curados de fpak.pt, wrc.com, exponor e calendários oficiais · atualizado 2026-07-13</footer>
+<script>
+  const cp = document.getElementById('copy');
+  if (cp) cp.onclick = () => navigator.clipboard.writeText(document.getElementById('feed').textContent)
+    .then(() => { cp.textContent = 'Copiado!'; setTimeout(() => cp.textContent = 'Copiar', 1500); });
+  const btns = document.querySelectorAll('#filters button');
+  const cards = document.querySelectorAll('#list .card');
+  btns.forEach(b => b.onclick = () => {
+    btns.forEach(x => x.classList.remove('on'));
+    b.classList.add('on');
+    const f = b.dataset.f;
+    cards.forEach(c => {
+      const show = f === 'all' || (f === 'porto' ? c.dataset.porto === 'true' : c.dataset.type === f);
+      c.style.display = show ? '' : 'none';
+    });
+  });
+</script>
+</body>
+</html>

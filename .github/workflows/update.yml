@@ -1,6 +1,8 @@
 name: Update World Cup calendar
 
 on:
+  push:
+    branches: [main]
   schedule:
     - cron: "0 5 * * *"   # daily 05:00 UTC
   workflow_dispatch:
@@ -30,11 +32,15 @@ jobs:
         env:
           FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
         run: python build_calendar.py
+      - name: Build motorsport calendar + page
+        run: python build_motorsport.py
       - name: Stage site
         run: |
           mkdir -p _site
           cp worldcup.ics _site/worldcup.ics
           cp index.html _site/index.html
+          cp motorsport-pt.ics _site/motorsport-pt.ics
+          cp motorsport.html _site/motorsport.html
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
