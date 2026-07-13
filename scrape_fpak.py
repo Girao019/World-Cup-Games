@@ -116,9 +116,11 @@ def main():
     events = parse(fetch())
     if not events:
         sys.exit("Parsed 0 events; FPAK markup likely changed. Check scrape_fpak.py regexes.")
+    # No scrape timestamp in the file on purpose: it must diff on event data
+    # only, so the weekly PR fires on real calendar changes, not every run.
     with open(OUT, "w", encoding="utf-8") as f:
-        json.dump({"source": URL, "scraped_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ"),
-                   "count": len(events), "events": events}, f, ensure_ascii=False, indent=2)
+        json.dump({"source": URL, "count": len(events), "events": events},
+                  f, ensure_ascii=False, indent=2)
         f.write("\n")
     print(f"Wrote {OUT}: {len(events)} events")
     if "--report" in sys.argv:
