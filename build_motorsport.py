@@ -11,6 +11,7 @@ Run:   python build_motorsport.py
 Test:  python build_motorsport.py --selftest
 """
 import json
+import os
 import sys
 from datetime import date, datetime, timedelta, timezone
 
@@ -21,12 +22,27 @@ HTML_OUT = "motorsport.html"
 EMOJI = {
     "circuit": "🏁", "rally": "🏎️", "hillclimb": "⛰️",
     "festival": "🎪", "classic": "🚘", "show": "🏛️", "concours": "🏆",
-    "moto": "🏍️", "karting": "🛞",
+    "moto": "🏍️", "karting": "🛞", "other": "🏳️",
 }
 TYPE_PT = {
     "circuit": "Circuito", "rally": "Rali", "hillclimb": "Rampa",
     "festival": "Festival", "classic": "Clássicos", "show": "Salão", "concours": "Concurso",
-    "moto": "Motos", "karting": "Karting",
+    "moto": "Motos", "karting": "Karting", "other": "Outros",
+}
+# FPAK discipline badge code -> our coarse type (for emoji/filter). Anything
+# unmapped falls back to "other". The raw code is kept in the category text.
+DISCIPLINE_TYPE = {
+    "V Ex": "circuit", "CPV": "circuit", "CPVC": "circuit", "C1ECup": "circuit",
+    "G1P": "circuit", "FJTV": "circuit", "CT": "circuit",
+    "CPR": "rally", "CProR": "rally", "CNR 2RM": "rally", "CRCM": "rally", "CAR": "rally",
+    "CCR": "rally", "CSR": "rally", "RSERIES": "rally", "FM": "rally", "R Ex": "rally",
+    "RR": "rally", "PER Ex": "rally", "CPRx": "rally", "RxKx Ex": "rally", "FWRX": "rally",
+    "RESRx": "rally", "TPRxKx": "rally", "CPTT": "rally", "CPT 4x4": "rally",
+    "CISET 4x4": "rally", "W2RC": "rally", "PExTT": "rally", "CPNE": "rally",
+    "CPK": "karting", "TPK": "karting", "K Ex": "karting",
+    "CPM": "hillclimb", "TPM": "hillclimb", "IHE": "hillclimb", "CPRH": "hillclimb",
+    "REG H": "classic", "REG S": "classic", "REGEx": "classic", "TRRAMAK": "classic",
+    "TRRHAMAK": "classic", "TFRAIANO": "classic", "CatMI": "classic",
 }
 # Default ticket note per type when an event has no explicit "tickets" entry.
 TICKET_DEFAULT = {
@@ -39,7 +55,9 @@ TICKET_DEFAULT = {
     "concours": "Ver site oficial.",
     "moto": "Bilhetes no site oficial / bilheteira.",
     "karting": "Entrada geralmente livre no kartódromo.",
+    "other": "Ver página da FPAK.",
 }
+FPAK_FILE = "fpak-calendar.json"
 
 
 def ticket_info(e):
@@ -51,8 +69,41 @@ def ticket_info(e):
 
 
 def maps_url(e):
-    q = f"{e['venue']}, {e['city']}, Portugal".replace(" ", "+").replace(",", "%2C")
+    base = ", ".join(b for b in (e.get("venue"), e.get("city")) if b) or e["name"]
+    q = (base + ", Portugal").replace(" ", "+").replace(",", "%2C")
     return "https://www.google.com/maps/search/?api=1&query=" + q
+
+
+def ics_location(e):
+    return ", ".join(b for b in (e.get("venue"), e.get("city"), e.get("region")) if b)
+
+
+def place_line(e):
+    bits = [b for b in (e.get("venue"), e.get("city")) if b]
+    head = ", ".join(bits) if bits else e.get("region", "Portugal")
+    tail = e.get("region", "")
+    return head + (" · " + tail if tail and tail != head else "")
+
+
+def merge_fpak(curated):
+    # Everything in the FPAK feed that is NOT already in the curated list,
+    # as lightweight events (no venue/porto/tickets, link back to FPAK).
+    if not os.path.exists(FPAK_FILE):
+        return []
+    fp = json.load(open(FPAK_FILE, encoding="utf-8")).get("events", [])
+    from scrape_fpak import not_in_curated
+    out = []
+    for e in not_in_curated(fp, [c["name"] for c in curated]):
+        code = e.get("discipline", "")
+        out.append({
+            "name": e["name"], "type": DISCIPLINE_TYPE.get(code, "other"),
+            "category": ("FPAK · " + code) if code else "FPAK",
+            "venue": "", "city": "", "region": "Portugal", "porto": False,
+            "start": e["start"], "end": e["end"], "url": e["url"],
+            "notes": "Calendário nacional FPAK; detalhes e regulamento no link.",
+            "fpak": True,
+        })
+    return out
 
 
 def load():
@@ -97,7 +148,7 @@ def build_ics(events, now):
         dtend = end + timedelta(days=1)  # DTEND is non-inclusive for all-day
         star = "⭐ " if e.get("porto") else ""
         summary = f"{star}{EMOJI[e['type']]} {e['name']}"
-        desc_parts = [e["category"], f"Onde: {e['venue']}, {e['city']}"]
+        desc_parts = [e["category"], "Onde: " + place_line(e)]
         if e.get("notes"):
             desc_parts.append(e["notes"])
         tnote, turl = ticket_info(e)
@@ -112,7 +163,7 @@ def build_ics(events, now):
             "DTEND;VALUE=DATE:" + dtend.strftime("%Y%m%d"),
             "SUMMARY:" + ics_escape(summary),
             "DESCRIPTION:" + ics_escape("\n".join(desc_parts)),
-            "LOCATION:" + ics_escape(f"{e['city']}, {e['region']}"),
+            "LOCATION:" + ics_escape(ics_location(e)),
             "END:VEVENT",
         ]
     lines.append("END:VCALENDAR")
@@ -158,7 +209,7 @@ def build_html(events, today):
       <div class="row1">{badge}{star}<span class="date">{fmt_range(e)}</span>{state}</div>
       <h3><a href="{e['url']}" target="_blank" rel="noopener">{e['name']}</a></h3>
       <p class="cat">{e['category']}</p>
-      <p class="where">📍 {e['venue']}, <strong>{e['city']}</strong> · {e['region']} · <a href="{maps_url(e)}" target="_blank" rel="noopener">mapa</a></p>
+      <p class="where">📍 {place_line(e)} · <a href="{maps_url(e)}" target="_blank" rel="noopener">mapa</a></p>
       <p class="notes">{e.get('notes', '')}</p>
       <p class="tickets">🎟️ {tnote}{tlink}</p>
     </article>''')
@@ -217,7 +268,7 @@ TEMPLATE = """<!doctype html>
 <body>
 <header>
   <h1>🏁 Automobilismo em Portugal</h1>
-  <p class="sub"><b>⭐ Foco no Porto e Norte.</b> Circuito, ralis, rampas e clássicos. {{COUNT}} eventos, {{PORTO}} na área do Porto.</p>
+  <p class="sub"><b>⭐ Foco no Porto e Norte.</b> Circuito, ralis, rampas, clássicos e mais. {{COUNT}} eventos, {{PORTO}} na área do Porto. Destaques curados + calendário nacional FPAK (🏳️) automático.</p>
   <div class="subscribe">
     📅 <strong>Subscreve o calendário</strong> (atualiza sozinho no telemóvel/Google Calendar).<br>
     Google Calendar: "Outros calendários" &rarr; <b>+</b> &rarr; <b>A partir do URL</b>, colar:<br>
@@ -237,6 +288,7 @@ TEMPLATE = """<!doctype html>
   <button data-f="festival">🎪 Festivais</button>
   <button data-f="classic">🚘 Clássicos</button>
   <button data-f="show">🏛️ Salões</button>
+  <button data-f="other">🏳️ Outros</button>
 </div>
 <main id="list">
 {{CARDS}}
@@ -274,13 +326,18 @@ def selftest():
         {"name": "Test Paid", "type": "festival", "category": "F", "venue": "Z", "city": "Braga",
          "region": "Norte", "porto": False, "start": "2026-09-01", "end": "2026-09-02",
          "url": "https://z", "tickets": {"url": "https://buy", "note": "10€"}},
+        {"name": "Rali Teste FPAK", "type": "other", "category": "FPAK · CPR", "venue": "",
+         "city": "", "region": "Portugal", "porto": False, "start": "2026-08-10",
+         "end": "2026-08-11", "url": "https://fpak", "notes": "n", "fpak": True},
     ]
     ics = build_ics(events, now).replace("\r\n ", "")  # unfold
     assert "SUMMARY:⭐ ⛰️ Test Porto Rampa" in ics, ics
     assert "DTSTART;VALUE=DATE:20260515" in ics, ics
     assert "DTEND;VALUE=DATE:20260518" in ics, ics  # end +1 day, non-inclusive
-    assert "LOCATION:Braga\\, Norte" in ics, ics
-    assert ics.count("BEGIN:VEVENT") == 2, "TBC event must NOT be in ICS"
+    assert "LOCATION:X\\, Braga\\, Norte" in ics, ics
+    assert "SUMMARY:🏳️ Rali Teste FPAK" in ics, ics  # FPAK event, no star
+    assert "LOCATION:Portugal" in ics, ics  # empty venue/city falls back to region
+    assert ics.count("BEGIN:VEVENT") == 3, "TBC event must NOT be in ICS"
     assert "Bilhetes: Beira-estrada" in ics, ics  # per-type default note
     assert "Bilhetes: 10€ https://buy" in ics, ics  # explicit ticket override + url
     html = build_html(events, date(2026, 7, 13))
@@ -297,11 +354,14 @@ def main():
         return selftest()
     now = datetime.now(timezone.utc)
     events = load()
+    fpak = merge_fpak(events)
+    events += fpak
     with open(ICS_OUT, "w", encoding="utf-8") as f:
         f.write(build_ics(events, now))
     with open(HTML_OUT, "w", encoding="utf-8") as f:
         f.write(build_html(events, now.date()))
-    print(f"Wrote {ICS_OUT} ({len(dated(events))} dated events) and {HTML_OUT} ({len(events)} total)")
+    print(f"Wrote {ICS_OUT} ({len(dated(events))} dated) and {HTML_OUT} "
+          f"({len(events)} total: {len(events) - len(fpak)} curados + {len(fpak)} FPAK)")
 
 
 if __name__ == "__main__":

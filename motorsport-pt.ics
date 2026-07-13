@@ -8,520 +8,1394 @@ REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
 BEGIN:VEVENT
 UID:ms-2026-04-25-0@worldcup-2026-calendar
-DTSTAMP:20260713T140505Z
+DTSTAMP:20260713T142029Z
 DTSTART;VALUE=DATE:20260425
 DTEND;VALUE=DATE:20260427
 SUMMARY:⭐ ⛰️ Rampa da Penha
 DESCRIPTION:CPM nacional (protótipos CN\, GT\, turismo\, monolugares)\nOn
- de: Monte da Penha\, Guimarães\nCampeonato de Portugal de Montanha\, ~50
-  min do Porto.\nBilhetes: Beira-estrada geralmente gratuita (algumas ramp
- as cobram acesso).\nhttps://www.fpak.pt
-LOCATION:Guimarães\, Braga / Norte
+ de: Monte da Penha\, Guimarães · Braga / Norte\nCampeonato de Portugal 
+ de Montanha\, ~50 min do Porto.\nBilhetes: Beira-estrada geralmente gratu
+ ita (algumas rampas cobram acesso).\nhttps://www.fpak.pt
+LOCATION:Monte da Penha\, Guimarães\, Braga / Norte
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-04-17-1@worldcup-2026-calendar
-DTSTAMP:20260713T140505Z
+DTSTAMP:20260713T142029Z
 DTSTART;VALUE=DATE:20260417
 DTEND;VALUE=DATE:20260419
 SUMMARY:⭐ 🏎️ Rali Terras d'Aboboreira
 DESCRIPTION:Nacional + ERT (Rally2/3/4/5)\nOnde: Serra da Aboboreira (terr
- a)\, Amarante\nCPR + European Rally Trophy. ~45 min a este do Porto. Piso
-  de terra.\nBilhetes: Troços à beira da estrada gratuitos\; bancadas/pa
- ddock pagos.\nhttps://www.fpak.pt
-LOCATION:Amarante\, Porto / Norte
+ a)\, Amarante · Porto / Norte\nCPR + European Rally Trophy. ~45 min a es
+ te do Porto. Piso de terra.\nBilhetes: Troços à beira da estrada gratui
+ tos\; bancadas/paddock pagos.\nhttps://www.fpak.pt
+LOCATION:Serra da Aboboreira (terra)\, Amarante\, Porto / Norte
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-04-17-2@worldcup-2026-calendar
-DTSTAMP:20260713T140505Z
+DTSTAMP:20260713T142029Z
 DTSTART;VALUE=DATE:20260417
 DTEND;VALUE=DATE:20260420
 SUMMARY:⭐ 🚘 Norte Classic
 DESCRIPTION:Clássicos (regularidade)\nOnde: Alto Minho (Braga → Guimar
- ães)\, Braga\nRali de regularidade\, 100+ clássicos\, inclui troços da
-  Falperra e de Fafe. Anual na primavera.\nBilhetes: Ver site oficial.\nht
- tps://www.norteclassic.com/
-LOCATION:Braga\, Norte
+ ães)\, Braga · Norte\nRali de regularidade\, 100+ clássicos\, inclui t
+ roços da Falperra e de Fafe. Anual na primavera.\nBilhetes: Ver site ofi
+ cial.\nhttps://www.norteclassic.com/
+LOCATION:Alto Minho (Braga → Guimarães)\, Braga\, Norte
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-05-15-3@worldcup-2026-calendar
-DTSTAMP:20260713T140505Z
+DTSTAMP:20260713T142029Z
 DTSTART;VALUE=DATE:20260515
 DTEND;VALUE=DATE:20260518
 SUMMARY:⭐ ⛰️ Rampa Internacional da Falperra
 DESCRIPTION:FIA European Hill Climb + CPM\nOnde: Subida ao Sameiro/Falperr
- a\, Braga\n40.ª edição. Ronda do Campeonato Europeu de Montanha da FIA
- . ~40 min do Porto: a rampa-rainha do Norte.\nBilhetes: PAGA: bilhete onl
- ine (easyticket)\, trocado por pulseira. https://easyticket.pt/e/falperra
- 26/\nhttps://www.fpak.pt
-LOCATION:Braga\, Braga / Norte
+ a\, Braga · Braga / Norte\n40.ª edição. Ronda do Campeonato Europeu d
+ e Montanha da FIA. ~40 min do Porto: a rampa-rainha do Norte.\nBilhetes: 
+ PAGA: bilhete online (easyticket)\, trocado por pulseira. https://easytic
+ ket.pt/e/falperra26/\nhttps://www.fpak.pt
+LOCATION:Subida ao Sameiro/Falperra\, Braga\, Braga / Norte
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-05-07-4@worldcup-2026-calendar
-DTSTAMP:20260713T140505Z
+DTSTAMP:20260713T142029Z
 DTSTART;VALUE=DATE:20260507
 DTEND;VALUE=DATE:20260511
 SUMMARY:⭐ 🏎️ Vodafone Rally de Portugal (WRC)
 DESCRIPTION:Rally1 (WRC)\, Rally2 (WRC2)\, Rally3\, Junior WRC\nOnde: Parq
- ue de serviço Exponor\, Leça da Palmeira (terra)\, Matosinhos\nRonda do
-  WRC. Base na área metro do Porto (Matosinhos/Exponor). Power stage trad
- icionalmente em Fafe.\nBilhetes: Troços de estrada gratuitos\; bancadas/
- paddock/super especial via rally-pass.com. https://rally-pass.com/ticket-
- office/passes-tickets/\nhttps://www.wrc.com/en/events/wrc-vodafone-rally-
- de-portugal-2026
-LOCATION:Matosinhos\, Porto / Norte
+ ue de serviço Exponor\, Leça da Palmeira (terra)\, Matosinhos · Porto 
+ / Norte\nRonda do WRC. Base na área metro do Porto (Matosinhos/Exponor).
+  Power stage tradicionalmente em Fafe.\nBilhetes: Troços de estrada grat
+ uitos\; bancadas/paddock/super especial via rally-pass.com. https://rally
+ -pass.com/ticket-office/passes-tickets/\nhttps://www.wrc.com/en/events/wr
+ c-vodafone-rally-de-portugal-2026
+LOCATION:Parque de serviço Exponor\, Leça da Palmeira (terra)\, Matosinh
+ os\, Porto / Norte
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-05-22-5@worldcup-2026-calendar
-DTSTAMP:20260713T140505Z
+DTSTAMP:20260713T142029Z
 DTSTART;VALUE=DATE:20260522
 DTEND;VALUE=DATE:20260525
 SUMMARY:⭐ 🏛️ Automobilia Aveiro
-DESCRIPTION:Clássicos\, peças\, memorabilia\nOnde: AveiroExpo\, Aveiro\n
- ~55 min a sul do Porto. A feira de coleccionismo mais antiga de Portugal\
- , 300+ expositores. Anual em maio.\nBilhetes: Bilhete pago à entrada / o
- nline\, ver site.\nhttps://www.caaa.pt/
-LOCATION:Aveiro\, Centro
+DESCRIPTION:Clássicos\, peças\, memorabilia\nOnde: AveiroExpo\, Aveiro 
+ · Centro\n~55 min a sul do Porto. A feira de coleccionismo mais antiga d
+ e Portugal\, 300+ expositores. Anual em maio.\nBilhetes: Bilhete pago à 
+ entrada / online\, ver site.\nhttps://www.caaa.pt/
+LOCATION:AveiroExpo\, Aveiro\, Centro
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-07-10-6@worldcup-2026-calendar
-DTSTAMP:20260713T140505Z
+DTSTAMP:20260713T142029Z
 DTSTART;VALUE=DATE:20260710
 DTEND;VALUE=DATE:20260713
 SUMMARY:🚘 55.º Circuito Internacional de Vila Real
 DESCRIPTION:Clássicos pré-guerra\, históricos\, TCR World Tour\nOnde: C
- ircuito citadino de Vila Real\, Vila Real\n~1h15 do Porto. Circuito de ru
- a histórico (desde 1931). Grelhas ANPAC Classics & Legends + TCR World T
- our. Anual em julho.\nBilhetes: Ver site oficial.\nhttps://www.autosport.
- pt/
-LOCATION:Vila Real\, Norte
+ ircuito citadino de Vila Real\, Vila Real · Norte\n~1h15 do Porto. Circu
+ ito de rua histórico (desde 1931). Grelhas ANPAC Classics & Legends + TC
+ R World Tour. Anual em julho.\nBilhetes: Ver site oficial.\nhttps://www.a
+ utosport.pt/
+LOCATION:Circuito citadino de Vila Real\, Vila Real\, Norte
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-07-17-7@worldcup-2026-calendar
-DTSTAMP:20260713T140505Z
+DTSTAMP:20260713T142029Z
 DTSTART;VALUE=DATE:20260717
 DTEND;VALUE=DATE:20260720
 SUMMARY:🏁 Ferrari Challenge Trofeo Pirelli
 DESCRIPTION:GT monomarca (Ferrari 296 Challenge)\nOnde: Autódromo Interna
- cional do Algarve\, Portimão\nMonomarca Ferrari\, pilotos gentleman/pro.
- \nBilhetes: Bilhetes no site do autódromo (venda via blueticket.meo.pt).
-  https://autodromodoalgarve.com/race-calendar/\nhttps://autodromodoalgarv
- e.com/race-calendar/
-LOCATION:Portimão\, Algarve
+ cional do Algarve\, Portimão · Algarve\nMonomarca Ferrari\, pilotos gen
+ tleman/pro.\nBilhetes: Bilhetes no site do autódromo (venda via bluetick
+ et.meo.pt). https://autodromodoalgarve.com/race-calendar/\nhttps://autodr
+ omodoalgarve.com/race-calendar/
+LOCATION:Autódromo Internacional do Algarve\, Portimão\, Algarve
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-07-18-8@worldcup-2026-calendar
-DTSTAMP:20260713T140505Z
+DTSTAMP:20260713T142029Z
 DTSTART;VALUE=DATE:20260718
 DTEND;VALUE=DATE:20260720
 SUMMARY:🏁 Estoril Summer Party (Race Ready)
 DESCRIPTION:Históricos / GT\nOnde: Autódromo do Estoril\, Estoril (Casca
- is)\nEncontro de históricos e GT.\nBilhetes: Ver site do circuito\; banc
- adas muitas vezes gratuitas. https://www.circuito-estoril.pt/en/eventos/\
- nhttps://www.circuito-estoril.pt/en/eventos/
-LOCATION:Estoril (Cascais)\, Lisboa
+ is) · Lisboa\nEncontro de históricos e GT.\nBilhetes: Ver site do circu
+ ito\; bancadas muitas vezes gratuitas. https://www.circuito-estoril.pt/en
+ /eventos/\nhttps://www.circuito-estoril.pt/en/eventos/
+LOCATION:Autódromo do Estoril\, Estoril (Cascais)\, Lisboa
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-07-31-9@worldcup-2026-calendar
-DTSTAMP:20260713T140505Z
+DTSTAMP:20260713T142029Z
 DTSTART;VALUE=DATE:20260731
 DTEND;VALUE=DATE:20260802
 SUMMARY:🏎️ Rali Vinho da Madeira
 DESCRIPTION:Nacional + ERT (Rally2)\nOnde: Troços de montanha (asfalto)\,
-  Funchal\nCPR + European Rally Trophy. Asfalto.\nBilhetes: Troços à bei
- ra da estrada gratuitos\; bancadas/paddock pagos.\nhttps://www.fpak.pt
-LOCATION:Funchal\, Madeira
+  Funchal · Madeira\nCPR + European Rally Trophy. Asfalto.\nBilhetes: Tro
+ ços à beira da estrada gratuitos\; bancadas/paddock pagos.\nhttps://www
+ .fpak.pt
+LOCATION:Troços de montanha (asfalto)\, Funchal\, Madeira
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-09-04-10@worldcup-2026-calendar
-DTSTAMP:20260713T140505Z
+DTSTAMP:20260713T142029Z
 DTSTART;VALUE=DATE:20260904
 DTEND;VALUE=DATE:20260907
 SUMMARY:🎪 Caramulo Motorfestival
 DESCRIPTION:Clássicos\, desportivos\, carros de corrida\, motos\nOnde: Se
  rra do Caramulo / Museu do Caramulo (rampa + exposições)\, Caramulo (To
- ndela)\n~1h45 do Porto. O maior festival automóvel de Portugal: rampa\, 
- 40.000+ visitantes\, 100+ expositores.\nBilhetes: Entrada no recinto grat
- uita\; Motor Pack pago para clássicos participantes. https://www.caramul
- o-motorfestival.com/\nhttps://www.caramulo-motorfestival.com/
-LOCATION:Caramulo (Tondela)\, Centro
+ ndela) · Centro\n~1h45 do Porto. O maior festival automóvel de Portugal
+ : rampa\, 40.000+ visitantes\, 100+ expositores.\nBilhetes: Entrada no re
+ cinto gratuita\; Motor Pack pago para clássicos participantes. https://w
+ ww.caramulo-motorfestival.com/\nhttps://www.caramulo-motorfestival.com/
+LOCATION:Serra do Caramulo / Museu do Caramulo (rampa + exposições)\, Ca
+ ramulo (Tondela)\, Centro
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-09-05-11@worldcup-2026-calendar
-DTSTAMP:20260713T140505Z
+DTSTAMP:20260713T142029Z
 DTSTART;VALUE=DATE:20260905
 DTEND;VALUE=DATE:20260907
 SUMMARY:⛰️ Rampa Internacional de Boticas
-DESCRIPTION:CPM nacional\nOnde: Rampa de Boticas\, Boticas\nNorte de Portu
- gal\, ~1h40 do Porto.\nBilhetes: Beira-estrada geralmente gratuita (algum
- as rampas cobram acesso).\nhttps://www.fpak.pt
-LOCATION:Boticas\, Vila Real / Norte
+DESCRIPTION:CPM nacional\nOnde: Rampa de Boticas\, Boticas · Vila Real / 
+ Norte\nNorte de Portugal\, ~1h40 do Porto.\nBilhetes: Beira-estrada geral
+ mente gratuita (algumas rampas cobram acesso).\nhttps://www.fpak.pt
+LOCATION:Rampa de Boticas\, Boticas\, Vila Real / Norte
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-09-11-12@worldcup-2026-calendar
-DTSTAMP:20260713T140505Z
+DTSTAMP:20260713T142029Z
 DTSTART;VALUE=DATE:20260911
 DTEND;VALUE=DATE:20260913
 SUMMARY:🏎️ Rali da Água / Transibérico Chaves-Verín
 DESCRIPTION:Nacional (Rally2 e classes inferiores)\nOnde: Troços de terra
- \, Chaves\, Chaves\nCPR. Norte\, ~1h30-2h do Porto. Transfronteiriço com
-  Verín (Espanha).\nBilhetes: Troços à beira da estrada gratuitos\; ban
- cadas/paddock pagos.\nhttps://www.fpak.pt
-LOCATION:Chaves\, Vila Real / Norte
+ \, Chaves\, Chaves · Vila Real / Norte\nCPR. Norte\, ~1h30-2h do Porto. 
+ Transfronteiriço com Verín (Espanha).\nBilhetes: Troços à beira da es
+ trada gratuitos\; bancadas/paddock pagos.\nhttps://www.fpak.pt
+LOCATION:Troços de terra\, Chaves\, Chaves\, Vila Real / Norte
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-09-16-13@worldcup-2026-calendar
-DTSTAMP:20260713T140505Z
+DTSTAMP:20260713T142029Z
 DTSTART;VALUE=DATE:20260916
 DTEND;VALUE=DATE:20260921
 SUMMARY:🚘 Estoril Classics
 DESCRIPTION:Históricos + Concurso de Elegância ACP\nOnde: Autódromo do 
- Estoril\, Estoril (Cascais)\nGrelhas de históricos (F1\, GT\, turismo) +
-  o principal concurso de elegância do país. Corridas 18-20 set.\nBilhet
- es: Venda online no site oficial (bancada/paddock). https://en.estorilcla
- ssics.pt/tickets\nhttps://en.estorilclassics.pt/
-LOCATION:Estoril (Cascais)\, Lisboa
+ Estoril\, Estoril (Cascais) · Lisboa\nGrelhas de históricos (F1\, GT\, 
+ turismo) + o principal concurso de elegância do país. Corridas 18-20 se
+ t.\nBilhetes: Venda online no site oficial (bancada/paddock). https://en.
+ estorilclassics.pt/tickets\nhttps://en.estorilclassics.pt/
+LOCATION:Autódromo do Estoril\, Estoril (Cascais)\, Lisboa
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-09-18-14@worldcup-2026-calendar
-DTSTAMP:20260713T140505Z
+DTSTAMP:20260713T142029Z
 DTSTART;VALUE=DATE:20260918
 DTEND;VALUE=DATE:20260920
 SUMMARY:🏁 24 Horas CRM
 DESCRIPTION:Endurance amador (turismo/GT/protótipo)\nOnde: Autódromo Int
- ernacional do Algarve\, Portimão\nProva de resistência de 24h\, grelha 
- mista.\nBilhetes: Bilhetes no site do autódromo (venda via blueticket.me
- o.pt). https://autodromodoalgarve.com/race-calendar/\nhttps://autodromodo
- algarve.com/race-calendar/
-LOCATION:Portimão\, Algarve
+ ernacional do Algarve\, Portimão · Algarve\nProva de resistência de 24
+ h\, grelha mista.\nBilhetes: Bilhetes no site do autódromo (venda via bl
+ ueticket.meo.pt). https://autodromodoalgarve.com/race-calendar/\nhttps://
+ autodromodoalgarve.com/race-calendar/
+LOCATION:Autódromo Internacional do Algarve\, Portimão\, Algarve
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-09-25-15@worldcup-2026-calendar
-DTSTAMP:20260713T140505Z
+DTSTAMP:20260713T142029Z
 DTSTART;VALUE=DATE:20260925
 DTEND;VALUE=DATE:20260928
 SUMMARY:🚘 Corrida dos Fundadores by Cartrack
 DESCRIPTION:Clássicos (passeio/touring)\nOnde: Figueira da Foz → Lisboa
- \, Figueira da Foz\nEvento touring de clássicos\, ligado ao Museu do Car
- amulo.\nBilhetes: Ver site oficial.\nhttps://museudocaramulo.pt/
-LOCATION:Figueira da Foz\, Centro / Lisboa
+ \, Figueira da Foz · Centro / Lisboa\nEvento touring de clássicos\, lig
+ ado ao Museu do Caramulo.\nBilhetes: Ver site oficial.\nhttps://museudoca
+ ramulo.pt/
+LOCATION:Figueira da Foz → Lisboa\, Figueira da Foz\, Centro / Lisboa
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-10-02-16@worldcup-2026-calendar
-DTSTAMP:20260713T140505Z
+DTSTAMP:20260713T142029Z
 DTSTART;VALUE=DATE:20261002
 DTEND;VALUE=DATE:20261006
 SUMMARY:⭐ 🏛️ autoClássico Porto (Salão de Clássicos + Exclusive 
  Top Cars + MotorXperience)
 DESCRIPTION:Clássicos\, época\, supercarros\, carros de corrida\nOnde: E
- xponor\, Matosinhos (Leça da Palmeira)\nXXIII edição. O grande evento 
- de clássicos do Porto no 2.º semestre. Inclui pavilhão de supercarros 
- (Exclusive Top Cars) e zona de desporto motorizado (MotorXperience). Sex 
- 15h-20h\, Sáb-Seg 10h-20h.\nBilhetes: Bilhete ~12€ (sex) a 15€ (fim 
- de semana)\; menores de 10 grátis. https://exponor.pt/calendario/autocla
- ssico/\nhttps://exponor.pt/calendario/autoclassico/
-LOCATION:Matosinhos (Leça da Palmeira)\, Norte
+ xponor\, Matosinhos (Leça da Palmeira) · Norte\nXXIII edição. O grand
+ e evento de clássicos do Porto no 2.º semestre. Inclui pavilhão de sup
+ ercarros (Exclusive Top Cars) e zona de desporto motorizado (MotorXperien
+ ce). Sex 15h-20h\, Sáb-Seg 10h-20h.\nBilhetes: Bilhete ~12€ (sex) a 15
+ € (fim de semana)\; menores de 10 grátis. https://exponor.pt/calendari
+ o/autoclassico/\nhttps://exponor.pt/calendario/autoclassico/
+LOCATION:Exponor\, Matosinhos (Leça da Palmeira)\, Norte
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-10-03-17@worldcup-2026-calendar
-DTSTAMP:20260713T140505Z
+DTSTAMP:20260713T142029Z
 DTSTART;VALUE=DATE:20261003
 DTEND;VALUE=DATE:20261005
 SUMMARY:⛰️ Rampa da Arrábida
 DESCRIPTION:Taça de Portugal de Montanha\nOnde: Serra da Arrábida\, Set
- úbal\nA sul de Lisboa.\nBilhetes: Beira-estrada geralmente gratuita (alg
- umas rampas cobram acesso).\nhttps://www.fpak.pt
-LOCATION:Setúbal\, Setúbal
+ úbal · Setúbal\nA sul de Lisboa.\nBilhetes: Beira-estrada geralmente g
+ ratuita (algumas rampas cobram acesso).\nhttps://www.fpak.pt
+LOCATION:Serra da Arrábida\, Setúbal\, Setúbal
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-10-03-18@worldcup-2026-calendar
-DTSTAMP:20260713T140505Z
+DTSTAMP:20260713T142029Z
 DTSTART;VALUE=DATE:20261003
 DTEND;VALUE=DATE:20261005
 SUMMARY:🏎️ Rallye Casinos do Algarve
 DESCRIPTION:Nacional (Rally2 e classes inferiores)\nOnde: Troços mistos\,
-  Algarve\, Loulé\nCPR.\nBilhetes: Troços à beira da estrada gratuitos\
- ; bancadas/paddock pagos.\nhttps://www.fpak.pt
-LOCATION:Loulé\, Algarve
+  Algarve\, Loulé · Algarve\nCPR.\nBilhetes: Troços à beira da estrada
+  gratuitos\; bancadas/paddock pagos.\nhttps://www.fpak.pt
+LOCATION:Troços mistos\, Algarve\, Loulé\, Algarve
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-10-02-19@worldcup-2026-calendar
-DTSTAMP:20260713T140505Z
+DTSTAMP:20260713T142029Z
 DTSTART;VALUE=DATE:20261002
 DTEND;VALUE=DATE:20261005
 SUMMARY:🏁 Fun Cup
 DESCRIPTION:Endurance monomarca (VW Fun Cup)\nOnde: Autódromo Internacion
- al do Algarve\, Portimão\nResistência de baixo custo\, equipas multi-pi
- loto.\nBilhetes: Bilhetes no site do autódromo (venda via blueticket.meo
- .pt). https://autodromodoalgarve.com/race-calendar/\nhttps://autodromodoa
- lgarve.com/race-calendar/
-LOCATION:Portimão\, Algarve
+ al do Algarve\, Portimão · Algarve\nResistência de baixo custo\, equip
+ as multi-piloto.\nBilhetes: Bilhetes no site do autódromo (venda via blu
+ eticket.meo.pt). https://autodromodoalgarve.com/race-calendar/\nhttps://a
+ utodromodoalgarve.com/race-calendar/
+LOCATION:Autódromo Internacional do Algarve\, Portimão\, Algarve
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-10-08-20@worldcup-2026-calendar
-DTSTAMP:20260713T140505Z
+DTSTAMP:20260713T142029Z
 DTSTART;VALUE=DATE:20261008
 DTEND;VALUE=DATE:20261011
 SUMMARY:🏁 4 Horas de Portimão - European Le Mans Series (final)
 DESCRIPTION:LMP2 / LMP3 / LMGT3\nOnde: Autódromo Internacional do Algarve
- \, Portimão\nFinal da ELMS. Protótipos LMP2/LMP3 + GT3. Corrida a 10 ou
- t.\nBilhetes: Bilhetes no site do autódromo (venda via blueticket.meo.pt
- ). https://autodromodoalgarve.com/race-calendar/\nhttps://www.europeanlem
- ansseries.com/
-LOCATION:Portimão\, Algarve
+ \, Portimão · Algarve\nFinal da ELMS. Protótipos LMP2/LMP3 + GT3. Corr
+ ida a 10 out.\nBilhetes: Bilhetes no site do autódromo (venda via blueti
+ cket.meo.pt). https://autodromodoalgarve.com/race-calendar/\nhttps://www.
+ europeanlemansseries.com/
+LOCATION:Autódromo Internacional do Algarve\, Portimão\, Algarve
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-10-09-21@worldcup-2026-calendar
-DTSTAMP:20260713T140505Z
+DTSTAMP:20260713T142029Z
 DTSTART;VALUE=DATE:20261009
 DTEND;VALUE=DATE:20261012
 SUMMARY:⭐ 🏎️ Rally Five Cities North of Portugal (ex-Serras de Fafe
  )
 DESCRIPTION:ERC + Nacional (Rally2\, ERC3/4)\nOnde: Terra\, base Fafe (sal
- to Pedra Sentada)\, Fafe\nFinal do Campeonato Europeu de Ralis (ERC)\, ~7
- 0 km / <1h do Porto. Também final do CPR. NOTA: ERC indica 9-11 out\; ra
- scunho FPAK indicava 23-25 out\, confirmar.\nBilhetes: Beira-estrada grat
- uita\; zonas VIP/paddock pagas via organização (ACP). https://www.fiaer
- c.com/\nhttps://www.fiaerc.com/
-LOCATION:Fafe\, Braga / Norte
+ to Pedra Sentada)\, Fafe · Braga / Norte\nFinal do Campeonato Europeu de
+  Ralis (ERC)\, ~70 km / <1h do Porto. Também final do CPR. NOTA: ERC ind
+ ica 9-11 out\; rascunho FPAK indicava 23-25 out\, confirmar.\nBilhetes: B
+ eira-estrada gratuita\; zonas VIP/paddock pagas via organização (ACP). 
+ https://www.fiaerc.com/\nhttps://www.fiaerc.com/
+LOCATION:Terra\, base Fafe (salto Pedra Sentada)\, Fafe\, Braga / Norte
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-10-16-22@worldcup-2026-calendar
-DTSTAMP:20260713T140505Z
+DTSTAMP:20260713T142029Z
 DTSTART;VALUE=DATE:20261016
 DTEND;VALUE=DATE:20261019
 SUMMARY:🏁 GT World Challenge Europe (final)
-DESCRIPTION:GT3\nOnde: Autódromo Internacional do Algarve\, Portimão\nFi
- nal do campeonato SRO GT3. Regresso de Portimão ao calendário desde 201
- 5.\nBilhetes: Bilhetes no site do autódromo (venda via blueticket.meo.pt
- ). https://autodromodoalgarve.com/race-calendar/\nhttps://www.gt-world-ch
- allenge-europe.com/
-LOCATION:Portimão\, Algarve
+DESCRIPTION:GT3\nOnde: Autódromo Internacional do Algarve\, Portimão · 
+ Algarve\nFinal do campeonato SRO GT3. Regresso de Portimão ao calendári
+ o desde 2015.\nBilhetes: Bilhetes no site do autódromo (venda via blueti
+ cket.meo.pt). https://autodromodoalgarve.com/race-calendar/\nhttps://www.
+ gt-world-challenge-europe.com/
+LOCATION:Autódromo Internacional do Algarve\, Portimão\, Algarve
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-10-30-23@worldcup-2026-calendar
-DTSTAMP:20260713T140505Z
+DTSTAMP:20260713T142029Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261102
 SUMMARY:🚘 Algarve Classic Festival
 DESCRIPTION:Históricos / clássicos\nOnde: Autódromo Internacional do Al
- garve\, Portimão\nFestival de corridas históricas: desportivos\, GT e m
- onolugares clássicos.\nBilhetes: Venda no site oficial\; bancada princip
- al e paddock. https://www.algarveclassicfestival.org/tickets\nhttps://aut
- odromodoalgarve.com/race-calendar/
-LOCATION:Portimão\, Algarve
+ garve\, Portimão · Algarve\nFestival de corridas históricas: desportiv
+ os\, GT e monolugares clássicos.\nBilhetes: Venda no site oficial\; banc
+ ada principal e paddock. https://www.algarveclassicfestival.org/tickets\n
+ https://autodromodoalgarve.com/race-calendar/
+LOCATION:Autódromo Internacional do Algarve\, Portimão\, Algarve
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-10-31-24@worldcup-2026-calendar
-DTSTAMP:20260713T140505Z
+DTSTAMP:20260713T142029Z
 DTSTART;VALUE=DATE:20261031
 DTEND;VALUE=DATE:20261102
 SUMMARY:🏁 Porsche Sprint Challenge Ibérica (final)
 DESCRIPTION:GT monomarca (Porsche 911 GT3 Cup)\nOnde: Autódromo do Estori
- l\, Estoril (Cascais)\n6.ª e última ronda\, Porsche 911 GT3 Cup.\nBilhe
- tes: Ver site do circuito\; bancadas muitas vezes gratuitas. https://www.
- circuito-estoril.pt/en/eventos/\nhttps://www.circuito-estoril.pt/en/event
- os/
-LOCATION:Estoril (Cascais)\, Lisboa
+ l\, Estoril (Cascais) · Lisboa\n6.ª e última ronda\, Porsche 911 GT3 C
+ up.\nBilhetes: Ver site do circuito\; bancadas muitas vezes gratuitas. ht
+ tps://www.circuito-estoril.pt/en/eventos/\nhttps://www.circuito-estoril.p
+ t/en/eventos/
+LOCATION:Autódromo do Estoril\, Estoril (Cascais)\, Lisboa
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-11-27-25@worldcup-2026-calendar
-DTSTAMP:20260713T140505Z
+DTSTAMP:20260713T142029Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261130
 SUMMARY:🏁 Ultimate Cup Series
 DESCRIPTION:Endurance (protótipos LMP3 / GT / turismo)\nOnde: Autódromo 
- Internacional do Algarve\, Portimão\nSérie de resistência multi-catego
- ria (França).\nBilhetes: Bilhetes no site do autódromo (venda via bluet
- icket.meo.pt). https://autodromodoalgarve.com/race-calendar/\nhttps://aut
- odromodoalgarve.com/race-calendar/
-LOCATION:Portimão\, Algarve
+ Internacional do Algarve\, Portimão · Algarve\nSérie de resistência m
+ ulti-categoria (França).\nBilhetes: Bilhetes no site do autódromo (vend
+ a via blueticket.meo.pt). https://autodromodoalgarve.com/race-calendar/\n
+ https://autodromodoalgarve.com/race-calendar/
+LOCATION:Autódromo Internacional do Algarve\, Portimão\, Algarve
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-12-04-26@worldcup-2026-calendar
-DTSTAMP:20260713T140505Z
+DTSTAMP:20260713T142029Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261207
 SUMMARY:🏁 Estoril Endurance Festival (final do Campeonato de Portugal d
  e Velocidade)
 DESCRIPTION:GT3/GT4/GTX\, protótipos\, monolugares\nOnde: Autódromo do E
- storil\, Estoril (Cascais)\nFinal do CPV e dos Iberian Supercars. Ronda d
- o campeonato nacional FPAK.\nBilhetes: Bancada A gratuita\; paddock ~15-2
- 0€ (BOL.pt / FNAC / Worten). https://www.circuito-estoril.pt/en/eventos
- /\nhttps://www.campeonatoportugalvelocidade.com/
-LOCATION:Estoril (Cascais)\, Lisboa
+ storil\, Estoril (Cascais) · Lisboa\nFinal do CPV e dos Iberian Supercar
+ s. Ronda do campeonato nacional FPAK.\nBilhetes: Bancada A gratuita\; pad
+ dock ~15-20€ (BOL.pt / FNAC / Worten). https://www.circuito-estoril.pt/
+ en/eventos/\nhttps://www.campeonatoportugalvelocidade.com/
+LOCATION:Autódromo do Estoril\, Estoril (Cascais)\, Lisboa
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-11-20-27@worldcup-2026-calendar
-DTSTAMP:20260713T140505Z
+DTSTAMP:20260713T142029Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261123
 SUMMARY:🏍️ MotoGP Grande Prémio de Portugal
 DESCRIPTION:Mundial MotoGP\, Moto2 e Moto3\nOnde: Autódromo Internacional
-  do Algarve\, Portimão\nPenúltima ronda do Mundial (recalendarizada de 
- 13-15 para 20-22 nov).\nBilhetes: Bilhetes oficiais\; geral e bancadas pa
- ra o fim de semana. https://tickets.motogp.com/en/53277-portugal/\nhttps:
- //autodromodoalgarve.com/pt/calendario-corridas/motogp-grande-premio-de-p
- ortugal-2026/
-LOCATION:Portimão\, Algarve
+  do Algarve\, Portimão · Algarve\nPenúltima ronda do Mundial (recalend
+ arizada de 13-15 para 20-22 nov).\nBilhetes: Bilhetes oficiais\; geral e 
+ bancadas para o fim de semana. https://tickets.motogp.com/en/53277-portug
+ al/\nhttps://autodromodoalgarve.com/pt/calendario-corridas/motogp-grande-
+ premio-de-portugal-2026/
+LOCATION:Autódromo Internacional do Algarve\, Portimão\, Algarve
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-10-09-28@worldcup-2026-calendar
-DTSTAMP:20260713T140505Z
+DTSTAMP:20260713T142029Z
 DTSTART;VALUE=DATE:20261009
 DTEND;VALUE=DATE:20261012
 SUMMARY:🏍️ WorldSBK Estoril Round
 DESCRIPTION:Mundial de Superbikes (WorldSBK\, WorldSSP)\nOnde: Circuito do
-  Estoril\, Alcabideche (Cascais)\nPenúltima ronda do Mundial de Superbik
- es.\nBilhetes: Bilhetes oficiais WorldSBK\; bancadas e geral. https://tic
- kets.worldsbk.com/en/53278-estoril/\nhttps://www.worldsbk.com/en/calendar
-LOCATION:Alcabideche (Cascais)\, Lisboa
+  Estoril\, Alcabideche (Cascais) · Lisboa\nPenúltima ronda do Mundial d
+ e Superbikes.\nBilhetes: Bilhetes oficiais WorldSBK\; bancadas e geral. h
+ ttps://tickets.worldsbk.com/en/53278-estoril/\nhttps://www.worldsbk.com/e
+ n/calendar
+LOCATION:Circuito do Estoril\, Alcabideche (Cascais)\, Lisboa
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-09-04-29@worldcup-2026-calendar
-DTSTAMP:20260713T140505Z
+DTSTAMP:20260713T142029Z
 DTSTART;VALUE=DATE:20260904
 DTEND;VALUE=DATE:20260907
 SUMMARY:🏍️ Nacional de Velocidade (motos) - Estoril III
 DESCRIPTION:Motociclismo de velocidade nacional (CNV)\nOnde: Circuito do E
- storil\, Alcabideche (Cascais)\nTerceira ronda do CNV/CNMV da FMP.\nBilhe
- tes: Bilhetes no site oficial / bilheteira.\nhttps://www.fmp.pt/
-LOCATION:Alcabideche (Cascais)\, Lisboa
+ storil\, Alcabideche (Cascais) · Lisboa\nTerceira ronda do CNV/CNMV da F
+ MP.\nBilhetes: Bilhetes no site oficial / bilheteira.\nhttps://www.fmp.pt
+ /
+LOCATION:Circuito do Estoril\, Alcabideche (Cascais)\, Lisboa
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-09-18-30@worldcup-2026-calendar
-DTSTAMP:20260713T140505Z
+DTSTAMP:20260713T142029Z
 DTSTART;VALUE=DATE:20260918
 DTEND;VALUE=DATE:20260921
 SUMMARY:🏍️ Nacional de Velocidade (motos) - Portimão
 DESCRIPTION:Motociclismo de velocidade nacional (CNV)\nOnde: Autódromo In
- ternacional do Algarve\, Portimão\nÚnica ronda do CNV no Algarve em 202
- 6.\nBilhetes: Bilhetes no site oficial / bilheteira.\nhttps://www.fmp.pt/
-LOCATION:Portimão\, Algarve
+ ternacional do Algarve\, Portimão · Algarve\nÚnica ronda do CNV no Alg
+ arve em 2026.\nBilhetes: Bilhetes no site oficial / bilheteira.\nhttps://
+ www.fmp.pt/
+LOCATION:Autódromo Internacional do Algarve\, Portimão\, Algarve
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-10-02-31@worldcup-2026-calendar
-DTSTAMP:20260713T140505Z
+DTSTAMP:20260713T142029Z
 DTSTART;VALUE=DATE:20261002
 DTEND;VALUE=DATE:20261005
 SUMMARY:🏍️ Nacional de Velocidade (motos) - Estoril IV (final)
 DESCRIPTION:Motociclismo de velocidade nacional (CNV)\nOnde: Circuito do E
- storil\, Alcabideche (Cascais)\nÚltima ronda e títulos do CNV 2026.\nBi
- lhetes: Bilhetes no site oficial / bilheteira.\nhttps://www.fmp.pt/
-LOCATION:Alcabideche (Cascais)\, Lisboa
+ storil\, Alcabideche (Cascais) · Lisboa\nÚltima ronda e títulos do CNV
+  2026.\nBilhetes: Bilhetes no site oficial / bilheteira.\nhttps://www.fmp
+ .pt/
+LOCATION:Circuito do Estoril\, Alcabideche (Cascais)\, Lisboa
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-09-13-32@worldcup-2026-calendar
-DTSTAMP:20260713T140505Z
+DTSTAMP:20260713T142029Z
 DTSTART;VALUE=DATE:20260913
 DTEND;VALUE=DATE:20260914
 SUMMARY:🏍️ Nacional de Motocross - Alqueidão
 DESCRIPTION:Motocross nacional (MX1\, MX2\, MX125)\nOnde: Crossódromo de 
- Alqueidão\, Alqueidão da Serra (Porto de Mós)\nPenúltima prova do Nac
- ional de Motocross.\nBilhetes: Bilhetes no site oficial / bilheteira.\nht
- tps://www.fmp.pt/
-LOCATION:Alqueidão da Serra (Porto de Mós)\, Centro
+ Alqueidão\, Alqueidão da Serra (Porto de Mós) · Centro\nPenúltima pr
+ ova do Nacional de Motocross.\nBilhetes: Bilhetes no site oficial / bilhe
+ teira.\nhttps://www.fmp.pt/
+LOCATION:Crossódromo de Alqueidão\, Alqueidão da Serra (Porto de Mós)\
+ , Centro
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-10-25-33@worldcup-2026-calendar
-DTSTAMP:20260713T140505Z
+DTSTAMP:20260713T142029Z
 DTSTART;VALUE=DATE:20261025
 DTEND;VALUE=DATE:20261026
 SUMMARY:🏍️ Nacional de Motocross - Carvoeira
 DESCRIPTION:Motocross nacional + Europeu MX65/MX85\nOnde: Crossódromo da 
- Carvoeira\, Carvoeira (Mafra)\nÚltima ronda nacional\, a par do Europeu 
- MX65/MX85.\nBilhetes: Bilhetes no site oficial / bilheteira.\nhttps://www
- .fmp.pt/
-LOCATION:Carvoeira (Mafra)\, Lisboa
+ Carvoeira\, Carvoeira (Mafra) · Lisboa\nÚltima ronda nacional\, a par d
+ o Europeu MX65/MX85.\nBilhetes: Bilhetes no site oficial / bilheteira.\nh
+ ttps://www.fmp.pt/
+LOCATION:Crossódromo da Carvoeira\, Carvoeira (Mafra)\, Lisboa
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-09-27-34@worldcup-2026-calendar
-DTSTAMP:20260713T140505Z
+DTSTAMP:20260713T142029Z
 DTSTART;VALUE=DATE:20260927
 DTEND;VALUE=DATE:20260928
 SUMMARY:⭐ 🏍️ Enduro Sprint - Barcelos
 DESCRIPTION:Enduro Sprint nacional (motos todo-o-terreno)\nOnde: Barcelos\
- , Barcelos\nRonda do Enduro Sprint no norte\, <1h do Porto.\nBilhetes: Bi
- lhetes no site oficial / bilheteira.\nhttps://www.fmp.pt/
-LOCATION:Barcelos\, Norte
+ , Barcelos · Norte\nRonda do Enduro Sprint no norte\, <1h do Porto.\nBil
+ hetes: Bilhetes no site oficial / bilheteira.\nhttps://www.fmp.pt/
+LOCATION:Barcelos\, Barcelos\, Norte
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-10-25-35@worldcup-2026-calendar
-DTSTAMP:20260713T140505Z
+DTSTAMP:20260713T142029Z
 DTSTART;VALUE=DATE:20261025
 DTEND;VALUE=DATE:20261026
 SUMMARY:🏍️ Enduro Sprint - Lousã
 DESCRIPTION:Enduro Sprint nacional (motos todo-o-terreno)\nOnde: Lousã\, 
- Lousã\nRonda de outono do Enduro Sprint.\nBilhetes: Bilhetes no site ofi
- cial / bilheteira.\nhttps://www.fmp.pt/
-LOCATION:Lousã\, Centro
+ Lousã · Centro\nRonda de outono do Enduro Sprint.\nBilhetes: Bilhetes n
+ o site oficial / bilheteira.\nhttps://www.fmp.pt/
+LOCATION:Lousã\, Lousã\, Centro
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-10-15-36@worldcup-2026-calendar
-DTSTAMP:20260713T140505Z
+DTSTAMP:20260713T142029Z
 DTSTART;VALUE=DATE:20261015
 DTEND;VALUE=DATE:20261018
 SUMMARY:🏎️ Baja Portalegre 500
 DESCRIPTION:Baja todo-o-terreno (autos e motos)\nOnde: Portalegre e concel
- hos vizinhos\, Portalegre\nMaior baja do país\; fecha a época de TT nac
- ional.\nBilhetes: Troços à beira da estrada gratuitos\; bancadas/paddoc
- k pagos.\nhttps://www.fmp.pt/
-LOCATION:Portalegre\, Alentejo
+ hos vizinhos\, Portalegre · Alentejo\nMaior baja do país\; fecha a épo
+ ca de TT nacional.\nBilhetes: Troços à beira da estrada gratuitos\; ban
+ cadas/paddock pagos.\nhttps://www.fmp.pt/
+LOCATION:Portalegre e concelhos vizinhos\, Portalegre\, Alentejo
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-11-27-37@worldcup-2026-calendar
-DTSTAMP:20260713T140505Z
+DTSTAMP:20260713T142029Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261130
 SUMMARY:🏎️ Baja TT de Lagos
-DESCRIPTION:Baja todo-o-terreno (autos e motos)\nOnde: Lagos\, Lagos\nÚlt
- ima prova do Campeonato Nacional de Todo-o-Terreno 2026.\nBilhetes: Troç
- os à beira da estrada gratuitos\; bancadas/paddock pagos.\nhttps://www.f
- mp.pt/
-LOCATION:Lagos\, Algarve
+DESCRIPTION:Baja todo-o-terreno (autos e motos)\nOnde: Lagos\, Lagos · Al
+ garve\nÚltima prova do Campeonato Nacional de Todo-o-Terreno 2026.\nBilh
+ etes: Troços à beira da estrada gratuitos\; bancadas/paddock pagos.\nht
+ tps://www.fmp.pt/
+LOCATION:Lagos\, Lagos\, Algarve
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-07-18-38@worldcup-2026-calendar
-DTSTAMP:20260713T140505Z
+DTSTAMP:20260713T142029Z
 DTSTART;VALUE=DATE:20260718
 DTEND;VALUE=DATE:20260720
 SUMMARY:⭐ 🛞 Campeonato de Portugal de Karting - Baltar
 DESCRIPTION:Karting nacional (várias categorias)\nOnde: Kartódromo de Ba
- ltar\, Baltar (Paredes)\nRonda do CPK a ~25 km do Porto.\nBilhetes: Entra
- da geralmente livre no kartódromo.\nhttps://www.fpak.pt/
-LOCATION:Baltar (Paredes)\, Norte
+ ltar\, Baltar (Paredes) · Norte\nRonda do CPK a ~25 km do Porto.\nBilhet
+ es: Entrada geralmente livre no kartódromo.\nhttps://www.fpak.pt/
+LOCATION:Kartódromo de Baltar\, Baltar (Paredes)\, Norte
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-09-05-39@worldcup-2026-calendar
-DTSTAMP:20260713T140505Z
+DTSTAMP:20260713T142029Z
 DTSTART;VALUE=DATE:20260905
 DTEND;VALUE=DATE:20260907
 SUMMARY:⭐ 🛞 Campeonato de Portugal de Karting - Braga
 DESCRIPTION:Karting nacional (várias categorias)\nOnde: Kartódromo Inter
- nacional de Braga\, Braga\nÚltima ronda do CPK 2026\, perto do Porto.\nB
- ilhetes: Entrada geralmente livre no kartódromo.\nhttps://www.fpak.pt/
-LOCATION:Braga\, Norte
+ nacional de Braga\, Braga · Norte\nÚltima ronda do CPK 2026\, perto do 
+ Porto.\nBilhetes: Entrada geralmente livre no kartódromo.\nhttps://www.f
+ pak.pt/
+LOCATION:Kartódromo Internacional de Braga\, Braga\, Norte
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-11-13-40@worldcup-2026-calendar
-DTSTAMP:20260713T140505Z
+DTSTAMP:20260713T142029Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261116
 SUMMARY:🛞 Taça de Portugal de Karting - Bombarral
 DESCRIPTION:Karting nacional (final da época)\nOnde: Kartódromo do Bomba
- rral\, Bombarral\nEncerra a época de karting nacional.\nBilhetes: Entrad
- a geralmente livre no kartódromo.\nhttps://www.fpak.pt/
-LOCATION:Bombarral\, Oeste
+ rral\, Bombarral · Oeste\nEncerra a época de karting nacional.\nBilhete
+ s: Entrada geralmente livre no kartódromo.\nhttps://www.fpak.pt/
+LOCATION:Kartódromo do Bombarral\, Bombarral\, Oeste
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-11-06-41@worldcup-2026-calendar
-DTSTAMP:20260713T140505Z
+DTSTAMP:20260713T142029Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261109
 SUMMARY:⭐ 🏛️ Salão da Mobilidade (Auto\, Moto\, Bike\, Electric)
 DESCRIPTION:Salão automóvel e motos (clássicos e modernos)\nOnde: Forum
-  Braga\, Braga\nSalão de mobilidade em Braga: automóveis\, motos e clá
- ssicos.\nBilhetes: Bilhete pago à entrada / online\, ver site.\nhttps://
- www.forumbraga.com/Feiras/Salao-Auto
-LOCATION:Braga\, Norte
+  Braga\, Braga · Norte\nSalão de mobilidade em Braga: automóveis\, mot
+ os e clássicos.\nBilhetes: Bilhete pago à entrada / online\, ver site.\
+ nhttps://www.forumbraga.com/Feiras/Salao-Auto
+LOCATION:Forum Braga\, Braga\, Norte
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-02-21-42@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260221
+DTEND;VALUE=DATE:20260223
+SUMMARY:🏎️ 47º Rali à Lampreia
+DESCRIPTION:FPAK · PER Ex\nOnde: Portugal\nCalendário nacional FPAK\; de
+ talhes e regulamento no link.\nBilhetes: Troços à beira da estrada grat
+ uitos\; bancadas/paddock pagos.\nhttps://www.fpak.pt/calendario/2026-02-2
+ 1-47o-rali-lampreia
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-02-26-43@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260226
+DTEND;VALUE=DATE:20260302
+SUMMARY:🏎️ ESC Online Baja Montes Alentejanos
+DESCRIPTION:FPAK · CPTT\nOnde: Portugal\nCalendário nacional FPAK\; deta
+ lhes e regulamento no link.\nBilhetes: Troços à beira da estrada gratui
+ tos\; bancadas/paddock pagos.\nhttps://www.fpak.pt/calendario/2026-02-26-
+ esc-online-baja-montes-alentejanos
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-03-07-44@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260307
+DTEND;VALUE=DATE:20260309
+SUMMARY:🛞 CPK Viana do Castelo - 1ª Prova
+DESCRIPTION:FPAK · CPK\nOnde: Portugal\nCalendário nacional FPAK\; detal
+ hes e regulamento no link.\nBilhetes: Entrada geralmente livre no kartód
+ romo.\nhttps://www.fpak.pt/calendario/2026-03-07-cpk-viana-do-castelo-1a-
+ prova
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-03-13-45@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260313
+DTEND;VALUE=DATE:20260315
+SUMMARY:🏎️ Rali do Marítimo/Município de Machico 2026
+DESCRIPTION:FPAK · CRCM\nOnde: Portugal\nCalendário nacional FPAK\; deta
+ lhes e regulamento no link.\nBilhetes: Troços à beira da estrada gratui
+ tos\; bancadas/paddock pagos.\nhttps://www.fpak.pt/calendario/2026-03-13-
+ rali-do-maritimomunicipio-de-machico-2026
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-03-27-46@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260327
+DTEND;VALUE=DATE:20260329
+SUMMARY:🏎️ Rali Serra da Cabreira
+DESCRIPTION:FPAK · CProR\nOnde: Portugal\nCalendário nacional FPAK\; det
+ alhes e regulamento no link.\nBilhetes: Troços à beira da estrada gratu
+ itos\; bancadas/paddock pagos.\nhttps://www.fpak.pt/calendario/2026-03-27
+ -rali-serra-da-cabreira
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-03-28-47@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260328
+DTEND;VALUE=DATE:20260330
+SUMMARY:🏳️ 1ª Prova CPD Montemor 2026
+DESCRIPTION:FPAK · CPD\nOnde: Portugal\nCalendário nacional FPAK\; detal
+ hes e regulamento no link.\nBilhetes: Ver página da FPAK.\nhttps://www.f
+ pak.pt/calendario/2026-03-28-1a-prova-cpd-montemor-2026
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-03-28-48@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260328
+DTEND;VALUE=DATE:20260330
+SUMMARY:🏎️ Rali Cidade Termal
+DESCRIPTION:FPAK · CCR\nOnde: Portugal\nCalendário nacional FPAK\; detal
+ hes e regulamento no link.\nBilhetes: Troços à beira da estrada gratuit
+ os\; bancadas/paddock pagos.\nhttps://www.fpak.pt/calendario/2026-03-28-r
+ ali-cidade-termal
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-04-10-49@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260410
+DTEND;VALUE=DATE:20260412
+SUMMARY:🏎️ 1º Rali da Praia
+DESCRIPTION:FPAK · CAR\nOnde: Portugal\nCalendário nacional FPAK\; detal
+ hes e regulamento no link.\nBilhetes: Troços à beira da estrada gratuit
+ os\; bancadas/paddock pagos.\nhttps://www.fpak.pt/calendario/2026-04-10-1
+ o-rali-da-praia
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-04-10-50@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260410
+DTEND;VALUE=DATE:20260412
+SUMMARY:🚘 500 Milhas ACP
+DESCRIPTION:FPAK · REG H\nOnde: Portugal\nCalendário nacional FPAK\; det
+ alhes e regulamento no link.\nBilhetes: Ver site oficial.\nhttps://www.fp
+ ak.pt/calendario/2026-04-10-500-milhas-acp
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-04-10-51@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260410
+DTEND;VALUE=DATE:20260412
+SUMMARY:🏎️ Rali de Santana
+DESCRIPTION:FPAK · CRCM\nOnde: Portugal\nCalendário nacional FPAK\; deta
+ lhes e regulamento no link.\nBilhetes: Troços à beira da estrada gratui
+ tos\; bancadas/paddock pagos.\nhttps://www.fpak.pt/calendario/2026-04-10-
+ rali-de-santana
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-04-11-52@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260411
+DTEND;VALUE=DATE:20260413
+SUMMARY:🏎️ Rali de Ourique-Capital do Porco Alentejano - Encivil
+DESCRIPTION:FPAK · CSR\nOnde: Portugal\nCalendário nacional FPAK\; detal
+ hes e regulamento no link.\nBilhetes: Troços à beira da estrada gratuit
+ os\; bancadas/paddock pagos.\nhttps://www.fpak.pt/calendario/2026-04-11-r
+ ali-de-ourique-capital-do-porco-alentejano-encivil
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-04-17-53@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260417
+DTEND;VALUE=DATE:20260420
+SUMMARY:🏁 GT Open
+DESCRIPTION:FPAK · V Ex\nOnde: Portugal\nCalendário nacional FPAK\; deta
+ lhes e regulamento no link.\nBilhetes: Bilhetes na bilheteira do autódro
+ mo.\nhttps://www.fpak.pt/calendario/2026-04-17-gt-open
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-04-24-54@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260424
+DTEND;VALUE=DATE:20260426
+SUMMARY:🚘 CRM
+DESCRIPTION:FPAK · CatMI\nOnde: Portugal\nCalendário nacional FPAK\; det
+ alhes e regulamento no link.\nBilhetes: Ver site oficial.\nhttps://www.fp
+ ak.pt/calendario/2026-04-24-crm
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-04-25-55@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260425
+DTEND;VALUE=DATE:20260427
+SUMMARY:🏎️ CISET4X4 Nelas
+DESCRIPTION:FPAK · CISET 4x4\nOnde: Portugal\nCalendário nacional FPAK\;
+  detalhes e regulamento no link.\nBilhetes: Troços à beira da estrada g
+ ratuitos\; bancadas/paddock pagos.\nhttps://www.fpak.pt/calendario/2026-0
+ 4-25-ciset4x4-nelas
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-04-25-56@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260425
+DTEND;VALUE=DATE:20260427
+SUMMARY:🏎️ Montalegre I
+DESCRIPTION:FPAK · CPRx\nOnde: Portugal\nCalendário nacional FPAK\; deta
+ lhes e regulamento no link.\nBilhetes: Troços à beira da estrada gratui
+ tos\; bancadas/paddock pagos.\nhttps://www.fpak.pt/calendario/2026-04-25-
+ montalegre-i
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-05-01-57@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260501
+DTEND;VALUE=DATE:20260503
+SUMMARY:🏎️ Rali de Santo Tirso 2026
+DESCRIPTION:FPAK · CNR 2RM\nOnde: Portugal\nCalendário nacional FPAK\; d
+ etalhes e regulamento no link.\nBilhetes: Troços à beira da estrada gra
+ tuitos\; bancadas/paddock pagos.\nhttps://www.fpak.pt/calendario/2026-05-
+ 01-rali-de-santo-tirso-2026
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-05-02-58@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260502
+DTEND;VALUE=DATE:20260504
+SUMMARY:🏳️ 2º Drift 2026 - Campia
+DESCRIPTION:FPAK · CPD\nOnde: Portugal\nCalendário nacional FPAK\; detal
+ hes e regulamento no link.\nBilhetes: Ver página da FPAK.\nhttps://www.f
+ pak.pt/calendario/2026-05-02-2o-drift-2026-campia
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-05-15-59@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260515
+DTEND;VALUE=DATE:20260518
+SUMMARY:🏎️ 4º Rallycross Escuderia Castelo Branco - CERx
+DESCRIPTION:FPAK · RxKx Ex\nOnde: Portugal\nCalendário nacional FPAK\; d
+ etalhes e regulamento no link.\nBilhetes: Troços à beira da estrada gra
+ tuitos\; bancadas/paddock pagos.\nhttps://www.fpak.pt/calendario/2026-05-
+ 15-4o-rallycross-escuderia-castelo-branco-cerx
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-05-15-60@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260515
+DTEND;VALUE=DATE:20260517
+SUMMARY:🏎️ Rali Município de São Vicente
+DESCRIPTION:FPAK · CRCM\nOnde: Portugal\nCalendário nacional FPAK\; deta
+ lhes e regulamento no link.\nBilhetes: Troços à beira da estrada gratui
+ tos\; bancadas/paddock pagos.\nhttps://www.fpak.pt/calendario/2026-05-15-
+ rali-municipio-de-sao-vicente
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-05-16-61@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260516
+DTEND;VALUE=DATE:20260518
+SUMMARY:🏎️ CISET4X4 Mangualde
+DESCRIPTION:FPAK · CISET 4x4\nOnde: Portugal\nCalendário nacional FPAK\;
+  detalhes e regulamento no link.\nBilhetes: Troços à beira da estrada g
+ ratuitos\; bancadas/paddock pagos.\nhttps://www.fpak.pt/calendario/2026-0
+ 5-16-ciset4x4-mangualde
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-05-22-62@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260522
+DTEND;VALUE=DATE:20260525
+SUMMARY:🏎️ Th Clothes Raid Ferraria 2026
+DESCRIPTION:FPAK · CPTT\nOnde: Portugal\nCalendário nacional FPAK\; deta
+ lhes e regulamento no link.\nBilhetes: Troços à beira da estrada gratui
+ tos\; bancadas/paddock pagos.\nhttps://www.fpak.pt/calendario/2026-05-22-
+ th-clothes-raid-ferraria-2026
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-05-23-63@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260523
+DTEND;VALUE=DATE:20260525
+SUMMARY:🏎️ Rali Espumante do Dão
+DESCRIPTION:FPAK · CCR\nOnde: Portugal\nCalendário nacional FPAK\; detal
+ hes e regulamento no link.\nBilhetes: Troços à beira da estrada gratuit
+ os\; bancadas/paddock pagos.\nhttps://www.fpak.pt/calendario/2026-05-23-r
+ ali-espumante-do-dao
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-05-30-64@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260530
+DTEND;VALUE=DATE:20260601
+SUMMARY:🏎️ 20º Rali de Gondomar
+DESCRIPTION:FPAK · CNR 2RM\nOnde: Portugal\nCalendário nacional FPAK\; d
+ etalhes e regulamento no link.\nBilhetes: Troços à beira da estrada gra
+ tuitos\; bancadas/paddock pagos.\nhttps://www.fpak.pt/calendario/2026-05-
+ 30-20o-rali-de-gondomar
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-05-30-65@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260530
+DTEND;VALUE=DATE:20260601
+SUMMARY:🏎️ 65º Mação Verde Horizonte - I
+DESCRIPTION:FPAK · CPRx\nOnde: Portugal\nCalendário nacional FPAK\; deta
+ lhes e regulamento no link.\nBilhetes: Troços à beira da estrada gratui
+ tos\; bancadas/paddock pagos.\nhttps://www.fpak.pt/calendario/2026-05-30-
+ 65o-macao-verde-horizonte-i
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-05-30-66@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260530
+DTEND;VALUE=DATE:20260601
+SUMMARY:🛞 CPK Castelo Branco - 3ª Prova
+DESCRIPTION:FPAK · CPK\nOnde: Portugal\nCalendário nacional FPAK\; detal
+ hes e regulamento no link.\nBilhetes: Entrada geralmente livre no kartód
+ romo.\nhttps://www.fpak.pt/calendario/2026-05-30-cpk-castelo-branco-3a-pr
+ ova
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-05-30-67@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260530
+DTEND;VALUE=DATE:20260601
+SUMMARY:🚘 Guimarães Revival
+DESCRIPTION:FPAK · TFRAIANO\nOnde: Portugal\nCalendário nacional FPAK\; 
+ detalhes e regulamento no link.\nBilhetes: Ver site oficial.\nhttps://www
+ .fpak.pt/calendario/2026-05-30-guimaraes-revival
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-06-04-68@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260604
+DTEND;VALUE=DATE:20260607
+SUMMARY:🏎️ Rallyspirit
+DESCRIPTION:FPAK · FM\nOnde: Portugal\nCalendário nacional FPAK\; detalh
+ es e regulamento no link.\nBilhetes: Troços à beira da estrada gratuito
+ s\; bancadas/paddock pagos.\nhttps://www.fpak.pt/calendario/2026-06-04-ra
+ llyspirit
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-06-05-69@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260605
+DTEND;VALUE=DATE:20260607
+SUMMARY:🏎️ XXXVII Rali Ilha Azul - Cidade Mar
+DESCRIPTION:FPAK · CAR\nOnde: Portugal\nCalendário nacional FPAK\; detal
+ hes e regulamento no link.\nBilhetes: Troços à beira da estrada gratuit
+ os\; bancadas/paddock pagos.\nhttps://www.fpak.pt/calendario/2026-06-05-x
+ xxvii-rali-ilha-azul-cidade-mar
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-06-06-70@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260606
+DTEND;VALUE=DATE:20260608
+SUMMARY:🏳️ 3º Drift Sever do Vouga 2026
+DESCRIPTION:FPAK · CPD\nOnde: Portugal\nCalendário nacional FPAK\; detal
+ hes e regulamento no link.\nBilhetes: Ver página da FPAK.\nhttps://www.f
+ pak.pt/calendario/2026-06-06-3o-drift-sever-do-vouga-2026
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-06-06-71@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260606
+DTEND;VALUE=DATE:20260608
+SUMMARY:🏁 F4 Spain
+DESCRIPTION:FPAK · V Ex\nOnde: Portugal\nCalendário nacional FPAK\; deta
+ lhes e regulamento no link.\nBilhetes: Bilhetes na bilheteira do autódro
+ mo.\nhttps://www.fpak.pt/calendario/2026-06-06-f4-spain
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-06-12-72@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260612
+DTEND;VALUE=DATE:20260615
+SUMMARY:🏎️ 8º Penafiel Racing Fest
+DESCRIPTION:FPAK · FM\nOnde: Portugal\nCalendário nacional FPAK\; detalh
+ es e regulamento no link.\nBilhetes: Troços à beira da estrada gratuito
+ s\; bancadas/paddock pagos.\nhttps://www.fpak.pt/calendario/2026-06-12-8o
+ -penafiel-racing-fest
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-06-12-73@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260612
+DTEND;VALUE=DATE:20260614
+SUMMARY:🏎️ Rali da Ribeira Brava
+DESCRIPTION:FPAK · CRCM\nOnde: Portugal\nCalendário nacional FPAK\; deta
+ lhes e regulamento no link.\nBilhetes: Troços à beira da estrada gratui
+ tos\; bancadas/paddock pagos.\nhttps://www.fpak.pt/calendario/2026-06-12-
+ rali-da-ribeira-brava
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-06-19-74@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260619
+DTEND;VALUE=DATE:20260621
+SUMMARY:🏎️ Rali de Castelo Branco e Vila Velha de Ródão
+DESCRIPTION:FPAK · CPR\nOnde: Portugal\nCalendário nacional FPAK\; detal
+ hes e regulamento no link.\nBilhetes: Troços à beira da estrada gratuit
+ os\; bancadas/paddock pagos.\nhttps://www.fpak.pt/calendario/2026-06-19-r
+ ali-de-castelo-branco-e-vila-velha-de-rodao
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-06-20-75@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260620
+DTEND;VALUE=DATE:20260622
+SUMMARY:🏎️ Epto Rodas Fest
+DESCRIPTION:FPAK · FM\nOnde: Portugal\nCalendário nacional FPAK\; detalh
+ es e regulamento no link.\nBilhetes: Troços à beira da estrada gratuito
+ s\; bancadas/paddock pagos.\nhttps://www.fpak.pt/calendario/2026-06-20-ep
+ to-rodas-fest
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-06-27-76@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260627
+DTEND;VALUE=DATE:20260629
+SUMMARY:🏎️ 55º Ralicross Sever do Vouga
+DESCRIPTION:FPAK · CPRx\nOnde: Portugal\nCalendário nacional FPAK\; deta
+ lhes e regulamento no link.\nBilhetes: Troços à beira da estrada gratui
+ tos\; bancadas/paddock pagos.\nhttps://www.fpak.pt/calendario/2026-06-27-
+ 55o-ralicross-sever-do-vouga
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-06-27-77@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260627
+DTEND;VALUE=DATE:20260629
+SUMMARY:🏳️ Drag Racing Mogadouro
+DESCRIPTION:FPAK · DR Ex\nOnde: Portugal\nCalendário nacional FPAK\; det
+ alhes e regulamento no link.\nBilhetes: Ver página da FPAK.\nhttps://www
+ .fpak.pt/calendario/2026-06-27-drag-racing-mogadouro
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-07-03-78@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260703
+DTEND;VALUE=DATE:20260705
+SUMMARY:🏎️ XVI Rali da Graciosa
+DESCRIPTION:FPAK · CAR\nOnde: Portugal\nCalendário nacional FPAK\; detal
+ hes e regulamento no link.\nBilhetes: Troços à beira da estrada gratuit
+ os\; bancadas/paddock pagos.\nhttps://www.fpak.pt/calendario/2026-07-03-x
+ vi-rali-da-graciosa
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-07-03-79@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260703
+DTEND;VALUE=DATE:20260705
+SUMMARY:🏎️ XXII Rali da Calheta
+DESCRIPTION:FPAK · CRCM\nOnde: Portugal\nCalendário nacional FPAK\; deta
+ lhes e regulamento no link.\nBilhetes: Troços à beira da estrada gratui
+ tos\; bancadas/paddock pagos.\nhttps://www.fpak.pt/calendario/2026-07-03-
+ xxii-rali-da-calheta
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-07-04-80@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260704
+DTEND;VALUE=DATE:20260706
+SUMMARY:🏳️ Guarda Racing Days
+DESCRIPTION:FPAK · ESP S\nOnde: Portugal\nCalendário nacional FPAK\; det
+ alhes e regulamento no link.\nBilhetes: Ver página da FPAK.\nhttps://www
+ .fpak.pt/calendario/2026-07-04-guarda-racing-days
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-07-04-81@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260704
+DTEND;VALUE=DATE:20260706
+SUMMARY:🏎️ Taça Jaime Moura
+DESCRIPTION:FPAK · FM\nOnde: Portugal\nCalendário nacional FPAK\; detalh
+ es e regulamento no link.\nBilhetes: Troços à beira da estrada gratuito
+ s\; bancadas/paddock pagos.\nhttps://www.fpak.pt/calendario/2026-07-04-ta
+ ca-jaime-moura
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-07-11-82@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260713
+SUMMARY:🏎️ CISET4X4 Couço
+DESCRIPTION:FPAK · CISET 4x4\nOnde: Portugal\nCalendário nacional FPAK\;
+  detalhes e regulamento no link.\nBilhetes: Troços à beira da estrada g
+ ratuitos\; bancadas/paddock pagos.\nhttps://www.fpak.pt/calendario/2026-0
+ 7-11-ciset4x4-couco
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-07-11-83@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260713
+SUMMARY:🏳️ Prólogo 767
+DESCRIPTION:FPAK · DEM\nOnde: Portugal\nCalendário nacional FPAK\; detal
+ hes e regulamento no link.\nBilhetes: Ver página da FPAK.\nhttps://www.f
+ pak.pt/calendario/2026-07-11-prologo-767
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-07-25-84@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260725
+DTEND;VALUE=DATE:20260727
+SUMMARY:🏎️ Montalegre II
+DESCRIPTION:FPAK · CPRx\nOnde: Portugal\nCalendário nacional FPAK\; deta
+ lhes e regulamento no link.\nBilhetes: Troços à beira da estrada gratui
+ tos\; bancadas/paddock pagos.\nhttps://www.fpak.pt/calendario/2026-07-25-
+ montalegre-ii
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-08-15-85@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260815
+DTEND;VALUE=DATE:20260817
+SUMMARY:🏳️ 5ª Prova CPD Pinhel 2026
+DESCRIPTION:FPAK · CPD\nOnde: Portugal\nCalendário nacional FPAK\; detal
+ hes e regulamento no link.\nBilhetes: Ver página da FPAK.\nhttps://www.f
+ pak.pt/calendario/2026-08-15-5a-prova-cpd-pinhel-2026
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-09-05-86@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260905
+DTEND;VALUE=DATE:20260907
+SUMMARY:🏎️ 59º Ralicross de Castelo Branco
+DESCRIPTION:FPAK · CPRx\nOnde: Portugal\nCalendário nacional FPAK\; deta
+ lhes e regulamento no link.\nBilhetes: Troços à beira da estrada gratui
+ tos\; bancadas/paddock pagos.\nhttps://www.fpak.pt/calendario/2026-09-05-
+ 59o-ralicross-de-castelo-branco
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-09-05-87@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260905
+DTEND;VALUE=DATE:20260907
+SUMMARY:🏁 Lamera Cup
+DESCRIPTION:FPAK · V Ex\nOnde: Portugal\nCalendário nacional FPAK\; deta
+ lhes e regulamento no link.\nBilhetes: Bilhetes na bilheteira do autódro
+ mo.\nhttps://www.fpak.pt/calendario/2026-09-05-lamera-cup
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-09-11-88@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260911
+DTEND;VALUE=DATE:20260913
+SUMMARY:🚘 XI Clássica do Caminho dos Pretos
+DESCRIPTION:FPAK · TRRHAMAK\nOnde: Portugal\nCalendário nacional FPAK\; 
+ detalhes e regulamento no link.\nBilhetes: Ver site oficial.\nhttps://www
+ .fpak.pt/calendario/2026-09-11-xi-classica-do-caminho-dos-pretos
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-09-18-89@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260918
+DTEND;VALUE=DATE:20260921
+SUMMARY:🏎️ 38ª Baja TT Sharish Gin Reguengos/Mourão
+DESCRIPTION:FPAK · CPTT\nOnde: Portugal\nCalendário nacional FPAK\; deta
+ lhes e regulamento no link.\nBilhetes: Troços à beira da estrada gratui
+ tos\; bancadas/paddock pagos.\nhttps://www.fpak.pt/calendario/2026-09-18-
+ 38a-baja-tt-sharish-gin-reguengosmourao
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-09-18-90@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260918
+DTEND;VALUE=DATE:20260920
+SUMMARY:🏎️ Rali Municípios do Funchal e Câmara de Lobos
+DESCRIPTION:FPAK · CRCM\nOnde: Portugal\nCalendário nacional FPAK\; deta
+ lhes e regulamento no link.\nBilhetes: Troços à beira da estrada gratui
+ tos\; bancadas/paddock pagos.\nhttps://www.fpak.pt/calendario/2026-09-18-
+ rali-municipios-do-funchal-e-camara-de-lobos
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-09-18-91@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260918
+DTEND;VALUE=DATE:20260920
+SUMMARY:🏎️ Rali Viana do Castelo
+DESCRIPTION:FPAK · CNR 2RM\nOnde: Portugal\nCalendário nacional FPAK\; d
+ etalhes e regulamento no link.\nBilhetes: Troços à beira da estrada gra
+ tuitos\; bancadas/paddock pagos.\nhttps://www.fpak.pt/calendario/2026-09-
+ 18-rali-viana-do-castelo
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-09-19-92@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260919
+DTEND;VALUE=DATE:20260921
+SUMMARY:🏎️ CISET4X4 Cerveira
+DESCRIPTION:FPAK · CISET 4x4\nOnde: Portugal\nCalendário nacional FPAK\;
+  detalhes e regulamento no link.\nBilhetes: Troços à beira da estrada g
+ ratuitos\; bancadas/paddock pagos.\nhttps://www.fpak.pt/calendario/2026-0
+ 9-19-ciset4x4-cerveira
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-09-19-93@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260919
+DTEND;VALUE=DATE:20260921
+SUMMARY:🚘 Perícia da Labareda
+DESCRIPTION:FPAK · TFRAIANO\nOnde: Portugal\nCalendário nacional FPAK\; 
+ detalhes e regulamento no link.\nBilhetes: Ver site oficial.\nhttps://www
+ .fpak.pt/calendario/2026-09-19-pericia-da-labareda
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-09-19-94@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260919
+DTEND;VALUE=DATE:20260921
+SUMMARY:🏎️ Rali Alitém
+DESCRIPTION:FPAK · CCR\nOnde: Portugal\nCalendário nacional FPAK\; detal
+ hes e regulamento no link.\nBilhetes: Troços à beira da estrada gratuit
+ os\; bancadas/paddock pagos.\nhttps://www.fpak.pt/calendario/2026-09-19-r
+ ali-alitem
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-09-25-95@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20260928
+SUMMARY:🏁 Circuit Ricardo Tormo de Cheste
+DESCRIPTION:FPAK · FJTV\nOnde: Portugal\nCalendário nacional FPAK\; deta
+ lhes e regulamento no link.\nBilhetes: Bilhetes na bilheteira do autódro
+ mo.\nhttps://www.fpak.pt/calendario/2026-09-25-circuit-ricardo-tormo-de-c
+ heste
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-09-26-96@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260926
+DTEND;VALUE=DATE:20260928
+SUMMARY:🏳️ 24h CRM
+DESCRIPTION:FPAK · E Ex\nOnde: Portugal\nCalendário nacional FPAK\; deta
+ lhes e regulamento no link.\nBilhetes: Ver página da FPAK.\nhttps://www.
+ fpak.pt/calendario/2026-09-26-24h-crm
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-09-26-97@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260926
+DTEND;VALUE=DATE:20260928
+SUMMARY:🏳️ 6ª Prova CPD Lousada 2026
+DESCRIPTION:FPAK · CPD\nOnde: Portugal\nCalendário nacional FPAK\; detal
+ hes e regulamento no link.\nBilhetes: Ver página da FPAK.\nhttps://www.f
+ pak.pt/calendario/2026-09-26-6a-prova-cpd-lousada-2026
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-09-26-98@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20260926
+DTEND;VALUE=DATE:20260928
+SUMMARY:🏁 The Bentley Boys Event
+DESCRIPTION:FPAK · V Ex\nOnde: Portugal\nCalendário nacional FPAK\; deta
+ lhes e regulamento no link.\nBilhetes: Bilhetes na bilheteira do autódro
+ mo.\nhttps://www.fpak.pt/calendario/2026-09-26-bentley-boys-event
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-10-03-99@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20261003
+DTEND;VALUE=DATE:20261005
+SUMMARY:🏳️ Fun Cup
+DESCRIPTION:FPAK · E Ex\nOnde: Portugal\nCalendário nacional FPAK\; deta
+ lhes e regulamento no link.\nBilhetes: Ver página da FPAK.\nhttps://www.
+ fpak.pt/calendario/2026-10-03-fun-cup
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-10-03-100@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20261003
+DTEND;VALUE=DATE:20261005
+SUMMARY:🚘 XI Rali Princesa Santa Joana
+DESCRIPTION:FPAK · REGEx\nOnde: Portugal\nCalendário nacional FPAK\; det
+ alhes e regulamento no link.\nBilhetes: Ver site oficial.\nhttps://www.fp
+ ak.pt/calendario/2026-10-03-xi-rali-princesa-santa-joana
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-10-07-101@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20261007
+DTEND;VALUE=DATE:20261012
+SUMMARY:🏳️ ELMS
+DESCRIPTION:FPAK · E Ex\nOnde: Portugal\nCalendário nacional FPAK\; deta
+ lhes e regulamento no link.\nBilhetes: Ver página da FPAK.\nhttps://www.
+ fpak.pt/calendario/2026-10-07-elms
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-10-10-102@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20261010
+DTEND;VALUE=DATE:20261012
+SUMMARY:🏎️ Rali De Vila Nova De Famalicão 2026
+DESCRIPTION:FPAK · CNR 2RM\nOnde: Portugal\nCalendário nacional FPAK\; d
+ etalhes e regulamento no link.\nBilhetes: Troços à beira da estrada gra
+ tuitos\; bancadas/paddock pagos.\nhttps://www.fpak.pt/calendario/2026-10-
+ 10-rali-de-vila-nova-de-famalicao-2026
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-10-16-103@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261019
+SUMMARY:🏁 GTWC EU
+DESCRIPTION:FPAK · V Ex\nOnde: Portugal\nCalendário nacional FPAK\; deta
+ lhes e regulamento no link.\nBilhetes: Bilhetes na bilheteira do autódro
+ mo.\nhttps://www.fpak.pt/calendario/2026-10-16-gtwc-eu
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-10-17-104@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261019
+SUMMARY:⛰️ 10º RRH ADA
+DESCRIPTION:FPAK · CPRH\nOnde: Portugal\nCalendário nacional FPAK\; deta
+ lhes e regulamento no link.\nBilhetes: Beira-estrada geralmente gratuita 
+ (algumas rampas cobram acesso).\nhttps://www.fpak.pt/calendario/2026-10-1
+ 7-10o-rrh-ada
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-10-30-105@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261102
+SUMMARY:🏁 ACF
+DESCRIPTION:FPAK · G1P\nOnde: Portugal\nCalendário nacional FPAK\; detal
+ hes e regulamento no link.\nBilhetes: Bilhetes na bilheteira do autódrom
+ o.\nhttps://www.fpak.pt/calendario/2026-10-30-acf
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-10-31-106@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261102
+SUMMARY:🏎️ 9º Rali Município de Albufeira - Encivil
+DESCRIPTION:FPAK · CSR\nOnde: Portugal\nCalendário nacional FPAK\; detal
+ hes e regulamento no link.\nBilhetes: Troços à beira da estrada gratuit
+ os\; bancadas/paddock pagos.\nhttps://www.fpak.pt/calendario/2026-10-31-9
+ o-rali-municipio-de-albufeira-encivil
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-10-31-107@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261102
+SUMMARY:🏁 Cascais PSCI Grand Finale
+DESCRIPTION:FPAK · V Ex\nOnde: Portugal\nCalendário nacional FPAK\; deta
+ lhes e regulamento no link.\nBilhetes: Bilhetes na bilheteira do autódro
+ mo.\nhttps://www.fpak.pt/calendario/2026-10-31-cascais-psci-grand-finale
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-11-07-108@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261109
+SUMMARY:🏎️ Rali União Alpendurada\, Várzea e Torrão
+DESCRIPTION:FPAK · CNR 2RM\nOnde: Portugal\nCalendário nacional FPAK\; d
+ etalhes e regulamento no link.\nBilhetes: Troços à beira da estrada gra
+ tuitos\; bancadas/paddock pagos.\nhttps://www.fpak.pt/calendario/2026-11-
+ 07-rali-uniao-alpendurada-varzea-e-torrao
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-11-13-109@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261115
+SUMMARY:🏎️ 2º Rali d&#039\;Angra 47º Ilha Lilás
+DESCRIPTION:FPAK · CAR\nOnde: Portugal\nCalendário nacional FPAK\; detal
+ hes e regulamento no link.\nBilhetes: Troços à beira da estrada gratuit
+ os\; bancadas/paddock pagos.\nhttps://www.fpak.pt/calendario/2026-11-13-2
+ o-rali-dangra-47o-ilha-lilas
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-11-13-110@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261116
+SUMMARY:🏎️ Baja TT de Castelo Branco
+DESCRIPTION:FPAK · CPTT\nOnde: Portugal\nCalendário nacional FPAK\; deta
+ lhes e regulamento no link.\nBilhetes: Troços à beira da estrada gratui
+ tos\; bancadas/paddock pagos.\nhttps://www.fpak.pt/calendario/2026-11-13-
+ baja-tt-de-castelo-branco
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-11-14-111@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261116
+SUMMARY:🏎️ Douro Motorshow
+DESCRIPTION:FPAK · FM\nOnde: Portugal\nCalendário nacional FPAK\; detalh
+ es e regulamento no link.\nBilhetes: Troços à beira da estrada gratuito
+ s\; bancadas/paddock pagos.\nhttps://www.fpak.pt/calendario/2026-11-14-do
+ uro-motorshow
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-11-20-112@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261123
+SUMMARY:🏎️ 11.º Leiria Motorshow - Leiria Sobre Rodas
+DESCRIPTION:FPAK · FM\nOnde: Portugal\nCalendário nacional FPAK\; detalh
+ es e regulamento no link.\nBilhetes: Troços à beira da estrada gratuito
+ s\; bancadas/paddock pagos.\nhttps://www.fpak.pt/calendario/2026-11-20-11
+ o-leiria-motorshow-leiria-sobre-rodas
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-12-03-113@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20261203
+DTEND;VALUE=DATE:20261207
+SUMMARY:🏎️ 24h TT Vila de Fronteira
+DESCRIPTION:FPAK · PExTT\nOnde: Portugal\nCalendário nacional FPAK\; det
+ alhes e regulamento no link.\nBilhetes: Troços à beira da estrada gratu
+ itos\; bancadas/paddock pagos.\nhttps://www.fpak.pt/calendario/2026-12-03
+ -24h-tt-vila-de-fronteira
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-12-05-114@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261207
+SUMMARY:🏎️ Águeda Rali Travocar
+DESCRIPTION:FPAK · CProR\nOnde: Portugal\nCalendário nacional FPAK\; det
+ alhes e regulamento no link.\nBilhetes: Troços à beira da estrada gratu
+ itos\; bancadas/paddock pagos.\nhttps://www.fpak.pt/calendario/2026-12-05
+ -agueda-rali-travocar
+LOCATION:Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-12-12-115@worldcup-2026-calendar
+DTSTAMP:20260713T142029Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261214
+SUMMARY:🏎️ 5º Rali de Tavira - Encivil
+DESCRIPTION:FPAK · CSR\nOnde: Portugal\nCalendário nacional FPAK\; detal
+ hes e regulamento no link.\nBilhetes: Troços à beira da estrada gratuit
+ os\; bancadas/paddock pagos.\nhttps://www.fpak.pt/calendario/2026-12-12-5
+ o-rali-de-tavira-encivil
+LOCATION:Portugal
 END:VEVENT
 END:VCALENDAR
