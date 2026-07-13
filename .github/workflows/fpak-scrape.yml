@@ -1,0 +1,37 @@
+name: FPAK calendar scrape
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"   # weekly, Monday 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Scrape FPAK + build PR body
+        run: |
+          {
+            echo "Automated weekly scrape of the FPAK national calendar."
+            echo "Review the events below and fold the real new ones into \`motorsport.json\` by hand."
+            echo '```'
+            python scrape_fpak.py --report
+            echo '```'
+          } > /tmp/pr-body.md
+      - name: Open PR if the calendar changed
+        uses: peter-evans/create-pull-request@v6
+        with:
+          add-paths: fpak-calendar.json
+          branch: fpak-calendar-update
+          delete-branch: true
+          commit-message: "chore: update FPAK calendar scrape"
+          title: "FPAK calendar update (weekly scrape)"
+          body-path: /tmp/pr-body.md
