@@ -8,7 +8,7 @@ REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
 BEGIN:VEVENT
 UID:ms-2026-04-25-0@worldcup-2026-calendar
-DTSTAMP:20260713T135012Z
+DTSTAMP:20260713T140505Z
 DTSTART;VALUE=DATE:20260425
 DTEND;VALUE=DATE:20260427
 SUMMARY:⭐ ⛰️ Rampa da Penha
@@ -20,7 +20,7 @@ LOCATION:Guimarães\, Braga / Norte
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-04-17-1@worldcup-2026-calendar
-DTSTAMP:20260713T135012Z
+DTSTAMP:20260713T140505Z
 DTSTART;VALUE=DATE:20260417
 DTEND;VALUE=DATE:20260419
 SUMMARY:⭐ 🏎️ Rali Terras d'Aboboreira
@@ -32,7 +32,7 @@ LOCATION:Amarante\, Porto / Norte
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-04-17-2@worldcup-2026-calendar
-DTSTAMP:20260713T135012Z
+DTSTAMP:20260713T140505Z
 DTSTART;VALUE=DATE:20260417
 DTEND;VALUE=DATE:20260420
 SUMMARY:⭐ 🚘 Norte Classic
@@ -44,7 +44,7 @@ LOCATION:Braga\, Norte
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-05-15-3@worldcup-2026-calendar
-DTSTAMP:20260713T135012Z
+DTSTAMP:20260713T140505Z
 DTSTART;VALUE=DATE:20260515
 DTEND;VALUE=DATE:20260518
 SUMMARY:⭐ ⛰️ Rampa Internacional da Falperra
@@ -57,7 +57,7 @@ LOCATION:Braga\, Braga / Norte
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-05-07-4@worldcup-2026-calendar
-DTSTAMP:20260713T135012Z
+DTSTAMP:20260713T140505Z
 DTSTART;VALUE=DATE:20260507
 DTEND;VALUE=DATE:20260511
 SUMMARY:⭐ 🏎️ Vodafone Rally de Portugal (WRC)
@@ -72,7 +72,7 @@ LOCATION:Matosinhos\, Porto / Norte
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-05-22-5@worldcup-2026-calendar
-DTSTAMP:20260713T135012Z
+DTSTAMP:20260713T140505Z
 DTSTART;VALUE=DATE:20260522
 DTEND;VALUE=DATE:20260525
 SUMMARY:⭐ 🏛️ Automobilia Aveiro
@@ -84,7 +84,7 @@ LOCATION:Aveiro\, Centro
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-07-10-6@worldcup-2026-calendar
-DTSTAMP:20260713T135012Z
+DTSTAMP:20260713T140505Z
 DTSTART;VALUE=DATE:20260710
 DTEND;VALUE=DATE:20260713
 SUMMARY:🚘 55.º Circuito Internacional de Vila Real
@@ -97,31 +97,32 @@ LOCATION:Vila Real\, Norte
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-07-17-7@worldcup-2026-calendar
-DTSTAMP:20260713T135012Z
+DTSTAMP:20260713T140505Z
 DTSTART;VALUE=DATE:20260717
 DTEND;VALUE=DATE:20260720
 SUMMARY:🏁 Ferrari Challenge Trofeo Pirelli
 DESCRIPTION:GT monomarca (Ferrari 296 Challenge)\nOnde: Autódromo Interna
  cional do Algarve\, Portimão\nMonomarca Ferrari\, pilotos gentleman/pro.
- \nBilhetes: Bilheteira do autódromo (MEO Blueticket). https://aia.bymeob
- lueticket.pt/\nhttps://autodromodoalgarve.com/race-calendar/
+ \nBilhetes: Bilhetes no site do autódromo (venda via blueticket.meo.pt).
+  https://autodromodoalgarve.com/race-calendar/\nhttps://autodromodoalgarv
+ e.com/race-calendar/
 LOCATION:Portimão\, Algarve
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-07-18-8@worldcup-2026-calendar
-DTSTAMP:20260713T135012Z
+DTSTAMP:20260713T140505Z
 DTSTART;VALUE=DATE:20260718
 DTEND;VALUE=DATE:20260720
 SUMMARY:🏁 Estoril Summer Party (Race Ready)
 DESCRIPTION:Históricos / GT\nOnde: Autódromo do Estoril\, Estoril (Casca
- is)\nEncontro de históricos e GT.\nBilhetes: Ver circuito-estoril.pt\; b
- ancadas muitas vezes gratuitas. https://www.circuito-estoril.pt/pt/evento
- s/\nhttps://www.circuito-estoril.pt/en/eventos/
+ is)\nEncontro de históricos e GT.\nBilhetes: Ver site do circuito\; banc
+ adas muitas vezes gratuitas. https://www.circuito-estoril.pt/en/eventos/\
+ nhttps://www.circuito-estoril.pt/en/eventos/
 LOCATION:Estoril (Cascais)\, Lisboa
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-07-31-9@worldcup-2026-calendar
-DTSTAMP:20260713T135012Z
+DTSTAMP:20260713T140505Z
 DTSTART;VALUE=DATE:20260731
 DTEND;VALUE=DATE:20260802
 SUMMARY:🏎️ Rali Vinho da Madeira
@@ -132,7 +133,7 @@ LOCATION:Funchal\, Madeira
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-09-04-10@worldcup-2026-calendar
-DTSTAMP:20260713T135012Z
+DTSTAMP:20260713T140505Z
 DTSTART;VALUE=DATE:20260904
 DTEND;VALUE=DATE:20260907
 SUMMARY:🎪 Caramulo Motorfestival
@@ -146,7 +147,7 @@ LOCATION:Caramulo (Tondela)\, Centro
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-09-05-11@worldcup-2026-calendar
-DTSTAMP:20260713T135012Z
+DTSTAMP:20260713T140505Z
 DTSTART;VALUE=DATE:20260905
 DTEND;VALUE=DATE:20260907
 SUMMARY:⛰️ Rampa Internacional de Boticas
@@ -157,7 +158,7 @@ LOCATION:Boticas\, Vila Real / Norte
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-09-11-12@worldcup-2026-calendar
-DTSTAMP:20260713T135012Z
+DTSTAMP:20260713T140505Z
 DTSTART;VALUE=DATE:20260911
 DTEND;VALUE=DATE:20260913
 SUMMARY:🏎️ Rali da Água / Transibérico Chaves-Verín
@@ -169,7 +170,7 @@ LOCATION:Chaves\, Vila Real / Norte
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-09-16-13@worldcup-2026-calendar
-DTSTAMP:20260713T135012Z
+DTSTAMP:20260713T140505Z
 DTSTART;VALUE=DATE:20260916
 DTEND;VALUE=DATE:20260921
 SUMMARY:🚘 Estoril Classics
@@ -182,19 +183,20 @@ LOCATION:Estoril (Cascais)\, Lisboa
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-09-18-14@worldcup-2026-calendar
-DTSTAMP:20260713T135012Z
+DTSTAMP:20260713T140505Z
 DTSTART;VALUE=DATE:20260918
 DTEND;VALUE=DATE:20260920
 SUMMARY:🏁 24 Horas CRM
 DESCRIPTION:Endurance amador (turismo/GT/protótipo)\nOnde: Autódromo Int
  ernacional do Algarve\, Portimão\nProva de resistência de 24h\, grelha 
- mista.\nBilhetes: Bilheteira do autódromo (MEO Blueticket). https://aia.
- bymeoblueticket.pt/\nhttps://autodromodoalgarve.com/race-calendar/
+ mista.\nBilhetes: Bilhetes no site do autódromo (venda via blueticket.me
+ o.pt). https://autodromodoalgarve.com/race-calendar/\nhttps://autodromodo
+ algarve.com/race-calendar/
 LOCATION:Portimão\, Algarve
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-09-25-15@worldcup-2026-calendar
-DTSTAMP:20260713T135012Z
+DTSTAMP:20260713T140505Z
 DTSTART;VALUE=DATE:20260925
 DTEND;VALUE=DATE:20260928
 SUMMARY:🚘 Corrida dos Fundadores by Cartrack
@@ -205,7 +207,7 @@ LOCATION:Figueira da Foz\, Centro / Lisboa
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-10-02-16@worldcup-2026-calendar
-DTSTAMP:20260713T135012Z
+DTSTAMP:20260713T140505Z
 DTSTART;VALUE=DATE:20261002
 DTEND;VALUE=DATE:20261006
 SUMMARY:⭐ 🏛️ autoClássico Porto (Salão de Clássicos + Exclusive 
@@ -221,7 +223,7 @@ LOCATION:Matosinhos (Leça da Palmeira)\, Norte
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-10-03-17@worldcup-2026-calendar
-DTSTAMP:20260713T135012Z
+DTSTAMP:20260713T140505Z
 DTSTART;VALUE=DATE:20261003
 DTEND;VALUE=DATE:20261005
 SUMMARY:⛰️ Rampa da Arrábida
@@ -232,7 +234,7 @@ LOCATION:Setúbal\, Setúbal
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-10-03-18@worldcup-2026-calendar
-DTSTAMP:20260713T135012Z
+DTSTAMP:20260713T140505Z
 DTSTART;VALUE=DATE:20261003
 DTEND;VALUE=DATE:20261005
 SUMMARY:🏎️ Rallye Casinos do Algarve
@@ -243,31 +245,33 @@ LOCATION:Loulé\, Algarve
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-10-02-19@worldcup-2026-calendar
-DTSTAMP:20260713T135012Z
+DTSTAMP:20260713T140505Z
 DTSTART;VALUE=DATE:20261002
 DTEND;VALUE=DATE:20261005
 SUMMARY:🏁 Fun Cup
 DESCRIPTION:Endurance monomarca (VW Fun Cup)\nOnde: Autódromo Internacion
  al do Algarve\, Portimão\nResistência de baixo custo\, equipas multi-pi
- loto.\nBilhetes: Bilheteira do autódromo (MEO Blueticket). https://aia.b
- ymeoblueticket.pt/\nhttps://autodromodoalgarve.com/race-calendar/
+ loto.\nBilhetes: Bilhetes no site do autódromo (venda via blueticket.meo
+ .pt). https://autodromodoalgarve.com/race-calendar/\nhttps://autodromodoa
+ lgarve.com/race-calendar/
 LOCATION:Portimão\, Algarve
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-10-08-20@worldcup-2026-calendar
-DTSTAMP:20260713T135012Z
+DTSTAMP:20260713T140505Z
 DTSTART;VALUE=DATE:20261008
 DTEND;VALUE=DATE:20261011
 SUMMARY:🏁 4 Horas de Portimão - European Le Mans Series (final)
 DESCRIPTION:LMP2 / LMP3 / LMGT3\nOnde: Autódromo Internacional do Algarve
  \, Portimão\nFinal da ELMS. Protótipos LMP2/LMP3 + GT3. Corrida a 10 ou
- t.\nBilhetes: Bilheteira do autódromo (MEO Blueticket). https://aia.byme
- oblueticket.pt/\nhttps://www.europeanlemansseries.com/
+ t.\nBilhetes: Bilhetes no site do autódromo (venda via blueticket.meo.pt
+ ). https://autodromodoalgarve.com/race-calendar/\nhttps://www.europeanlem
+ ansseries.com/
 LOCATION:Portimão\, Algarve
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-10-09-21@worldcup-2026-calendar
-DTSTAMP:20260713T135012Z
+DTSTAMP:20260713T140505Z
 DTSTART;VALUE=DATE:20261009
 DTEND;VALUE=DATE:20261012
 SUMMARY:⭐ 🏎️ Rally Five Cities North of Portugal (ex-Serras de Fafe
@@ -282,19 +286,20 @@ LOCATION:Fafe\, Braga / Norte
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-10-16-22@worldcup-2026-calendar
-DTSTAMP:20260713T135012Z
+DTSTAMP:20260713T140505Z
 DTSTART;VALUE=DATE:20261016
 DTEND;VALUE=DATE:20261019
 SUMMARY:🏁 GT World Challenge Europe (final)
 DESCRIPTION:GT3\nOnde: Autódromo Internacional do Algarve\, Portimão\nFi
  nal do campeonato SRO GT3. Regresso de Portimão ao calendário desde 201
- 5.\nBilhetes: Bilheteira do autódromo (MEO Blueticket). https://aia.byme
- oblueticket.pt/\nhttps://www.gt-world-challenge-europe.com/
+ 5.\nBilhetes: Bilhetes no site do autódromo (venda via blueticket.meo.pt
+ ). https://autodromodoalgarve.com/race-calendar/\nhttps://www.gt-world-ch
+ allenge-europe.com/
 LOCATION:Portimão\, Algarve
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-10-30-23@worldcup-2026-calendar
-DTSTAMP:20260713T135012Z
+DTSTAMP:20260713T140505Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261102
 SUMMARY:🚘 Algarve Classic Festival
@@ -307,33 +312,33 @@ LOCATION:Portimão\, Algarve
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-10-31-24@worldcup-2026-calendar
-DTSTAMP:20260713T135012Z
+DTSTAMP:20260713T140505Z
 DTSTART;VALUE=DATE:20261031
 DTEND;VALUE=DATE:20261102
 SUMMARY:🏁 Porsche Sprint Challenge Ibérica (final)
 DESCRIPTION:GT monomarca (Porsche 911 GT3 Cup)\nOnde: Autódromo do Estori
  l\, Estoril (Cascais)\n6.ª e última ronda\, Porsche 911 GT3 Cup.\nBilhe
- tes: Ver circuito-estoril.pt\; bancadas muitas vezes gratuitas. https://w
- ww.circuito-estoril.pt/pt/eventos/\nhttps://www.circuito-estoril.pt/en/ev
- entos/
+ tes: Ver site do circuito\; bancadas muitas vezes gratuitas. https://www.
+ circuito-estoril.pt/en/eventos/\nhttps://www.circuito-estoril.pt/en/event
+ os/
 LOCATION:Estoril (Cascais)\, Lisboa
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-11-27-25@worldcup-2026-calendar
-DTSTAMP:20260713T135012Z
+DTSTAMP:20260713T140505Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261130
 SUMMARY:🏁 Ultimate Cup Series
 DESCRIPTION:Endurance (protótipos LMP3 / GT / turismo)\nOnde: Autódromo 
  Internacional do Algarve\, Portimão\nSérie de resistência multi-catego
- ria (França).\nBilhetes: Bilheteira do autódromo (MEO Blueticket). http
- s://aia.bymeoblueticket.pt/\nhttps://autodromodoalgarve.com/race-calendar
- /
+ ria (França).\nBilhetes: Bilhetes no site do autódromo (venda via bluet
+ icket.meo.pt). https://autodromodoalgarve.com/race-calendar/\nhttps://aut
+ odromodoalgarve.com/race-calendar/
 LOCATION:Portimão\, Algarve
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-2026-12-04-26@worldcup-2026-calendar
-DTSTAMP:20260713T135012Z
+DTSTAMP:20260713T140505Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261207
 SUMMARY:🏁 Estoril Endurance Festival (final do Campeonato de Portugal d
@@ -342,7 +347,181 @@ DESCRIPTION:GT3/GT4/GTX\, protótipos\, monolugares\nOnde: Autódromo do E
  storil\, Estoril (Cascais)\nFinal do CPV e dos Iberian Supercars. Ronda d
  o campeonato nacional FPAK.\nBilhetes: Bancada A gratuita\; paddock ~15-2
  0€ (BOL.pt / FNAC / Worten). https://www.circuito-estoril.pt/en/eventos
- /endurance-fest/\nhttps://www.campeonatoportugalvelocidade.com/
+ /\nhttps://www.campeonatoportugalvelocidade.com/
 LOCATION:Estoril (Cascais)\, Lisboa
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-11-20-27@worldcup-2026-calendar
+DTSTAMP:20260713T140505Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261123
+SUMMARY:🏍️ MotoGP Grande Prémio de Portugal
+DESCRIPTION:Mundial MotoGP\, Moto2 e Moto3\nOnde: Autódromo Internacional
+  do Algarve\, Portimão\nPenúltima ronda do Mundial (recalendarizada de 
+ 13-15 para 20-22 nov).\nBilhetes: Bilhetes oficiais\; geral e bancadas pa
+ ra o fim de semana. https://tickets.motogp.com/en/53277-portugal/\nhttps:
+ //autodromodoalgarve.com/pt/calendario-corridas/motogp-grande-premio-de-p
+ ortugal-2026/
+LOCATION:Portimão\, Algarve
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-10-09-28@worldcup-2026-calendar
+DTSTAMP:20260713T140505Z
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261012
+SUMMARY:🏍️ WorldSBK Estoril Round
+DESCRIPTION:Mundial de Superbikes (WorldSBK\, WorldSSP)\nOnde: Circuito do
+  Estoril\, Alcabideche (Cascais)\nPenúltima ronda do Mundial de Superbik
+ es.\nBilhetes: Bilhetes oficiais WorldSBK\; bancadas e geral. https://tic
+ kets.worldsbk.com/en/53278-estoril/\nhttps://www.worldsbk.com/en/calendar
+LOCATION:Alcabideche (Cascais)\, Lisboa
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-09-04-29@worldcup-2026-calendar
+DTSTAMP:20260713T140505Z
+DTSTART;VALUE=DATE:20260904
+DTEND;VALUE=DATE:20260907
+SUMMARY:🏍️ Nacional de Velocidade (motos) - Estoril III
+DESCRIPTION:Motociclismo de velocidade nacional (CNV)\nOnde: Circuito do E
+ storil\, Alcabideche (Cascais)\nTerceira ronda do CNV/CNMV da FMP.\nBilhe
+ tes: Bilhetes no site oficial / bilheteira.\nhttps://www.fmp.pt/
+LOCATION:Alcabideche (Cascais)\, Lisboa
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-09-18-30@worldcup-2026-calendar
+DTSTAMP:20260713T140505Z
+DTSTART;VALUE=DATE:20260918
+DTEND;VALUE=DATE:20260921
+SUMMARY:🏍️ Nacional de Velocidade (motos) - Portimão
+DESCRIPTION:Motociclismo de velocidade nacional (CNV)\nOnde: Autódromo In
+ ternacional do Algarve\, Portimão\nÚnica ronda do CNV no Algarve em 202
+ 6.\nBilhetes: Bilhetes no site oficial / bilheteira.\nhttps://www.fmp.pt/
+LOCATION:Portimão\, Algarve
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-10-02-31@worldcup-2026-calendar
+DTSTAMP:20260713T140505Z
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20261005
+SUMMARY:🏍️ Nacional de Velocidade (motos) - Estoril IV (final)
+DESCRIPTION:Motociclismo de velocidade nacional (CNV)\nOnde: Circuito do E
+ storil\, Alcabideche (Cascais)\nÚltima ronda e títulos do CNV 2026.\nBi
+ lhetes: Bilhetes no site oficial / bilheteira.\nhttps://www.fmp.pt/
+LOCATION:Alcabideche (Cascais)\, Lisboa
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-09-13-32@worldcup-2026-calendar
+DTSTAMP:20260713T140505Z
+DTSTART;VALUE=DATE:20260913
+DTEND;VALUE=DATE:20260914
+SUMMARY:🏍️ Nacional de Motocross - Alqueidão
+DESCRIPTION:Motocross nacional (MX1\, MX2\, MX125)\nOnde: Crossódromo de 
+ Alqueidão\, Alqueidão da Serra (Porto de Mós)\nPenúltima prova do Nac
+ ional de Motocross.\nBilhetes: Bilhetes no site oficial / bilheteira.\nht
+ tps://www.fmp.pt/
+LOCATION:Alqueidão da Serra (Porto de Mós)\, Centro
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-10-25-33@worldcup-2026-calendar
+DTSTAMP:20260713T140505Z
+DTSTART;VALUE=DATE:20261025
+DTEND;VALUE=DATE:20261026
+SUMMARY:🏍️ Nacional de Motocross - Carvoeira
+DESCRIPTION:Motocross nacional + Europeu MX65/MX85\nOnde: Crossódromo da 
+ Carvoeira\, Carvoeira (Mafra)\nÚltima ronda nacional\, a par do Europeu 
+ MX65/MX85.\nBilhetes: Bilhetes no site oficial / bilheteira.\nhttps://www
+ .fmp.pt/
+LOCATION:Carvoeira (Mafra)\, Lisboa
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-09-27-34@worldcup-2026-calendar
+DTSTAMP:20260713T140505Z
+DTSTART;VALUE=DATE:20260927
+DTEND;VALUE=DATE:20260928
+SUMMARY:⭐ 🏍️ Enduro Sprint - Barcelos
+DESCRIPTION:Enduro Sprint nacional (motos todo-o-terreno)\nOnde: Barcelos\
+ , Barcelos\nRonda do Enduro Sprint no norte\, <1h do Porto.\nBilhetes: Bi
+ lhetes no site oficial / bilheteira.\nhttps://www.fmp.pt/
+LOCATION:Barcelos\, Norte
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-10-25-35@worldcup-2026-calendar
+DTSTAMP:20260713T140505Z
+DTSTART;VALUE=DATE:20261025
+DTEND;VALUE=DATE:20261026
+SUMMARY:🏍️ Enduro Sprint - Lousã
+DESCRIPTION:Enduro Sprint nacional (motos todo-o-terreno)\nOnde: Lousã\, 
+ Lousã\nRonda de outono do Enduro Sprint.\nBilhetes: Bilhetes no site ofi
+ cial / bilheteira.\nhttps://www.fmp.pt/
+LOCATION:Lousã\, Centro
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-10-15-36@worldcup-2026-calendar
+DTSTAMP:20260713T140505Z
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261018
+SUMMARY:🏎️ Baja Portalegre 500
+DESCRIPTION:Baja todo-o-terreno (autos e motos)\nOnde: Portalegre e concel
+ hos vizinhos\, Portalegre\nMaior baja do país\; fecha a época de TT nac
+ ional.\nBilhetes: Troços à beira da estrada gratuitos\; bancadas/paddoc
+ k pagos.\nhttps://www.fmp.pt/
+LOCATION:Portalegre\, Alentejo
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-11-27-37@worldcup-2026-calendar
+DTSTAMP:20260713T140505Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261130
+SUMMARY:🏎️ Baja TT de Lagos
+DESCRIPTION:Baja todo-o-terreno (autos e motos)\nOnde: Lagos\, Lagos\nÚlt
+ ima prova do Campeonato Nacional de Todo-o-Terreno 2026.\nBilhetes: Troç
+ os à beira da estrada gratuitos\; bancadas/paddock pagos.\nhttps://www.f
+ mp.pt/
+LOCATION:Lagos\, Algarve
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-07-18-38@worldcup-2026-calendar
+DTSTAMP:20260713T140505Z
+DTSTART;VALUE=DATE:20260718
+DTEND;VALUE=DATE:20260720
+SUMMARY:⭐ 🛞 Campeonato de Portugal de Karting - Baltar
+DESCRIPTION:Karting nacional (várias categorias)\nOnde: Kartódromo de Ba
+ ltar\, Baltar (Paredes)\nRonda do CPK a ~25 km do Porto.\nBilhetes: Entra
+ da geralmente livre no kartódromo.\nhttps://www.fpak.pt/
+LOCATION:Baltar (Paredes)\, Norte
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-09-05-39@worldcup-2026-calendar
+DTSTAMP:20260713T140505Z
+DTSTART;VALUE=DATE:20260905
+DTEND;VALUE=DATE:20260907
+SUMMARY:⭐ 🛞 Campeonato de Portugal de Karting - Braga
+DESCRIPTION:Karting nacional (várias categorias)\nOnde: Kartódromo Inter
+ nacional de Braga\, Braga\nÚltima ronda do CPK 2026\, perto do Porto.\nB
+ ilhetes: Entrada geralmente livre no kartódromo.\nhttps://www.fpak.pt/
+LOCATION:Braga\, Norte
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-11-13-40@worldcup-2026-calendar
+DTSTAMP:20260713T140505Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261116
+SUMMARY:🛞 Taça de Portugal de Karting - Bombarral
+DESCRIPTION:Karting nacional (final da época)\nOnde: Kartódromo do Bomba
+ rral\, Bombarral\nEncerra a época de karting nacional.\nBilhetes: Entrad
+ a geralmente livre no kartódromo.\nhttps://www.fpak.pt/
+LOCATION:Bombarral\, Oeste
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-2026-11-06-41@worldcup-2026-calendar
+DTSTAMP:20260713T140505Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261109
+SUMMARY:⭐ 🏛️ Salão da Mobilidade (Auto\, Moto\, Bike\, Electric)
+DESCRIPTION:Salão automóvel e motos (clássicos e modernos)\nOnde: Forum
+  Braga\, Braga\nSalão de mobilidade em Braga: automóveis\, motos e clá
+ ssicos.\nBilhetes: Bilhete pago à entrada / online\, ver site.\nhttps://
+ www.forumbraga.com/Feiras/Salao-Auto
+LOCATION:Braga\, Norte
 END:VEVENT
 END:VCALENDAR

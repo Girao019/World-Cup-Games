@@ -21,10 +21,12 @@ HTML_OUT = "motorsport.html"
 EMOJI = {
     "circuit": "🏁", "rally": "🏎️", "hillclimb": "⛰️",
     "festival": "🎪", "classic": "🚘", "show": "🏛️", "concours": "🏆",
+    "moto": "🏍️", "karting": "🛞",
 }
 TYPE_PT = {
     "circuit": "Circuito", "rally": "Rali", "hillclimb": "Rampa",
     "festival": "Festival", "classic": "Clássicos", "show": "Salão", "concours": "Concurso",
+    "moto": "Motos", "karting": "Karting",
 }
 # Default ticket note per type when an event has no explicit "tickets" entry.
 TICKET_DEFAULT = {
@@ -35,6 +37,8 @@ TICKET_DEFAULT = {
     "classic": "Ver site oficial.",
     "show": "Bilhete pago à entrada / online, ver site.",
     "concours": "Ver site oficial.",
+    "moto": "Bilhetes no site oficial / bilheteira.",
+    "karting": "Entrada geralmente livre no kartódromo.",
 }
 
 
@@ -149,7 +153,7 @@ def build_html(events, today):
         state = '<span class="past">terminado</span>' if past else (
             '<span class="tbc">a confirmar</span>' if is_tbc else '<span class="up">a caminho</span>')
         tnote, turl = ticket_info(e)
-        tlink = f' <a href="{turl}" target="_blank" rel="noopener">comprar &rarr;</a>' if turl else ""
+        tlink = f' <a href="{turl}" target="_blank" rel="noopener">bilhetes &rarr;</a>' if turl else ""
         cards.append(f'''    <article class="card{' is-past' if past else ''}" data-type="{e['type']}" data-porto="{str(e.get('porto', False)).lower()}">
       <div class="row1">{badge}{star}<span class="date">{fmt_range(e)}</span>{state}</div>
       <h3><a href="{e['url']}" target="_blank" rel="noopener">{e['name']}</a></h3>
@@ -228,6 +232,8 @@ TEMPLATE = """<!doctype html>
   <button data-f="rally">🏎️ Ralis</button>
   <button data-f="hillclimb">⛰️ Rampas</button>
   <button data-f="circuit">🏁 Circuito</button>
+  <button data-f="moto">🏍️ Motos</button>
+  <button data-f="karting">🛞 Karting</button>
   <button data-f="festival">🎪 Festivais</button>
   <button data-f="classic">🚘 Clássicos</button>
   <button data-f="show">🏛️ Salões</button>
@@ -281,7 +287,7 @@ def selftest():
     assert 'data-porto="true"' in html
     assert "Data por confirmar" in html  # TBC rendered on page
     assert "terminado" in html  # past event state rendered
-    assert 'href="https://buy"' in html and "comprar" in html  # buy link
+    assert 'href="https://buy"' in html and "bilhetes &rarr;" in html  # buy link
     assert "google.com/maps" in html  # maps link
     print("selftest OK")
 
