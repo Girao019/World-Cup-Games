@@ -26,6 +26,29 @@ TYPE_PT = {
     "circuit": "Circuito", "rally": "Rali", "hillclimb": "Rampa",
     "festival": "Festival", "classic": "Clássicos", "show": "Salão", "concours": "Concurso",
 }
+# Default ticket note per type when an event has no explicit "tickets" entry.
+TICKET_DEFAULT = {
+    "rally": "Troços à beira da estrada gratuitos; bancadas/paddock pagos.",
+    "hillclimb": "Beira-estrada geralmente gratuita (algumas rampas cobram acesso).",
+    "circuit": "Bilhetes na bilheteira do autódromo.",
+    "festival": "Bilhete pago, ver site oficial.",
+    "classic": "Ver site oficial.",
+    "show": "Bilhete pago à entrada / online, ver site.",
+    "concours": "Ver site oficial.",
+}
+
+
+def ticket_info(e):
+    # (note, url_or_None). Explicit event["tickets"] overrides the per-type default.
+    t = e.get("tickets")
+    if t:
+        return t.get("note", TICKET_DEFAULT.get(e["type"], "")), t.get("url")
+    return TICKET_DEFAULT.get(e["type"], ""), None
+
+
+def maps_url(e):
+    q = f"{e['venue']}, {e['city']}, Portugal".replace(" ", "+").replace(",", "%2C")
+    return "https://www.google.com/maps/search/?api=1&query=" + q
 
 
 def load():
@@ -73,6 +96,8 @@ def build_ics(events, now):
         desc_parts = [e["category"], f"Onde: {e['venue']}, {e['city']}"]
         if e.get("notes"):
             desc_parts.append(e["notes"])
+        tnote, turl = ticket_info(e)
+        desc_parts.append("Bilhetes: " + tnote + (" " + turl if turl else ""))
         desc_parts.append(e["url"])
         uid = f"ms-{start.isoformat()}-{i}@worldcup-2026-calendar"
         lines += [
@@ -123,12 +148,15 @@ def build_html(events, today):
         badge = f'<span class="badge t-{e["type"]}">{EMOJI[e["type"]]} {TYPE_PT[e["type"]]}</span>'
         state = '<span class="past">terminado</span>' if past else (
             '<span class="tbc">a confirmar</span>' if is_tbc else '<span class="up">a caminho</span>')
+        tnote, turl = ticket_info(e)
+        tlink = f' <a href="{turl}" target="_blank" rel="noopener">comprar &rarr;</a>' if turl else ""
         cards.append(f'''    <article class="card{' is-past' if past else ''}" data-type="{e['type']}" data-porto="{str(e.get('porto', False)).lower()}">
       <div class="row1">{badge}{star}<span class="date">{fmt_range(e)}</span>{state}</div>
       <h3><a href="{e['url']}" target="_blank" rel="noopener">{e['name']}</a></h3>
       <p class="cat">{e['category']}</p>
-      <p class="where">📍 {e['venue']}, <strong>{e['city']}</strong> · {e['region']}</p>
+      <p class="where">📍 {e['venue']}, <strong>{e['city']}</strong> · {e['region']} · <a href="{maps_url(e)}" target="_blank" rel="noopener">mapa</a></p>
       <p class="notes">{e.get('notes', '')}</p>
+      <p class="tickets">🎟️ {tnote}{tlink}</p>
     </article>''')
 
     return TEMPLATE.replace("{{CARDS}}", "\n".join(cards)).replace(
@@ -176,6 +204,9 @@ TEMPLATE = """<!doctype html>
   .cat { margin:.1rem 0; color:var(--fg); font-size:.9rem; }
   .where { margin:.2rem 0; color:var(--mut); font-size:.88rem; }
   .notes { margin:.3rem 0 0; color:var(--mut); font-size:.83rem; }
+  .tickets { margin:.4rem 0 0; font-size:.83rem; }
+  .tickets a { color:var(--acc); font-weight:600; text-decoration:none; white-space:nowrap; }
+  .where a { color:var(--mut); }
   footer { text-align:center; color:var(--mut); font-size:.8rem; padding:1rem; }
 </style>
 </head>
@@ -234,17 +265,24 @@ def selftest():
          "end": "2026-05-17", "url": "https://x", "notes": "n"},
         {"name": "Test TBC", "type": "classic", "category": "C", "venue": "Y", "city": "Porto",
          "region": "Norte", "porto": True, "start": "TBC", "end": "TBC", "url": "https://y"},
+        {"name": "Test Paid", "type": "festival", "category": "F", "venue": "Z", "city": "Braga",
+         "region": "Norte", "porto": False, "start": "2026-09-01", "end": "2026-09-02",
+         "url": "https://z", "tickets": {"url": "https://buy", "note": "10€"}},
     ]
     ics = build_ics(events, now).replace("\r\n ", "")  # unfold
     assert "SUMMARY:⭐ ⛰️ Test Porto Rampa" in ics, ics
     assert "DTSTART;VALUE=DATE:20260515" in ics, ics
     assert "DTEND;VALUE=DATE:20260518" in ics, ics  # end +1 day, non-inclusive
     assert "LOCATION:Braga\\, Norte" in ics, ics
-    assert ics.count("BEGIN:VEVENT") == 1, "TBC event must NOT be in ICS"
+    assert ics.count("BEGIN:VEVENT") == 2, "TBC event must NOT be in ICS"
+    assert "Bilhetes: Beira-estrada" in ics, ics  # per-type default note
+    assert "Bilhetes: 10€ https://buy" in ics, ics  # explicit ticket override + url
     html = build_html(events, date(2026, 7, 13))
     assert 'data-porto="true"' in html
     assert "Data por confirmar" in html  # TBC rendered on page
     assert "terminado" in html  # past event state rendered
+    assert 'href="https://buy"' in html and "comprar" in html  # buy link
+    assert "google.com/maps" in html  # maps link
     print("selftest OK")
 
 
