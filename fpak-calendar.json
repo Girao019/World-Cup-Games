@@ -1,6 +1,6 @@
 {
   "source": "https://www.fpak.pt/calendario",
-  "count": 195,
+  "count": 207,
   "events": [
     {
       "start": "2026-01-17",
@@ -115,6 +115,13 @@
       "url": "https://www.fpak.pt/calendario/2026-03-13-rali-do-maritimomunicipio-de-machico-2026"
     },
     {
+      "start": "2026-03-14",
+      "end": "2026-03-15",
+      "discipline": "CPT 4x4",
+      "name": "Campeonato Portugal Trial 4x4 Valongo",
+      "url": "https://www.fpak.pt/calendario/2026-03-14-campeonato-portugal-trial-4x4-valongo"
+    },
+    {
       "start": "2026-03-17",
       "end": "2026-03-22",
       "discipline": "W2RC",
@@ -201,6 +208,13 @@
     {
       "start": "2026-04-11",
       "end": "2026-04-12",
+      "discipline": "CPT 4x4",
+      "name": "Campeonato Portugal Trial 4x4 - Moimenta/Cinfães",
+      "url": "https://www.fpak.pt/calendario/2026-04-11-campeonato-portugal-trial-4x4-moimentacinfaes"
+    },
+    {
+      "start": "2026-04-11",
+      "end": "2026-04-12",
       "discipline": "CSR",
       "name": "Rali de Ourique-Capital do Porco Alentejano - Encivil",
       "url": "https://www.fpak.pt/calendario/2026-04-11-rali-de-ourique-capital-do-porco-alentejano-encivil"
@@ -239,6 +253,13 @@
       "discipline": "R Ex",
       "name": "Freita Mythic Rally",
       "url": "https://www.fpak.pt/calendario/2026-04-24-freita-mythic-rally"
+    },
+    {
+      "start": "2026-04-25",
+      "end": "2026-04-26",
+      "discipline": "CISET 4x4",
+      "name": "CISET4X4 Nelas",
+      "url": "https://www.fpak.pt/calendario/2026-04-25-ciset4x4-nelas"
     },
     {
       "start": "2026-04-25",
@@ -351,6 +372,13 @@
       "discipline": "CRCM",
       "name": "Rali Município de São Vicente",
       "url": "https://www.fpak.pt/calendario/2026-05-15-rali-municipio-de-sao-vicente"
+    },
+    {
+      "start": "2026-05-16",
+      "end": "2026-05-17",
+      "discipline": "CISET 4x4",
+      "name": "CISET4X4 Mangualde",
+      "url": "https://www.fpak.pt/calendario/2026-05-16-ciset4x4-mangualde"
     },
     {
       "start": "2026-05-22",
@@ -509,6 +537,13 @@
     {
       "start": "2026-06-13",
       "end": "2026-06-14",
+      "discipline": "CPT 4x4",
+      "name": "Campeonato Portugal Trial 4x4 Bragança - Heat of the Mountain 2026",
+      "url": "https://www.fpak.pt/calendario/2026-06-13-campeonato-portugal-trial-4x4-braganca-heat-mountain-2026"
+    },
+    {
+      "start": "2026-06-13",
+      "end": "2026-06-14",
       "discipline": "RtxMC",
       "name": "RMC PORTUGAL 2026 - Baltar",
       "url": "https://www.fpak.pt/calendario/2026-06-13-rmc-portugal-2026-baltar"
@@ -656,6 +691,13 @@
     {
       "start": "2026-07-11",
       "end": "2026-07-12",
+      "discipline": "CISET 4x4",
+      "name": "CISET4X4 Couço",
+      "url": "https://www.fpak.pt/calendario/2026-07-11-ciset4x4-couco"
+    },
+    {
+      "start": "2026-07-11",
+      "end": "2026-07-12",
       "discipline": "V Ex",
       "name": "Porsche Brasil - Portimão II",
       "url": "https://www.fpak.pt/calendario/2026-07-11-porsche-brasil-portimao-ii"
@@ -759,6 +801,13 @@
       "url": "https://www.fpak.pt/calendario/2026-08-15-5a-prova-cpd-pinhel-2026"
     },
     {
+      "start": "2026-08-22",
+      "end": "2026-08-23",
+      "discipline": "CISET 4x4",
+      "name": "Super Trial 4X4 São Vicente Madeira",
+      "url": "https://www.fpak.pt/calendario/2026-08-22-super-trial-4x4-sao-vicente-madeira"
+    },
+    {
       "start": "2026-08-29",
       "end": "2026-08-30",
       "discipline": "CProR",
@@ -769,8 +818,8 @@
       "start": "2026-09-04",
       "end": "2026-09-05",
       "discipline": "CAR",
-      "name": "Azores Rallye",
-      "url": "https://www.fpak.pt/calendario/2026-09-04-azores-rallye"
+      "name": "59th Volta a Ilha S. Miguel - By Azores Rallye",
+      "url": "https://www.fpak.pt/calendario/2026-09-04-59th-volta-ilha-s-miguel-azores-rallye"
     },
     {
       "start": "2026-09-04",
@@ -845,6 +894,13 @@
     {
       "start": "2026-09-12",
       "end": "2026-09-13",
+      "discipline": "CPT 4x4",
+      "name": "Campeonato Portugal Trial 4x4 - Santa Maria da Feira",
+      "url": "https://www.fpak.pt/calendario/2026-09-12-campeonato-portugal-trial-4x4-santa-maria-da-feira"
+    },
+    {
+      "start": "2026-09-12",
+      "end": "2026-09-13",
       "discipline": "CPVC",
       "name": "Campeonato Portugal de Velocidade de Clássicos - Circuito de Jerez",
       "url": "https://www.fpak.pt/calendario/2026-09-12-campeonato-portugal-de-velocidade-de-classicos-circuito-de-jerez"
@@ -890,6 +946,13 @@
       "discipline": "FM",
       "name": "Rally Legends Luso - Bussaco",
       "url": "https://www.fpak.pt/calendario/2026-09-18-rally-legends-luso-bussaco"
+    },
+    {
+      "start": "2026-09-19",
+      "end": "2026-09-20",
+      "discipline": "CISET 4x4",
+      "name": "CISET4X4 Cerveira",
+      "url": "https://www.fpak.pt/calendario/2026-09-19-ciset4x4-cerveira"
     },
     {
       "start": "2026-09-19",
@@ -1025,11 +1088,11 @@
       "url": "https://www.fpak.pt/calendario/2026-10-07-elms"
     },
     {
-      "start": "2026-10-08",
+      "start": "2026-10-07",
       "end": "2026-10-10",
       "discipline": "",
       "name": "King of Portugal",
-      "url": "https://www.fpak.pt/calendario/2026-10-08-king-portugal"
+      "url": "https://www.fpak.pt/calendario/2026-10-07-king-portugal"
     },
     {
       "start": "2026-10-10",
@@ -1128,6 +1191,13 @@
       "discipline": "RxKx Ex",
       "name": "Montalegre Rally X Global Final",
       "url": "https://www.fpak.pt/calendario/2026-10-23-montalegre-rally-x-global-final"
+    },
+    {
+      "start": "2026-10-23",
+      "end": "2026-10-25",
+      "discipline": "CPR",
+      "name": "Rally Six Cities North of Portugal",
+      "url": "https://www.fpak.pt/calendario/2026-10-23-rally-six-cities-north-portugal"
     },
     {
       "start": "2026-10-24",
@@ -1230,6 +1300,13 @@
     {
       "start": "2026-11-14",
       "end": "2026-11-15",
+      "discipline": "CPT 4x4",
+      "name": "Campeonato Portugal Trial 4x4 Paredes",
+      "url": "https://www.fpak.pt/calendario/2026-11-14-campeonato-portugal-trial-4x4-paredes"
+    },
+    {
+      "start": "2026-11-14",
+      "end": "2026-11-15",
       "discipline": "FM",
       "name": "Douro Motorshow",
       "url": "https://www.fpak.pt/calendario/2026-11-14-douro-motorshow"
@@ -1261,6 +1338,13 @@
       "discipline": "CPR",
       "name": "Rallye Vidreiro Centro de Portugal",
       "url": "https://www.fpak.pt/calendario/2026-11-20-rallye-vidreiro-centro-de-portugal"
+    },
+    {
+      "start": "2026-11-21",
+      "end": "2026-11-22",
+      "discipline": "CISET 4x4",
+      "name": "CISET4X4 Porto Santo",
+      "url": "https://www.fpak.pt/calendario/2026-11-21-ciset4x4-porto-santo"
     },
     {
       "start": "2026-11-21",
