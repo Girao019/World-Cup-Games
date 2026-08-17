@@ -1,6 +1,6 @@
 {
   "source": "https://www.fpak.pt/calendario",
-  "count": 43,
+  "count": 42,
   "events": [
     {
       "start": "2026-03-07",
@@ -216,8 +216,8 @@
       "start": "2026-09-19",
       "end": "2026-09-20",
       "discipline": "CCR",
-      "name": "Rali Alitém",
-      "url": "https://www.fpak.pt/calendario/2026-09-19-rali-alitem"
+      "name": "Rali Terras d´Idanha",
+      "url": "https://www.fpak.pt/calendario/2026-09-19-rali-terras-didanha"
     },
     {
       "start": "2026-09-26",
@@ -232,13 +232,6 @@
       "discipline": "CPNE",
       "name": "Eco Rally Madeira",
       "url": "https://www.fpak.pt/calendario/2026-10-02-eco-rally-madeira"
-    },
-    {
-      "start": "2026-10-07",
-      "end": "2026-10-10",
-      "discipline": "",
-      "name": "King of Portugal",
-      "url": "https://www.fpak.pt/calendario/2026-10-07-king-portugal"
     },
     {
       "start": "2026-10-10",
