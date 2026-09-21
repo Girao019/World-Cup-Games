@@ -1,6 +1,6 @@
 {
   "source": "https://www.fpak.pt/calendario",
-  "count": 207,
+  "count": 206,
   "events": [
     {
       "start": "2026-01-17",
@@ -913,11 +913,11 @@
       "url": "https://www.fpak.pt/calendario/2026-09-12-turn6-gymkhana"
     },
     {
-      "start": "2026-09-16",
+      "start": "2026-09-17",
       "end": "2026-09-20",
       "discipline": "IHE",
       "name": "Estoril Classics",
-      "url": "https://www.fpak.pt/calendario/2026-09-16-estoril-classics"
+      "url": "https://www.fpak.pt/calendario/2026-09-17-estoril-classics"
     },
     {
       "start": "2026-09-18",
@@ -929,7 +929,7 @@
     {
       "start": "2026-09-18",
       "end": "2026-09-20",
-      "discipline": "CPTT",
+      "discipline": "EBCup",
       "name": "38ª Baja TT Sharish Gin Reguengos/Mourão",
       "url": "https://www.fpak.pt/calendario/2026-09-18-38a-baja-tt-sharish-gin-reguengosmourao"
     },
@@ -983,16 +983,9 @@
       "url": "https://www.fpak.pt/calendario/2026-09-19-rmc-portugal-2026-portimao"
     },
     {
-      "start": "2026-09-19",
-      "end": "2026-09-20",
-      "discipline": "CCR",
-      "name": "Rali Terras d´Idanha",
-      "url": "https://www.fpak.pt/calendario/2026-09-19-rali-terras-didanha"
-    },
-    {
       "start": "2026-09-25",
       "end": "2026-09-27",
-      "discipline": "CPV",
+      "discipline": "FJTV",
       "name": "Iberian Supercars - Circuito Ricardo Tormo",
       "url": "https://www.fpak.pt/calendario/2026-09-25-iberian-supercars-circuito-ricardo-tormo"
     },
@@ -1256,6 +1249,13 @@
       "url": "https://www.fpak.pt/calendario/2026-11-07-rali-uniao-alpendurada-varzea-e-torrao"
     },
     {
+      "start": "2026-11-07",
+      "end": "2026-11-14",
+      "discipline": "K Ex",
+      "name": "Rotax Max Challenge Grand Finals 2026",
+      "url": "https://www.fpak.pt/calendario/2026-11-07-rotax-max-challenge-grand-finals-2026"
+    },
+    {
       "start": "2026-11-13",
       "end": "2026-11-14",
       "discipline": "CAR",
@@ -1296,13 +1296,6 @@
       "discipline": "CPT 4x4",
       "name": "Campeonato Portugal Trial 4x4 Paredes",
       "url": "https://www.fpak.pt/calendario/2026-11-14-campeonato-portugal-trial-4x4-paredes"
-    },
-    {
-      "start": "2026-11-14",
-      "end": "2026-11-15",
-      "discipline": "ESP S",
-      "name": "Douro Motorshow",
-      "url": "https://www.fpak.pt/calendario/2026-11-14-douro-motorshow"
     },
     {
       "start": "2026-11-14",
@@ -1355,13 +1348,6 @@
     },
     {
       "start": "2026-11-21",
-      "end": "2026-11-28",
-      "discipline": "K Ex",
-      "name": "Rotax Max Challenge Grand Finals 2026",
-      "url": "https://www.fpak.pt/calendario/2026-11-21-rotax-max-challenge-grand-finals-2026"
-    },
-    {
-      "start": "2026-11-21",
       "end": "2026-11-22",
       "discipline": "TPK",
       "name": "Taça de Portugal de Karting",
@@ -1380,6 +1366,13 @@
       "discipline": "CPTT",
       "name": "Baja de Lagos",
       "url": "https://www.fpak.pt/calendario/2026-11-27-baja-de-lagos"
+    },
+    {
+      "start": "2026-11-28",
+      "end": "2026-11-29",
+      "discipline": "RR",
+      "name": "Templários Rally Classic",
+      "url": "https://www.fpak.pt/calendario/2026-11-28-templarios-rally-classic"
     },
     {
       "start": "2026-12-03",
