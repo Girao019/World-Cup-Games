@@ -1,6 +1,6 @@
 {
   "source": "https://www.fpak.pt/calendario",
-  "count": 171,
+  "count": 204,
   "events": [
     {
       "start": "2026-01-17",
@@ -1198,6 +1198,237 @@
       "discipline": "CSR",
       "name": "9º Rali Município de Albufeira - Encivil",
       "url": "https://www.fpak.pt/calendario/2026-10-31-9o-rali-municipio-de-albufeira-encivil"
+    },
+    {
+      "start": "2026-10-31",
+      "end": "2026-11-01",
+      "discipline": "V Ex",
+      "name": "Cascais PSCI Grand Finale",
+      "url": "https://www.fpak.pt/calendario/2026-10-31-cascais-psci-grand-finale"
+    },
+    {
+      "start": "2026-10-31",
+      "end": "2026-11-01",
+      "discipline": "D Ex",
+      "name": "MotorShow Portugal",
+      "url": "https://www.fpak.pt/calendario/2026-10-31-motorshow-portugal"
+    },
+    {
+      "start": "2026-11-06",
+      "end": "2026-11-08",
+      "discipline": "CPV",
+      "name": "Campeonato Portugal de Velocidade / Iberian Supercars - Circuito de Jerez",
+      "url": "https://www.fpak.pt/calendario/2026-11-06-campeonato-portugal-de-velocidade-iberian-supercars-circuito-de-jerez"
+    },
+    {
+      "start": "2026-11-06",
+      "end": "2026-11-07",
+      "discipline": "CRCM",
+      "name": "Rali Porto Santo",
+      "url": "https://www.fpak.pt/calendario/2026-11-06-rali-porto-santo"
+    },
+    {
+      "start": "2026-11-06",
+      "end": "2026-11-08",
+      "discipline": "E Ex",
+      "name": "Ultimate CUP Series",
+      "url": "https://www.fpak.pt/calendario/2026-11-06-ultimate-cup-series"
+    },
+    {
+      "start": "2026-11-07",
+      "end": "2026-11-08",
+      "discipline": "CPNE",
+      "name": "Fafe Eco Rally",
+      "url": "https://www.fpak.pt/calendario/2026-11-07-fafe-eco-rally"
+    },
+    {
+      "start": "2026-11-07",
+      "end": "2026-11-08",
+      "discipline": "CNR 2RM",
+      "name": "Rali União Alpendurada, Várzea e Torrão",
+      "url": "https://www.fpak.pt/calendario/2026-11-07-rali-uniao-alpendurada-varzea-e-torrao"
+    },
+    {
+      "start": "2026-11-07",
+      "end": "2026-11-14",
+      "discipline": "K Ex",
+      "name": "Rotax Max Challenge Grand Finals 2026",
+      "url": "https://www.fpak.pt/calendario/2026-11-07-rotax-max-challenge-grand-finals-2026"
+    },
+    {
+      "start": "2026-11-13",
+      "end": "2026-11-14",
+      "discipline": "CAR",
+      "name": "2º Rali d&#039;Angra 47º Ilha Lilás",
+      "url": "https://www.fpak.pt/calendario/2026-11-13-2o-rali-dangra-47o-ilha-lilas"
+    },
+    {
+      "start": "2026-11-13",
+      "end": "2026-11-15",
+      "discipline": "CPTT",
+      "name": "Baja TT de Castelo Branco",
+      "url": "https://www.fpak.pt/calendario/2026-11-13-baja-tt-de-castelo-branco"
+    },
+    {
+      "start": "2026-11-13",
+      "end": "2026-11-14",
+      "discipline": "CPRH",
+      "name": "Camélias Classic by bilstein group",
+      "url": "https://www.fpak.pt/calendario/2026-11-13-camelias-classic-bilstein-group"
+    },
+    {
+      "start": "2026-11-13",
+      "end": "2026-11-14",
+      "discipline": "V Ex",
+      "name": "Caterham Festival",
+      "url": "https://www.fpak.pt/calendario/2026-11-13-caterham-festival"
+    },
+    {
+      "start": "2026-11-13",
+      "end": "2026-11-14",
+      "discipline": "TRRAMAK",
+      "name": "Rampa Regional do Paul do Mar",
+      "url": "https://www.fpak.pt/calendario/2026-11-13-rampa-regional-do-paul-do-mar"
+    },
+    {
+      "start": "2026-11-14",
+      "end": "2026-11-15",
+      "discipline": "CPT 4x4",
+      "name": "Campeonato Portugal Trial 4x4 Paredes",
+      "url": "https://www.fpak.pt/calendario/2026-11-14-campeonato-portugal-trial-4x4-paredes"
+    },
+    {
+      "start": "2026-11-14",
+      "end": "2026-11-15",
+      "discipline": "RSERIES",
+      "name": "Portugal Rally Series - Fafe",
+      "url": "https://www.fpak.pt/calendario/2026-11-14-portugal-rally-series-fafe"
+    },
+    {
+      "start": "2026-11-14",
+      "end": "2026-11-15",
+      "discipline": "REG H",
+      "name": "Rally D. Carlos I",
+      "url": "https://www.fpak.pt/calendario/2026-11-14-rally-d-carlos-i"
+    },
+    {
+      "start": "2026-11-20",
+      "end": "2026-11-22",
+      "discipline": "FM",
+      "name": "11.º Leiria Motorshow - Leiria Sobre Rodas",
+      "url": "https://www.fpak.pt/calendario/2026-11-20-11o-leiria-motorshow-leiria-sobre-rodas"
+    },
+    {
+      "start": "2026-11-20",
+      "end": "2026-11-21",
+      "discipline": "CPR",
+      "name": "Rallye Vidreiro Centro de Portugal",
+      "url": "https://www.fpak.pt/calendario/2026-11-20-rallye-vidreiro-centro-de-portugal"
+    },
+    {
+      "start": "2026-11-21",
+      "end": "2026-11-22",
+      "discipline": "CISET 4x4",
+      "name": "CISET4X4 Porto Santo",
+      "url": "https://www.fpak.pt/calendario/2026-11-21-ciset4x4-porto-santo"
+    },
+    {
+      "start": "2026-11-21",
+      "end": "2026-11-22",
+      "discipline": "CPVC",
+      "name": "Campeonato de Portugal de Velocidade de Clássicos",
+      "url": "https://www.fpak.pt/calendario/2026-11-21-campeonato-de-portugal-de-velocidade-de-classicos"
+    },
+    {
+      "start": "2026-11-21",
+      "end": "2026-11-22",
+      "discipline": "",
+      "name": "Eco Rally de Lisboa",
+      "url": "https://www.fpak.pt/calendario/2026-11-21-eco-rally-de-lisboa"
+    },
+    {
+      "start": "2026-11-21",
+      "end": "2026-11-22",
+      "discipline": "TPK",
+      "name": "Taça de Portugal de Karting",
+      "url": "https://www.fpak.pt/calendario/2026-11-21-taca-de-portugal-de-karting"
+    },
+    {
+      "start": "2026-11-21",
+      "end": "2026-11-22",
+      "discipline": "TPRxKx",
+      "name": "Taça de Portugal de Ralicross e Kartcross Sever do Vouga 2026",
+      "url": "https://www.fpak.pt/calendario/2026-11-21-taca-de-portugal-de-ralicross-e-kartcross-sever-do-vouga-2026"
+    },
+    {
+      "start": "2026-11-27",
+      "end": "2026-11-29",
+      "discipline": "CPTT",
+      "name": "Baja de Lagos",
+      "url": "https://www.fpak.pt/calendario/2026-11-27-baja-de-lagos"
+    },
+    {
+      "start": "2026-11-28",
+      "end": "2026-11-29",
+      "discipline": "RR",
+      "name": "Templários Rally Classic",
+      "url": "https://www.fpak.pt/calendario/2026-11-28-templarios-rally-classic"
+    },
+    {
+      "start": "2026-12-03",
+      "end": "2026-12-06",
+      "discipline": "PExTT",
+      "name": "24h TT Vila de Fronteira",
+      "url": "https://www.fpak.pt/calendario/2026-12-03-24h-tt-vila-de-fronteira"
+    },
+    {
+      "start": "2026-12-04",
+      "end": "2026-12-06",
+      "discipline": "SSS",
+      "name": "Estoril Endurance Festival",
+      "url": "https://www.fpak.pt/calendario/2026-12-04-estoril-endurance-festival"
+    },
+    {
+      "start": "2026-12-04",
+      "end": "2026-12-05",
+      "discipline": "TRRAMAK",
+      "name": "Rampa Regional Cassiano&#039;s Car - Cidade de Machico",
+      "url": "https://www.fpak.pt/calendario/2026-12-04-rampa-regional-cassianos-car-cidade-de-machico-0"
+    },
+    {
+      "start": "2026-12-05",
+      "end": "2026-12-06",
+      "discipline": "FM",
+      "name": "7.º Leiria Festival Rallye",
+      "url": "https://www.fpak.pt/calendario/2026-12-05-7o-leiria-festival-rallye"
+    },
+    {
+      "start": "2026-12-05",
+      "end": "2026-12-06",
+      "discipline": "CProR",
+      "name": "Águeda Rali Travocar",
+      "url": "https://www.fpak.pt/calendario/2026-12-05-agueda-rali-travocar"
+    },
+    {
+      "start": "2026-12-12",
+      "end": "2026-12-13",
+      "discipline": "REGEx",
+      "name": "15º CAM / KIB Festival Motorsport",
+      "url": "https://www.fpak.pt/calendario/2026-12-12-15o-cam-kib-festival-motorsport"
+    },
+    {
+      "start": "2026-12-12",
+      "end": "2026-12-13",
+      "discipline": "CSR",
+      "name": "5º Rali de Tavira - Encivil",
+      "url": "https://www.fpak.pt/calendario/2026-12-12-5o-rali-de-tavira-encivil"
+    },
+    {
+      "start": "2026-12-19",
+      "end": "2026-12-20",
+      "discipline": "RESRx",
+      "name": "6 Horas de Ralicross &#039;Paulo Sérgio&#039;",
+      "url": "https://www.fpak.pt/calendario/2026-12-19-6-horas-de-ralicross-paulo-sergio"
     }
   ]
 }
