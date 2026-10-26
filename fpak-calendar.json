@@ -1,76 +1,20 @@
 {
   "source": "https://www.fpak.pt/calendario",
-  "count": 14,
+  "count": 4,
   "events": [
     {
-      "start": "2026-03-14",
-      "end": "2026-03-15",
-      "discipline": "CPT 4x4",
-      "name": "Campeonato Portugal Trial 4x4 Valongo",
-      "url": "https://www.fpak.pt/calendario/2026-03-14-campeonato-portugal-trial-4x4-valongo"
+      "start": "2026-02-21",
+      "end": "2026-02-22",
+      "discipline": "PER Ex",
+      "name": "47º Rali à Lampreia",
+      "url": "https://www.fpak.pt/calendario/2026-02-21-47o-rali-lampreia"
     },
     {
-      "start": "2026-04-11",
-      "end": "2026-04-12",
-      "discipline": "CPT 4x4",
-      "name": "Campeonato Portugal Trial 4x4 - Moimenta/Cinfães",
-      "url": "https://www.fpak.pt/calendario/2026-04-11-campeonato-portugal-trial-4x4-moimentacinfaes"
-    },
-    {
-      "start": "2026-06-13",
-      "end": "2026-06-14",
-      "discipline": "CPT 4x4",
-      "name": "Campeonato Portugal Trial 4x4 Bragança - Heat of the Mountain 2026",
-      "url": "https://www.fpak.pt/calendario/2026-06-13-campeonato-portugal-trial-4x4-braganca-heat-mountain-2026"
-    },
-    {
-      "start": "2026-09-12",
-      "end": "2026-09-13",
-      "discipline": "CPT 4x4",
-      "name": "Campeonato Portugal Trial 4x4 - Santa Maria da Feira",
-      "url": "https://www.fpak.pt/calendario/2026-09-12-campeonato-portugal-trial-4x4-santa-maria-da-feira"
-    },
-    {
-      "start": "2026-10-07",
-      "end": "2026-10-11",
-      "discipline": "E Ex",
-      "name": "ELMS",
-      "url": "https://www.fpak.pt/calendario/2026-10-07-elms"
-    },
-    {
-      "start": "2026-10-15",
-      "end": "2026-10-17",
-      "discipline": "CPTT",
-      "name": "BP Ultimate Baja de Portalegre 500",
-      "url": "https://www.fpak.pt/calendario/2026-10-15-bp-ultimate-baja-de-portalegre-500"
-    },
-    {
-      "start": "2026-10-16",
-      "end": "2026-10-17",
-      "discipline": "TRRAMAK",
-      "name": "Rampa Regional do Porto Moniz",
-      "url": "https://www.fpak.pt/calendario/2026-10-16-rampa-regional-do-porto-moniz"
-    },
-    {
-      "start": "2026-10-16",
-      "end": "2026-10-17",
-      "discipline": "CAR",
-      "name": "XV Rali Vinho do Pico",
-      "url": "https://www.fpak.pt/calendario/2026-10-16-xv-rali-vinho-do-pico"
-    },
-    {
-      "start": "2026-10-17",
-      "end": "2026-10-18",
-      "discipline": "RtxMC",
-      "name": "RMC Portugal 2026 - Bombarral",
-      "url": "https://www.fpak.pt/calendario/2026-10-17-rmc-portugal-2026-bombarral"
-    },
-    {
-      "start": "2026-10-17",
-      "end": "2026-10-18",
-      "discipline": "TPD",
-      "name": "Taça de Portugal de Drift 2026",
-      "url": "https://www.fpak.pt/calendario/2026-10-17-taca-de-portugal-de-drift-2026"
+      "start": "2026-05-30",
+      "end": "2026-05-31",
+      "discipline": "TFRAIANO",
+      "name": "Guimarães Revival",
+      "url": "https://www.fpak.pt/calendario/2026-05-30-guimaraes-revival"
     },
     {
       "start": "2026-10-23",
@@ -80,25 +24,11 @@
       "url": "https://www.fpak.pt/calendario/2026-10-23-rally-6-cities-north-portugal"
     },
     {
-      "start": "2026-10-31",
-      "end": "2026-11-01",
-      "discipline": "D Ex",
-      "name": "MotorShow Portugal",
-      "url": "https://www.fpak.pt/calendario/2026-10-31-motorshow-portugal"
-    },
-    {
-      "start": "2026-11-06",
-      "end": "2026-11-08",
-      "discipline": "E Ex",
-      "name": "Ultimate CUP Series",
-      "url": "https://www.fpak.pt/calendario/2026-11-06-ultimate-cup-series"
-    },
-    {
-      "start": "2026-11-14",
-      "end": "2026-11-15",
-      "discipline": "CPT 4x4",
-      "name": "Campeonato Portugal Trial 4x4 Paredes",
-      "url": "https://www.fpak.pt/calendario/2026-11-14-campeonato-portugal-trial-4x4-paredes"
+      "start": "2026-10-24",
+      "end": "2026-10-25",
+      "discipline": "CPM",
+      "name": "35ª Rampa do Caramulo",
+      "url": "https://www.fpak.pt/calendario/2026-10-24-35a-rampa-do-caramulo"
     }
   ]
 }
