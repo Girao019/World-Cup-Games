@@ -1,34 +1,104 @@
 {
   "source": "https://www.fpak.pt/calendario",
-  "count": 4,
+  "count": 14,
   "events": [
     {
-      "start": "2026-02-21",
-      "end": "2026-02-22",
-      "discipline": "PER Ex",
-      "name": "47º Rali à Lampreia",
-      "url": "https://www.fpak.pt/calendario/2026-02-21-47o-rali-lampreia"
+      "start": "2026-05-16",
+      "end": "2026-05-17",
+      "discipline": "CISET 4x4",
+      "name": "CISET4X4 Mangualde",
+      "url": "https://www.fpak.pt/calendario/2026-05-16-ciset4x4-mangualde"
     },
     {
-      "start": "2026-05-30",
-      "end": "2026-05-31",
-      "discipline": "TFRAIANO",
-      "name": "Guimarães Revival",
-      "url": "https://www.fpak.pt/calendario/2026-05-30-guimaraes-revival"
+      "start": "2026-07-11",
+      "end": "2026-07-12",
+      "discipline": "CISET 4x4",
+      "name": "CISET4X4 Couço",
+      "url": "https://www.fpak.pt/calendario/2026-07-11-ciset4x4-couco"
+    },
+    {
+      "start": "2026-08-22",
+      "end": "2026-08-23",
+      "discipline": "CISET 4x4",
+      "name": "Super Trial 4X4 São Vicente Madeira",
+      "url": "https://www.fpak.pt/calendario/2026-08-22-super-trial-4x4-sao-vicente-madeira"
+    },
+    {
+      "start": "2026-09-19",
+      "end": "2026-09-20",
+      "discipline": "CISET 4x4",
+      "name": "CISET4X4 Cerveira",
+      "url": "https://www.fpak.pt/calendario/2026-09-19-ciset4x4-cerveira"
     },
     {
       "start": "2026-10-23",
       "end": "2026-10-25",
-      "discipline": "CPR",
-      "name": "Rally 6 Cities North of Portugal",
-      "url": "https://www.fpak.pt/calendario/2026-10-23-rally-6-cities-north-portugal"
+      "discipline": "RxKx Ex",
+      "name": "Montalegre Rally X Global Final",
+      "url": "https://www.fpak.pt/calendario/2026-10-23-montalegre-rally-x-global-final"
     },
     {
-      "start": "2026-10-24",
-      "end": "2026-10-25",
-      "discipline": "CPM",
-      "name": "35ª Rampa do Caramulo",
-      "url": "https://www.fpak.pt/calendario/2026-10-24-35a-rampa-do-caramulo"
+      "start": "2026-10-30",
+      "end": "2026-11-01",
+      "discipline": "SSS",
+      "name": "ACF",
+      "url": "https://www.fpak.pt/calendario/2026-10-30-acf"
+    },
+    {
+      "start": "2026-10-30",
+      "end": "2026-11-01",
+      "discipline": "V Ex",
+      "name": "Cascais PSCI Grand Finale",
+      "url": "https://www.fpak.pt/calendario/2026-10-30-cascais-psci-grand-finale"
+    },
+    {
+      "start": "2026-10-31",
+      "end": "2026-11-01",
+      "discipline": "TRCE",
+      "name": "9º Rali Município de Albufeira - Encivil",
+      "url": "https://www.fpak.pt/calendario/2026-10-31-9o-rali-municipio-de-albufeira-encivil"
+    },
+    {
+      "start": "2026-10-31",
+      "end": "2026-11-01",
+      "discipline": "D Ex",
+      "name": "MotorShow Portugal",
+      "url": "https://www.fpak.pt/calendario/2026-10-31-motorshow-portugal"
+    },
+    {
+      "start": "2026-11-06",
+      "end": "2026-11-07",
+      "discipline": "CRCM",
+      "name": "Rali Porto Santo",
+      "url": "https://www.fpak.pt/calendario/2026-11-06-rali-porto-santo"
+    },
+    {
+      "start": "2026-11-13",
+      "end": "2026-11-14",
+      "discipline": "CAR",
+      "name": "2º Rali d&#039;Angra 47º Ilha Lilás",
+      "url": "https://www.fpak.pt/calendario/2026-11-13-2o-rali-dangra-47o-ilha-lilas"
+    },
+    {
+      "start": "2026-11-14",
+      "end": "2026-11-15",
+      "discipline": "RSERIES",
+      "name": "Portugal Rally Series - Fafe",
+      "url": "https://www.fpak.pt/calendario/2026-11-14-portugal-rally-series-fafe"
+    },
+    {
+      "start": "2026-11-20",
+      "end": "2026-11-21",
+      "discipline": "CPR",
+      "name": "Rallye Vidreiro Centro de Portugal",
+      "url": "https://www.fpak.pt/calendario/2026-11-20-rallye-vidreiro-centro-de-portugal"
+    },
+    {
+      "start": "2026-11-21",
+      "end": "2026-11-22",
+      "discipline": "TPK",
+      "name": "Taça de Portugal de Karting",
+      "url": "https://www.fpak.pt/calendario/2026-11-21-taca-de-portugal-de-karting"
     }
   ]
 }
